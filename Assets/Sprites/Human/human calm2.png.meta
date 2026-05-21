@@ -1,0 +1,858 @@
+fileFormatVersion: 2
+guid: 522e2933c4741fe41842000c214c2d1b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2928167487669047121
+    second: human calm2_0
+  - first:
+      213: -3512044766402172031
+    second: human calm2_1
+  - first:
+      213: -9078342698089434482
+    second: human calm2_2
+  - first:
+      213: -1793178417702089522
+    second: human calm2_3
+  - first:
+      213: -905092614741310125
+    second: human calm2_4
+  - first:
+      213: 483606215177114483
+    second: human calm2_5
+  - first:
+      213: 654689675409275555
+    second: human calm2_6
+  - first:
+      213: -5185264674691058972
+    second: human calm2_7
+  - first:
+      213: 5913852566984784191
+    second: human calm2_8
+  - first:
+      213: 3735471317524619195
+    second: human calm2_9
+  - first:
+      213: 4213099538278991347
+    second: human calm2_10
+  - first:
+      213: -871509691013182019
+    second: human calm2_11
+  - first:
+      213: -3835388342541680110
+    second: human calm2_12
+  - first:
+      213: 4796617054755845203
+    second: human calm2_13
+  - first:
+      213: -7903338943284658010
+    second: human calm2_14
+  - first:
+      213: 2228001106463541662
+    second: human calm2_15
+  - first:
+      213: 7242242836818890616
+    second: human calm2_16
+  - first:
+      213: 32935639930415022
+    second: human calm2_17
+  - first:
+      213: -3722478806447883838
+    second: human calm2_18
+  - first:
+      213: 7635040104605661786
+    second: human calm2_19
+  - first:
+      213: -5428198036713027607
+    second: human calm2_20
+  - first:
+      213: -1615985973707877044
+    second: human calm2_21
+  - first:
+      213: 343112463627673835
+    second: human calm2_22
+  - first:
+      213: -6890067753717105389
+    second: human calm2_23
+  - first:
+      213: -9036576891588246372
+    second: human calm2_24
+  - first:
+      213: -8168089411509274795
+    second: human calm2_25
+  - first:
+      213: 8835861793616804623
+    second: human calm2_26
+  - first:
+      213: 897760887815007778
+    second: human calm2_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: human calm2_0
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 3
+        width: 37
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa073ae1f2f0d57d0800000000000000
+      internalID: -2928167487669047121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 3
+        width: 37
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 18b245f74e5b24fc0800000000000000
+      internalID: -3512044766402172031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 3
+        width: 37
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e823e1b4a6f330280800000000000000
+      internalID: -9078342698089434482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_3
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 3
+        width: 37
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecc48f1dab95d17e0800000000000000
+      internalID: -1793178417702089522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_4
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 3
+        width: 37
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 355c381ff077073f0800000000000000
+      internalID: -905092614741310125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_5
+      rect:
+        serializedVersion: 2
+        x: 252
+        y: 3
+        width: 37
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3739dca5a4d16b600800000000000000
+      internalID: 483606215177114483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_6
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 3
+        width: 37
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aab2e48acce51900800000000000000
+      internalID: 654689675409275555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_7
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 3
+        width: 37
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e278a6404d3a08b0800000000000000
+      internalID: -5185264674691058972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_8
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 3
+        width: 37
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f39f825a399321250800000000000000
+      internalID: 5913852566984784191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_9
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 3
+        width: 37
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbf17b53f5f07d330800000000000000
+      internalID: 3735471317524619195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_10
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 3
+        width: 37
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f54b7645bfe77a30800000000000000
+      internalID: 4213099538278991347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_11
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 3
+        width: 37
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbd49d0bd86c7e3f0800000000000000
+      internalID: -871509691013182019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_12
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 3
+        width: 37
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 212012b8f96f5cac0800000000000000
+      internalID: -3835388342541680110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_13
+      rect:
+        serializedVersion: 2
+        x: 636
+        y: 3
+        width: 37
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3547d483cc1019240800000000000000
+      internalID: 4796617054755845203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_14
+      rect:
+        serializedVersion: 2
+        x: 684
+        y: 3
+        width: 37
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a0c102da13b15290800000000000000
+      internalID: -7903338943284658010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_15
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 3
+        width: 37
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e99cfeda3337bee10800000000000000
+      internalID: 2228001106463541662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_16
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 3
+        width: 37
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87f05b13d7d918460800000000000000
+      internalID: 7242242836818890616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_17
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 3
+        width: 37
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea7a08e3ac2057000800000000000000
+      internalID: 32935639930415022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_18
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 3
+        width: 37
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c9f0c18f39175cc0800000000000000
+      internalID: -3722478806447883838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_19
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 3
+        width: 37
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5ab1e0e58c15f960800000000000000
+      internalID: 7635040104605661786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_20
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 3
+        width: 37
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e74f3b35aa2ba4b0800000000000000
+      internalID: -5428198036713027607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_21
+      rect:
+        serializedVersion: 2
+        x: 1020
+        y: 3
+        width: 37
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c45d02b915dd299e0800000000000000
+      internalID: -1615985973707877044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_22
+      rect:
+        serializedVersion: 2
+        x: 1068
+        y: 3
+        width: 37
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be06980c7faf2c400800000000000000
+      internalID: 343112463627673835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_23
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 3
+        width: 37
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31d715512ef8160a0800000000000000
+      internalID: -6890067753717105389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_24
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 3
+        width: 37
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c940167e131a79280800000000000000
+      internalID: -9036576891588246372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_25
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 3
+        width: 37
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5573c55e4fd15ae80800000000000000
+      internalID: -8168089411509274795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_26
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 3
+        width: 37
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0bb9f4ac794f9a70800000000000000
+      internalID: 8835861793616804623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: human calm2_27
+      rect:
+        serializedVersion: 2
+        x: 1308
+        y: 3
+        width: 36
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22ee37b55cc757c00800000000000000
+      internalID: 897760887815007778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      human calm2_0: -2928167487669047121
+      human calm2_1: -3512044766402172031
+      human calm2_10: 4213099538278991347
+      human calm2_11: -871509691013182019
+      human calm2_12: -3835388342541680110
+      human calm2_13: 4796617054755845203
+      human calm2_14: -7903338943284658010
+      human calm2_15: 2228001106463541662
+      human calm2_16: 7242242836818890616
+      human calm2_17: 32935639930415022
+      human calm2_18: -3722478806447883838
+      human calm2_19: 7635040104605661786
+      human calm2_2: -9078342698089434482
+      human calm2_20: -5428198036713027607
+      human calm2_21: -1615985973707877044
+      human calm2_22: 343112463627673835
+      human calm2_23: -6890067753717105389
+      human calm2_24: -9036576891588246372
+      human calm2_25: -8168089411509274795
+      human calm2_26: 8835861793616804623
+      human calm2_27: 897760887815007778
+      human calm2_3: -1793178417702089522
+      human calm2_4: -905092614741310125
+      human calm2_5: 483606215177114483
+      human calm2_6: 654689675409275555
+      human calm2_7: -5185264674691058972
+      human calm2_8: 5913852566984784191
+      human calm2_9: 3735471317524619195
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

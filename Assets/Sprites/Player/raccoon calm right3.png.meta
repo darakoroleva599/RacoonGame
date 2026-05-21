@@ -1,0 +1,1300 @@
+fileFormatVersion: 2
+guid: e215fd52eb465b64abcfb8827be28c94
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1486374733909494272
+    second: raccoon calm right3_0
+  - first:
+      213: -23251592020430753
+    second: raccoon calm right3_1
+  - first:
+      213: -4701493218792112389
+    second: raccoon calm right3_2
+  - first:
+      213: 2131110979873010768
+    second: raccoon calm right3_3
+  - first:
+      213: 2116284608996089675
+    second: raccoon calm right3_4
+  - first:
+      213: -8634568705072443553
+    second: raccoon calm right3_5
+  - first:
+      213: -3355195701763069105
+    second: raccoon calm right3_6
+  - first:
+      213: -5997014191628320771
+    second: raccoon calm right3_7
+  - first:
+      213: -4558014910010540891
+    second: raccoon calm right3_8
+  - first:
+      213: 6725519672857963040
+    second: raccoon calm right3_9
+  - first:
+      213: 8918856513355062658
+    second: raccoon calm right3_10
+  - first:
+      213: -9090386500297144806
+    second: raccoon calm right3_11
+  - first:
+      213: 1208466367456576501
+    second: raccoon calm right3_12
+  - first:
+      213: -1905018663557548169
+    second: raccoon calm right3_13
+  - first:
+      213: -2031411458495442309
+    second: raccoon calm right3_14
+  - first:
+      213: -3677450131935328293
+    second: raccoon calm right3_15
+  - first:
+      213: 532752340979016512
+    second: raccoon calm right3_16
+  - first:
+      213: 5457359967132458516
+    second: raccoon calm right3_17
+  - first:
+      213: -6576290059809803328
+    second: raccoon calm right3_18
+  - first:
+      213: -3412988456747443916
+    second: raccoon calm right3_19
+  - first:
+      213: 8574853368095619335
+    second: raccoon calm right3_20
+  - first:
+      213: -3054814586707548915
+    second: raccoon calm right3_21
+  - first:
+      213: -1558786998429602182
+    second: raccoon calm right3_22
+  - first:
+      213: -2217548128979240128
+    second: raccoon calm right3_23
+  - first:
+      213: 9190430147493421392
+    second: raccoon calm right3_24
+  - first:
+      213: 4470356335664945042
+    second: raccoon calm right3_25
+  - first:
+      213: -8467187972199136771
+    second: raccoon calm right3_26
+  - first:
+      213: -9170729002044806322
+    second: raccoon calm right3_27
+  - first:
+      213: -9057400027599833483
+    second: raccoon calm right3_28
+  - first:
+      213: -6088304618809087146
+    second: raccoon calm right3_29
+  - first:
+      213: 311459107825506714
+    second: raccoon calm right3_30
+  - first:
+      213: 3191233991449875263
+    second: raccoon calm right3_31
+  - first:
+      213: 5387402325888143376
+    second: raccoon calm right3_32
+  - first:
+      213: 220413148789410975
+    second: raccoon calm right3_33
+  - first:
+      213: 917974509959877595
+    second: raccoon calm right3_34
+  - first:
+      213: 5174262484877635021
+    second: raccoon calm right3_35
+  - first:
+      213: 275880523261555647
+    second: raccoon calm right3_36
+  - first:
+      213: 8807308480474652681
+    second: raccoon calm right3_37
+  - first:
+      213: -9016810306832028127
+    second: raccoon calm right3_38
+  - first:
+      213: 8737802106846396995
+    second: raccoon calm right3_39
+  - first:
+      213: -1110019251074752717
+    second: raccoon calm right3_40
+  - first:
+      213: 3239406172007182106
+    second: raccoon calm right3_41
+  - first:
+      213: -8720454311934141117
+    second: raccoon calm right3_42
+  - first:
+      213: -4092055445883778479
+    second: raccoon calm right3_43
+  - first:
+      213: -6747245244827451813
+    second: raccoon calm right3_44
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: raccoon calm right3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11
+        width: 59
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00a8ac102f9a0a410800000000000000
+      internalID: 1486374733909494272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 12
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f50f82ddcc46daff0800000000000000
+      internalID: -23251592020430753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_2
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 13
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfefcfbb3d0f0ceb0800000000000000
+      internalID: -4701493218792112389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_3
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 13
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 054f344252a339d10800000000000000
+      internalID: 2131110979873010768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_4
+      rect:
+        serializedVersion: 2
+        x: 255
+        y: 13
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4f96daa3ad8e5d10800000000000000
+      internalID: 2116284608996089675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_5
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 13
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5fc379b289db2880800000000000000
+      internalID: -8634568705072443553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_6
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 13
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4bae7c2943ff61d0800000000000000
+      internalID: -3355195701763069105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_7
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 13
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dff7403cd5356cca0800000000000000
+      internalID: -5997014191628320771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_8
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 12
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac33e7b69daeb0c0800000000000000
+      internalID: -4558014910010540891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_9
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 12
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02aa9965288d55d50800000000000000
+      internalID: 6725519672857963040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_10
+      rect:
+        serializedVersion: 2
+        x: 639
+        y: 13
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28d1539aeb426cb70800000000000000
+      internalID: 8918856513355062658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_11
+      rect:
+        serializedVersion: 2
+        x: 703
+        y: 13
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1648c214a578d180800000000000000
+      internalID: -9090386500297144806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_12
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 12
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f3814b22c555c010800000000000000
+      internalID: 1208466367456576501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_13
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 12
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 777b9246e930095e0800000000000000
+      internalID: -1905018663557548169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_14
+      rect:
+        serializedVersion: 2
+        x: 895
+        y: 13
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7298b79a0afec3e0800000000000000
+      internalID: -2031411458495442309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_15
+      rect:
+        serializedVersion: 2
+        x: 959
+        y: 13
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd708c6c69217fcc0800000000000000
+      internalID: -3677450131935328293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_16
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 12
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 043ef457e67b46700800000000000000
+      internalID: 532752340979016512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_17
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 12
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41e1e5cc9ff6cbb40800000000000000
+      internalID: 5457359967132458516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_18
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 13
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c3ba1588035cb4a0800000000000000
+      internalID: -6576290059809803328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_19
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 13
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4395f05d411a2a0d0800000000000000
+      internalID: -3412988456747443916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_20
+      rect:
+        serializedVersion: 2
+        x: 1279
+        y: 12
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 709b66ee4bffff670800000000000000
+      internalID: 8574853368095619335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_21
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 12
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d056d98815e1b95d0800000000000000
+      internalID: -3054814586707548915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_22
+      rect:
+        serializedVersion: 2
+        x: 1407
+        y: 13
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7e2b16db731e5ae0800000000000000
+      internalID: -1558786998429602182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_23
+      rect:
+        serializedVersion: 2
+        x: 1471
+        y: 13
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04b3cdbc9bfa931e0800000000000000
+      internalID: -2217548128979240128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_24
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 13
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 051e262b687fa8f70800000000000000
+      internalID: 9190430147493421392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_25
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 12
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 297d9bef665e90e30800000000000000
+      internalID: 4470356335664945042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_26
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 12
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df14c9e76618e7a80800000000000000
+      internalID: -8467187972199136771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_27
+      rect:
+        serializedVersion: 2
+        x: 1727
+        y: 12
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4b2fbdaf860bb080800000000000000
+      internalID: -9170729002044806322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_28
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 13
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5767c4eb9a6ad4280800000000000000
+      internalID: -9057400027599833483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_29
+      rect:
+        serializedVersion: 2
+        x: 1855
+        y: 13
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ba387d43ff18ba0800000000000000
+      internalID: -6088304618809087146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_30
+      rect:
+        serializedVersion: 2
+        x: 1919
+        y: 12
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a99dffb8866825400800000000000000
+      internalID: 311459107825506714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_31
+      rect:
+        serializedVersion: 2
+        x: 1983
+        y: 12
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f339587486a894c20800000000000000
+      internalID: 3191233991449875263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_32
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 13
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0101da82fd5e3ca40800000000000000
+      internalID: 5387402325888143376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_33
+      rect:
+        serializedVersion: 2
+        x: 2111
+        y: 13
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9c0b6d47901f0300800000000000000
+      internalID: 220413148789410975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_34
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 12
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd3950304fc4dbc00800000000000000
+      internalID: 917974509959877595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_35
+      rect:
+        serializedVersion: 2
+        x: 2239
+        y: 12
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcde2c9c05caec740800000000000000
+      internalID: 5174262484877635021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_36
+      rect:
+        serializedVersion: 2
+        x: 2303
+        y: 13
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb3347dcfdf14d300800000000000000
+      internalID: 275880523261555647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_37
+      rect:
+        serializedVersion: 2
+        x: 2367
+        y: 13
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9002afd5668d93a70800000000000000
+      internalID: 8807308480474652681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_38
+      rect:
+        serializedVersion: 2
+        x: 2431
+        y: 13
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12e223e8ccaddd280800000000000000
+      internalID: -9016810306832028127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_39
+      rect:
+        serializedVersion: 2
+        x: 2495
+        y: 13
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3424d38a8b8e24970800000000000000
+      internalID: 8737802106846396995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_40
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 13
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33f18dd4f5b6890f0800000000000000
+      internalID: -1110019251074752717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_41
+      rect:
+        serializedVersion: 2
+        x: 2623
+        y: 13
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1f22b510cea4fc20800000000000000
+      internalID: 3239406172007182106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_42
+      rect:
+        serializedVersion: 2
+        x: 2687
+        y: 13
+        width: 60
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34d54299109baf680800000000000000
+      internalID: -8720454311934141117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_43
+      rect:
+        serializedVersion: 2
+        x: 2751
+        y: 12
+        width: 60
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15a05eaa0491637c0800000000000000
+      internalID: -4092055445883778479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon calm right3_44
+      rect:
+        serializedVersion: 2
+        x: 2815
+        y: 11
+        width: 60
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5ebd91c238fc52a0800000000000000
+      internalID: -6747245244827451813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      raccoon calm right3_0: 1486374733909494272
+      raccoon calm right3_1: -23251592020430753
+      raccoon calm right3_10: 8918856513355062658
+      raccoon calm right3_11: -9090386500297144806
+      raccoon calm right3_12: 1208466367456576501
+      raccoon calm right3_13: -1905018663557548169
+      raccoon calm right3_14: -2031411458495442309
+      raccoon calm right3_15: -3677450131935328293
+      raccoon calm right3_16: 532752340979016512
+      raccoon calm right3_17: 5457359967132458516
+      raccoon calm right3_18: -6576290059809803328
+      raccoon calm right3_19: -3412988456747443916
+      raccoon calm right3_2: -4701493218792112389
+      raccoon calm right3_20: 8574853368095619335
+      raccoon calm right3_21: -3054814586707548915
+      raccoon calm right3_22: -1558786998429602182
+      raccoon calm right3_23: -2217548128979240128
+      raccoon calm right3_24: 9190430147493421392
+      raccoon calm right3_25: 4470356335664945042
+      raccoon calm right3_26: -8467187972199136771
+      raccoon calm right3_27: -9170729002044806322
+      raccoon calm right3_28: -9057400027599833483
+      raccoon calm right3_29: -6088304618809087146
+      raccoon calm right3_3: 2131110979873010768
+      raccoon calm right3_30: 311459107825506714
+      raccoon calm right3_31: 3191233991449875263
+      raccoon calm right3_32: 5387402325888143376
+      raccoon calm right3_33: 220413148789410975
+      raccoon calm right3_34: 917974509959877595
+      raccoon calm right3_35: 5174262484877635021
+      raccoon calm right3_36: 275880523261555647
+      raccoon calm right3_37: 8807308480474652681
+      raccoon calm right3_38: -9016810306832028127
+      raccoon calm right3_39: 8737802106846396995
+      raccoon calm right3_4: 2116284608996089675
+      raccoon calm right3_40: -1110019251074752717
+      raccoon calm right3_41: 3239406172007182106
+      raccoon calm right3_42: -8720454311934141117
+      raccoon calm right3_43: -4092055445883778479
+      raccoon calm right3_44: -6747245244827451813
+      raccoon calm right3_5: -8634568705072443553
+      raccoon calm right3_6: -3355195701763069105
+      raccoon calm right3_7: -5997014191628320771
+      raccoon calm right3_8: -4558014910010540891
+      raccoon calm right3_9: 6725519672857963040
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
