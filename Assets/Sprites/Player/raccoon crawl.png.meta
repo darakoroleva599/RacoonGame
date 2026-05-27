@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 67e07ce2cf73b894fb1b2b2beaaf7002
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3750636717585144030
+    second: raccoon crawl_0
+  - first:
+      213: -2554961450067521206
+    second: raccoon crawl_1
+  - first:
+      213: 6042551330136588909
+    second: raccoon crawl_2
+  - first:
+      213: -5718089522327159388
+    second: raccoon crawl_3
+  - first:
+      213: 5430948121615656471
+    second: raccoon crawl_4
+  - first:
+      213: 3709138318965588910
+    second: raccoon crawl_5
+  - first:
+      213: -6995189395491746871
+    second: raccoon crawl_6
+  - first:
+      213: -5262187194113390172
+    second: raccoon crawl_7
+  - first:
+      213: -8060525546842965507
+    second: raccoon crawl_8
+  - first:
+      213: 5946622964028420485
+    second: raccoon crawl_9
+  - first:
+      213: -5326781006603760931
+    second: raccoon crawl_10
+  - first:
+      213: -4321503155609293390
+    second: raccoon crawl_11
+  - first:
+      213: -7107071502734302565
+    second: raccoon crawl_12
+  - first:
+      213: -3133879435284163956
+    second: raccoon crawl_13
+  - first:
+      213: 2558012232297395128
+    second: raccoon crawl_14
+  - first:
+      213: 2012532295227565281
+    second: raccoon crawl_15
+  - first:
+      213: 1937860129897545143
+    second: raccoon crawl_16
+  - first:
+      213: -3743450467088455909
+    second: raccoon crawl_17
+  - first:
+      213: 6779319073939317962
+    second: raccoon crawl_18
+  - first:
+      213: 6511848973938427609
+    second: raccoon crawl_19
+  - first:
+      213: -9188211279998047543
+    second: raccoon crawl_20
+  - first:
+      213: -4038651913670307510
+    second: raccoon crawl_21
+  - first:
+      213: -8780554666370033479
+    second: raccoon crawl_22
+  - first:
+      213: 5987067608774448492
+    second: raccoon crawl_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: raccoon crawl_0
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 15
+        width: 51
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 227eccee6cf03fbc0800000000000000
+      internalID: -3750636717585144030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon crawl_1
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 15
+        width: 51
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4198e11914fa8cd0800000000000000
+      internalID: -2554961450067521206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon crawl_2
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 7
+        width: 51
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d620bd18b647bd350800000000000000
+      internalID: 6042551330136588909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon crawl_3
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 7
+        width: 51
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ad7ecb00e345a0b0800000000000000
+      internalID: -5718089522327159388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon crawl_4
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 6
+        width: 51
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 716e97eca8a9e5b40800000000000000
+      internalID: 5430948121615656471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon crawl_5
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 6
+        width: 51
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea3cbb436a1897330800000000000000
+      internalID: 3709138318965588910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon crawl_6
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 6
+        width: 50
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cb82219e481cee90800000000000000
+      internalID: -6995189395491746871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon crawl_7
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 6
+        width: 50
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a9034190a4f8f6b0800000000000000
+      internalID: -5262187194113390172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon crawl_8
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 13
+        width: 50
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df9b67db8b2432090800000000000000
+      internalID: -8060525546842965507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon crawl_9
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 13
+        width: 50
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58138184416a68250800000000000000
+      internalID: 5946622964028420485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon crawl_10
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 6
+        width: 50
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddac511a5e87316b0800000000000000
+      internalID: -5326781006603760931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon crawl_11
+      rect:
+        serializedVersion: 2
+        x: 711
+        y: 6
+        width: 50
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bdad2ab6cfe604c0800000000000000
+      internalID: -4321503155609293390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon crawl_12
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 13
+        width: 50
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9268368f1c9e5d90800000000000000
+      internalID: -7107071502734302565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon crawl_13
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 13
+        width: 50
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c825cf2f1493284d0800000000000000
+      internalID: -3133879435284163956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon crawl_14
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 7
+        width: 51
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b3b0358292ef7320800000000000000
+      internalID: 2558012232297395128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon crawl_15
+      rect:
+        serializedVersion: 2
+        x: 966
+        y: 7
+        width: 51
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e46a0ca573fdeb10800000000000000
+      internalID: 2012532295227565281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon crawl_16
+      rect:
+        serializedVersion: 2
+        x: 1030
+        y: 8
+        width: 51
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bd7fea5589a4ea10800000000000000
+      internalID: 1937860129897545143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon crawl_17
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 8
+        width: 51
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b172ce242a79c0cc0800000000000000
+      internalID: -3743450467088455909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon crawl_18
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 6
+        width: 51
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac4ee2587caf41e50800000000000000
+      internalID: 6779319073939317962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon crawl_19
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 6
+        width: 51
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d6879af32cbe5a50800000000000000
+      internalID: 6511848973938427609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon crawl_20
+      rect:
+        serializedVersion: 2
+        x: 1286
+        y: 6
+        width: 51
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9caaa76a58aec7080800000000000000
+      internalID: -9188211279998047543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon crawl_21
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 6
+        width: 51
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a41da327b73d3f7c0800000000000000
+      internalID: -4038651913670307510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon crawl_22
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 6
+        width: 51
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b89d146d04352680800000000000000
+      internalID: -8780554666370033479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: raccoon crawl_23
+      rect:
+        serializedVersion: 2
+        x: 1478
+        y: 6
+        width: 51
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c659f33f446561350800000000000000
+      internalID: 5987067608774448492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      raccoon crawl_0: -3750636717585144030
+      raccoon crawl_1: -2554961450067521206
+      raccoon crawl_10: -5326781006603760931
+      raccoon crawl_11: -4321503155609293390
+      raccoon crawl_12: -7107071502734302565
+      raccoon crawl_13: -3133879435284163956
+      raccoon crawl_14: 2558012232297395128
+      raccoon crawl_15: 2012532295227565281
+      raccoon crawl_16: 1937860129897545143
+      raccoon crawl_17: -3743450467088455909
+      raccoon crawl_18: 6779319073939317962
+      raccoon crawl_19: 6511848973938427609
+      raccoon crawl_2: 6042551330136588909
+      raccoon crawl_20: -9188211279998047543
+      raccoon crawl_21: -4038651913670307510
+      raccoon crawl_22: -8780554666370033479
+      raccoon crawl_23: 5987067608774448492
+      raccoon crawl_3: -5718089522327159388
+      raccoon crawl_4: 5430948121615656471
+      raccoon crawl_5: 3709138318965588910
+      raccoon crawl_6: -6995189395491746871
+      raccoon crawl_7: -5262187194113390172
+      raccoon crawl_8: -8060525546842965507
+      raccoon crawl_9: 5946622964028420485
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

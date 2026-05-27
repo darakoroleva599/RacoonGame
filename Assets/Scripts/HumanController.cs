@@ -24,6 +24,7 @@ public class HumanController : MonoBehaviour
     private int currentWaypointIndex = 0;
     private bool isReacting = false;
     private Transform raccoon;
+    private Coroutine patrolCoroutine;
 
     public System.Action OnCaughtRaccoon;
 
@@ -42,7 +43,7 @@ public class HumanController : MonoBehaviour
         UpdateAnnoyanceUI();
 
         if (waypoints.Length > 0)
-            StartCoroutine(PatrolRoutine());
+            patrolCoroutine = StartCoroutine(PatrolRoutine());
     }
 
     void Update()
@@ -80,6 +81,7 @@ public class HumanController : MonoBehaviour
             if (isReacting)
             {
                 animator.SetBool("isMoving", false);
+                rb.linearVelocity = Vector2.zero;
                 yield break;
             }
 
@@ -134,6 +136,7 @@ public class HumanController : MonoBehaviour
 
     public void ReactToPrank(Vector3 prankLocation, float reactionTime = 3f)
     {
+        StopAllCoroutines();
         StartCoroutine(ReactionRoutine(prankLocation, reactionTime));
     }
 
@@ -144,6 +147,11 @@ public class HumanController : MonoBehaviour
         animator.SetBool("isMoving", false);
         yield return new WaitForSeconds(duration);
         isReacting = false;
+
+        if (patrolCoroutine != null)
+            StopCoroutine(patrolCoroutine);
+        if (waypoints.Length > 0)
+            patrolCoroutine = StartCoroutine(PatrolRoutine());
     }
 
     private IEnumerator LeaveRoom()
@@ -169,6 +177,22 @@ public class HumanController : MonoBehaviour
     public bool IsReacting()
     {
         return isReacting;
+    }
+
+    public void ResetMovementState()
+    {
+        StopAllCoroutines();
+
+        isReacting = false;
+
+        if (rb != null)
+            rb.linearVelocity = Vector2.zero;
+
+        if (animator != null)
+            animator.SetBool("isMoving", false);
+
+        if (waypoints != null && waypoints.Length > 0)
+            patrolCoroutine = StartCoroutine(PatrolRoutine());
     }
 
     public static void RestartGame()

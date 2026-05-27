@@ -91,6 +91,9 @@ public class Oven : MonoBehaviour
         }
         hiddenObjects.Clear();
         Time.timeScale = 1;
+
+        if (humanController != null)
+            humanController.ResetMovementState();
     }
 
     private void OnSceneUnloaded(Scene scene)
@@ -118,5 +121,7 @@ public class Oven : MonoBehaviour
             humanController.AddAnnoyance(annoyanceAmount);
             humanController.ReactToPrank(transform.position, 2f);
         }
+        if (QuestManager.Instance != null)
+            QuestManager.Instance.CompleteQuest("Oven");
     }
 }

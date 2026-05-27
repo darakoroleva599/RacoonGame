@@ -7,10 +7,14 @@ public class FlowerPotMinigameController : MonoBehaviour
 {
     [Header("Shake Settings")]
     [SerializeField] private RectTransform potImage;
+    [SerializeField] private GameObject wholePot;
     [SerializeField] private float shakeSpeed = 0.5f;
     [SerializeField] private float maxShakeOffset = 30f;
     [SerializeField] private float maxProgress = 100f;
     [SerializeField] private float decaySpeed = 0.2f;
+
+    [Header("Sprites")]
+    [SerializeField] private GameObject brokenPotObject;
 
     [Header("UI")]
     [SerializeField] private Image progressFill;
@@ -23,6 +27,7 @@ public class FlowerPotMinigameController : MonoBehaviour
     [SerializeField] private Color activeColor = Color.yellow;
     [SerializeField] private Color inactiveColor = Color.white;
 
+    private GameObject brokenPot;
     private float currentProgress = 0f;
     private float shakeTimer = 0f;
     private float shakeDirection = 1f;
@@ -41,6 +46,13 @@ public class FlowerPotMinigameController : MonoBehaviour
         isComplete = false;
         returningToGame = false;
 
+        brokenPot = brokenPotObject;
+        if (brokenPot != null)
+            brokenPot.SetActive(false);
+
+        if (wholePot != null)
+            wholePot.SetActive(true);
+
         if (progressFill != null)
             progressFill.fillAmount = 0f;
 
@@ -49,8 +61,6 @@ public class FlowerPotMinigameController : MonoBehaviour
 
         if (instructionText != null)
             instructionText.SetActive(true);
-
-        Debug.Log("FlowerPotMinigameController Start - ЖМИ A и D БЫСТРО!");
     }
 
     void Update()
@@ -60,48 +70,40 @@ public class FlowerPotMinigameController : MonoBehaviour
         bool pressingA = Input.GetKey(KeyCode.A);
         bool pressingD = Input.GetKey(KeyCode.D);
 
-        // Подсветка клавиш
         if (leftArrow != null)
             leftArrow.color = pressingA ? activeColor : inactiveColor;
         if (rightArrow != null)
             rightArrow.color = pressingD ? activeColor : inactiveColor;
 
         if (pressingA && pressingD)
-        {
             return;
-        }
 
         if (pressingA || pressingD)
         {
-            // Скрываем подсказку
             if (instructionText != null && instructionText.activeSelf)
                 instructionText.SetActive(false);
 
-            // Увеличиваем прогресс
             currentProgress += shakeSpeed;
             currentProgress = Mathf.Min(currentProgress, maxProgress);
 
-            // ТРЯСКА ГОРШКА (ручная анимация)
             float progressRatio = currentProgress / maxProgress;
             float shakeIntensity = Mathf.Lerp(5f, maxShakeOffset, progressRatio);
-            float shakeFrequency = Mathf.Lerp(0.05f, 0.02f, progressRatio); // Быстрее при большем прогрессе
+            float shakeFrequency = Mathf.Lerp(0.05f, 0.02f, progressRatio);
 
             shakeTimer += Time.unscaledDeltaTime;
 
             if (shakeTimer >= shakeFrequency)
             {
                 shakeTimer = 0f;
-                shakeDirection *= -1f; // Меняем направление
+                shakeDirection *= -1f;
             }
 
-            // Плавное движение к краю
             float targetX = potStartPosition.x + shakeDirection * shakeIntensity;
             potImage.anchoredPosition = new Vector2(
                 Mathf.Lerp(potImage.anchoredPosition.x, targetX, Time.unscaledDeltaTime * 20f),
                 potStartPosition.y
             );
 
-            // Лёгкое вращение
             float targetRotation = shakeDirection * shakeIntensity * 0.15f;
             potImage.rotation = Quaternion.Lerp(
                 potImage.rotation,
@@ -109,26 +111,16 @@ public class FlowerPotMinigameController : MonoBehaviour
                 Time.unscaledDeltaTime * 20f
             );
 
-            // Обновляем шкалу
             if (progressFill != null)
                 progressFill.fillAmount = currentProgress / maxProgress;
 
-            // Отладка каждые 25%
-            if (Mathf.Abs(currentProgress % 25) < shakeSpeed && currentProgress > 0)
+            if (currentProgress >= maxProgress && !isComplete)
             {
-                Debug.Log("Прогресс: " + currentProgress.ToString("F0") + "/" + maxProgress + " | Тряска: " + shakeIntensity.ToString("F1"));
-            }
-
-            // Завершение ТОЛЬКО при 100%
-            if (currentProgress >= maxProgress - 0.01f && !isComplete)
-            {
-                Debug.Log("!!! ГОРШОК РАСКАЧАН !!!");
                 CompleteMinigame();
             }
         }
         else
         {
-            // Ничего не нажато — прогресс медленно падает
             if (currentProgress > 0)
             {
                 currentProgress -= decaySpeed;
@@ -163,7 +155,6 @@ public class FlowerPotMinigameController : MonoBehaviour
             }
             else
             {
-                // Горшок возвращается в исходное положение
                 potImage.anchoredPosition = Vector2.Lerp(
                     potImage.anchoredPosition,
                     potStartPosition,
@@ -181,7 +172,15 @@ public class FlowerPotMinigameController : MonoBehaviour
     private void CompleteMinigame()
     {
         isComplete = true;
-        Debug.Log("=== МИНИ-ИГРА ЗАВЕРШЕНА ===");
+
+        if (wholePot != null)
+            wholePot.SetActive(false);
+
+        if (brokenPot != null)
+        {
+            brokenPot.SetActive(true);
+            brokenPot.transform.position = potImage.position;
+        }
 
         if (completeEffect != null)
             completeEffect.SetActive(true);
@@ -193,7 +192,6 @@ public class FlowerPotMinigameController : MonoBehaviour
 
     private IEnumerator WaitAndReturn()
     {
-        Debug.Log("Горшок раскачан! +25% раздражения");
         yield return new WaitForSecondsRealtime(1.5f);
         ReturnToGame();
     }
@@ -203,10 +201,7 @@ public class FlowerPotMinigameController : MonoBehaviour
         if (returningToGame) return;
         returningToGame = true;
 
-        Debug.Log("ReturnToGame - включаем время");
         Time.timeScale = 1;
-
-        Debug.Log("Выгружаем сцену FlowerPotMinigame...");
         SceneManager.UnloadSceneAsync("FlowerPotMinigame");
     }
 
@@ -215,7 +210,6 @@ public class FlowerPotMinigameController : MonoBehaviour
         if (returningToGame) return;
         returningToGame = true;
 
-        Debug.Log("Закрытие мини-игры без завершения");
         FlowerPotData.wasCompleted = false;
         Time.timeScale = 1;
         SceneManager.UnloadSceneAsync("FlowerPotMinigame");

@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private float interactionRadius = 1.5f;
     [SerializeField] private float climbHeight = 0.6f;
     [SerializeField] private float interactionCooldown = 1f;
+    [SerializeField] private float climbDuration = 0.5f;
 
     private Rigidbody2D rb;
     private Animator animator;
@@ -17,6 +19,7 @@ public class PlayerMove : MonoBehaviour
 
     private bool isOnTaburet = false;
     private bool isOnPodosokonnik = false;
+    private bool isCrawling = false;
 
     private float lastInteractionTime = 0f;
 
@@ -31,6 +34,8 @@ public class PlayerMove : MonoBehaviour
 
     void Update()
     {
+        if (isCrawling) return;
+
         float x = Input.GetAxisRaw("Horizontal");
         float y = Input.GetAxisRaw("Vertical");
         Vector2 move = new Vector2(x, y);
@@ -55,7 +60,12 @@ public class PlayerMove : MonoBehaviour
             TryInteract();
         }
 
-        if (Input.GetKeyDown(KeyCode.Q) && (isOnTaburet || isOnPodosokonnik))
+        if (Input.GetKeyDown(KeyCode.Q) && !isCrawling)
+        {
+            TryClimb();
+        }
+
+        if (Input.GetKeyDown(KeyCode.S) && (isOnTaburet || isOnPodosokonnik) && !isCrawling)
         {
             ClimbDown();
         }
@@ -77,18 +87,6 @@ public class PlayerMove : MonoBehaviour
                 }
             }
 
-            if (hit.CompareTag("Taburet") && !isOnTaburet && !isOnPodosokonnik)
-            {
-                ClimbOn(hit.transform);
-                return;
-            }
-
-            if (hit.CompareTag("Podosokonnik") && isOnTaburet && !isOnPodosokonnik)
-            {
-                ClimbOn(hit.transform);
-                return;
-            }
-
             if (hit.CompareTag("FlowerPot") && isOnPodosokonnik)
             {
                 FlowerPot pot = hit.GetComponent<FlowerPot>();
@@ -101,22 +99,60 @@ public class PlayerMove : MonoBehaviour
         }
     }
 
-    private void ClimbOn(Transform target)
+    private void TryClimb()
     {
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, interactionRadius);
+
+        foreach (var hit in hits)
+        {
+            if (hit.CompareTag("Taburet") && !isOnTaburet && !isOnPodosokonnik)
+            {
+                StartCoroutine(ClimbRoutine(hit.transform));
+                return;
+            }
+
+            if (hit.CompareTag("Podosokonnik") && isOnTaburet && !isOnPodosokonnik)
+            {
+                StartCoroutine(ClimbRoutine(hit.transform));
+                return;
+            }
+        }
+    }
+
+    private IEnumerator ClimbRoutine(Transform target)
+    {
+        isCrawling = true;
+        rb.linearVelocity = Vector2.zero;
+
+        animator.SetBool("isCrawling", true);
+
+        yield return new WaitForSeconds(0.6f);
+
         Collider2D targetCollider = target.GetComponent<Collider2D>();
         float targetTop = target.position.y;
-
         if (targetCollider != null)
         {
             Bounds bounds = targetCollider.bounds;
             targetTop = bounds.max.y;
         }
 
-        transform.position = new Vector3(
+        Vector3 startPosition = transform.position;
+        Vector3 endPosition = new Vector3(
             target.position.x,
             targetTop + climbHeight,
             transform.position.z
         );
+
+        float elapsed = 0f;
+        while (elapsed < climbDuration)
+        {
+            elapsed += Time.unscaledDeltaTime;
+            float t = elapsed / climbDuration;
+            transform.position = Vector3.Lerp(startPosition, endPosition, t);
+            yield return null;
+        }
+
+        transform.position = endPosition;
 
         if (target.CompareTag("Taburet"))
         {
@@ -128,6 +164,9 @@ public class PlayerMove : MonoBehaviour
             isOnTaburet = false;
             isOnPodosokonnik = true;
         }
+
+        animator.SetBool("isCrawling", false);
+        isCrawling = false;
     }
 
     private void ClimbDown()
