@@ -2,28 +2,18 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
-public class FlowerPot : MonoBehaviour
+public class Fridge : MonoBehaviour
 {
     [SerializeField] private float annoyanceAmount = 25f;
-    [SerializeField] private AudioClip potFallSound;
-    [SerializeField] private GameObject dirtParticles;
 
     private bool isActivated = false;
     private HumanController humanController;
-    private AudioSource audioSource;
 
     private static List<GameObject> hiddenObjects = new List<GameObject>();
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
-        if (audioSource == null)
-            audioSource = gameObject.AddComponent<AudioSource>();
-
         humanController = FindObjectOfType<HumanController>();
-
-        if (dirtParticles != null)
-            dirtParticles.SetActive(false);
     }
 
     void OnEnable()
@@ -40,27 +30,27 @@ public class FlowerPot : MonoBehaviour
     {
         if (isActivated) return;
 
-        if (FlowerPotData.Instance != null)
+        if (FridgeData.Instance != null)
         {
-            FlowerPotData.Instance.annoyanceAmount = annoyanceAmount;
-            FlowerPotData.Instance.potPosition = transform.position;
+            FridgeData.Instance.annoyanceAmount = annoyanceAmount;
+            FridgeData.Instance.fridgePosition = transform.position;
         }
 
-        FlowerPotData.wasCompleted = false;
+        FridgeData.pepperTaken = false;
 
         HideMainScene();
-        SceneManager.LoadScene("FlowerPotMiniGame", LoadSceneMode.Additive);
+        SceneManager.LoadScene("FridgeMinigame", LoadSceneMode.Additive);
     }
 
     private void HideMainScene()
     {
         hiddenObjects.Clear();
 
-        List<GameObject> potParents = new List<GameObject>();
+        List<GameObject> fridgeParents = new List<GameObject>();
         Transform parent = transform;
         while (parent != null)
         {
-            potParents.Add(parent.gameObject);
+            fridgeParents.Add(parent.gameObject);
             parent = parent.parent;
         }
 
@@ -68,15 +58,16 @@ public class FlowerPot : MonoBehaviour
 
         foreach (GameObject obj in rootObjects)
         {
-            if (obj == gameObject || 
-                potParents.Contains(obj) ||
+            if (obj == gameObject ||
+                fridgeParents.Contains(obj) ||
                 obj.GetComponent<OvenData>() != null ||
                 obj.GetComponent<FlowerPotData>() != null ||
+                obj.GetComponent<FridgeData>() != null ||
                 obj.GetComponent<QuestManager>() != null ||
                 obj.name.Contains("EventSystem") ||
                 obj.name.Contains("GameData") ||
                 obj.name.Contains("Main Camera") ||
-            obj.name.Contains("Camera"))
+                obj.name.Contains("Camera"))
             {
                 continue;
             }
@@ -102,11 +93,11 @@ public class FlowerPot : MonoBehaviour
 
     private void OnMinigameSceneUnloaded(Scene scene)
     {
-        if (scene.name == "FlowerPotMiniGame")
+        if (scene.name == "FridgeMinigame")
         {
             ShowMainScene();
 
-            if (FlowerPotData.wasCompleted)
+            if (FridgeData.pepperTaken)
             {
                 CompletePrank();
             }
@@ -117,16 +108,6 @@ public class FlowerPot : MonoBehaviour
     {
         isActivated = true;
 
-        if (dirtParticles != null)
-            dirtParticles.SetActive(true);
-
-        Collider2D col = GetComponent<Collider2D>();
-        if (col != null)
-            col.enabled = false;
-
-        if (potFallSound != null && audioSource != null)
-            audioSource.PlayOneShot(potFallSound);
-
         if (humanController != null)
         {
             humanController.AddAnnoyance(annoyanceAmount);
@@ -134,6 +115,7 @@ public class FlowerPot : MonoBehaviour
         }
 
         if (QuestManager.Instance != null)
-            QuestManager.Instance.CompleteQuest("FlowerPot");
+            QuestManager.Instance.CompleteQuest("Fridge");
+        PepperDisplay.Show();
     }
 }

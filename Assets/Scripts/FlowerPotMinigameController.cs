@@ -202,7 +202,7 @@ public class FlowerPotMinigameController : MonoBehaviour
         returningToGame = true;
 
         Time.timeScale = 1;
-        SceneManager.UnloadSceneAsync("FlowerPotMinigame");
+        SceneManager.UnloadSceneAsync("FlowerPotMiniGame");
     }
 
     public void CloseMinigame()
@@ -212,6 +212,6 @@ public class FlowerPotMinigameController : MonoBehaviour
 
         FlowerPotData.wasCompleted = false;
         Time.timeScale = 1;
-        SceneManager.UnloadSceneAsync("FlowerPotMinigame");
+        SceneManager.UnloadSceneAsync("FlowerPotMiniGame");
     }
 }

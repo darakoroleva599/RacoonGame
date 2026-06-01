@@ -12,6 +12,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private float climbHeight = 0.6f;
     [SerializeField] private float interactionCooldown = 1f;
     [SerializeField] private float climbDuration = 0.5f;
+    [SerializeField] private float hidingRadius = 1f;
 
     private Rigidbody2D rb;
     private Animator animator;
@@ -20,13 +21,16 @@ public class PlayerMove : MonoBehaviour
     private bool isOnTaburet = false;
     private bool isOnPodosokonnik = false;
     private bool isCrawling = false;
+    private bool isHidden = false;
 
     private float lastInteractionTime = 0f;
+    private SpriteRenderer spriteRenderer;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         rb.gravityScale = 0;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         defaultScale = transform.localScale;
@@ -69,6 +73,45 @@ public class PlayerMove : MonoBehaviour
         {
             ClimbDown();
         }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            ToggleHide();
+        }
+    }
+
+    private void ToggleHide()
+    {
+        if (isHidden)
+        {
+            isHidden = false;
+            spriteRenderer.enabled = true;
+            GetComponent<Collider2D>().enabled = true;
+            gameObject.tag = "Player";
+        }
+        else
+        {
+            if (IsNearHidingSpot())
+            {
+                isHidden = true;
+                spriteRenderer.enabled = false;
+                GetComponent<Collider2D>().enabled = false;
+                gameObject.tag = "Hidden";
+            }
+        }
+    }
+
+    private bool IsNearHidingSpot()
+    {
+        Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, hidingRadius);
+        foreach (var hit in hits)
+        {
+            if (hit.CompareTag("HidingSpot"))
+            {
+                return true;
+            }
+        }
+        return false;
     }
 
     private void TryInteract()
@@ -93,6 +136,36 @@ public class PlayerMove : MonoBehaviour
                 if (pot != null)
                 {
                     pot.StartMinigame();
+                    return;
+                }
+            }
+
+            if (hit.CompareTag("Fridge"))
+            {
+                Fridge fridge = hit.GetComponent<Fridge>();
+                if (fridge != null)
+                {
+                    fridge.StartMinigame();
+                    return;
+                }
+            }
+
+            if (hit.CompareTag("Pie") && Vector2.Distance(transform.position, hit.transform.position) < 1.2f)
+            {
+                Pie pie = hit.GetComponent<Pie>();
+                if (pie != null)
+                {
+                    pie.StartMinigame();
+                    return;
+                }
+            }
+
+            if (hit.CompareTag("DoorDistraction") || hit.CompareTag("LampDistraction") || hit.CompareTag("PhoneDistraction"))
+            {
+                DistractionObject distraction = hit.GetComponent<DistractionObject>();
+                if (distraction != null)
+                {
+                    distraction.Activate();
                     return;
                 }
             }
@@ -185,5 +258,7 @@ public class PlayerMove : MonoBehaviour
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, interactionRadius);
+        Gizmos.color = Color.blue;
+        Gizmos.DrawWireSphere(transform.position, hidingRadius);
     }
 }

@@ -1,6 +1,6 @@
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using System.Collections;
 
 public class HumanController : MonoBehaviour
 {
@@ -13,10 +13,19 @@ public class HumanController : MonoBehaviour
     [SerializeField] private float visionRadius = 3f;
     [SerializeField, Range(0, 360)] private float visionAngle = 90f;
 
+    [Header("Detection Settings")]
+    [SerializeField] private GameObject eyeIndicator;
+    [SerializeField] private Image detectionBar;
+    [SerializeField] private float detectionTime = 3f;
+    [SerializeField] private float decaySpeed = 1.5f;
+
     [Header("Annoyance System")]
     [SerializeField] private float maxAnnoyance = 100f;
     [SerializeField] private float currentAnnoyance = 0f;
-    [SerializeField] private UnityEngine.UI.Slider annoyanceBar;
+    [SerializeField] private Slider annoyanceBar;
+
+    [Header("Distraction")]
+    [SerializeField] private GameObject exclamationMark;
 
     private Rigidbody2D rb;
     private Animator animator;
@@ -24,7 +33,17 @@ public class HumanController : MonoBehaviour
     private int currentWaypointIndex = 0;
     private bool isReacting = false;
     private Transform raccoon;
-    private Coroutine patrolCoroutine;
+
+    private float waitTimer = 0f;
+    private bool isWaiting = false;
+
+    private bool isDistracted = false;
+    private float distractionTimer = 0f;
+    private Transform[] distractionPath;
+    private int distractionPathIndex = 0;
+
+    private float detectionProgress = 0f;
+    private bool isDetecting = false;
 
     public System.Action OnCaughtRaccoon;
 
@@ -40,78 +59,171 @@ public class HumanController : MonoBehaviour
 
         raccoon = GameObject.FindGameObjectWithTag("Player").transform;
 
-        UpdateAnnoyanceUI();
+        if (eyeIndicator != null) eyeIndicator.SetActive(false);
+        if (detectionBar != null) detectionBar.gameObject.SetActive(false);
+        if (exclamationMark != null) exclamationMark.SetActive(false);
 
-        if (waypoints.Length > 0)
-            patrolCoroutine = StartCoroutine(PatrolRoutine());
+        UpdateAnnoyanceUI();
     }
 
     void Update()
     {
-        if (CanSeeRaccoon())
+        HandleDetection();
+
+        if (isReacting)
         {
-            CatchRaccoon();
+            rb.linearVelocity = Vector2.zero;
+            animator.SetBool("isMoving", false);
+            return;
         }
+
+        if (isDistracted)
+        {
+            HandleDistraction();
+            return;
+        }
+
+        HandlePatrol();
     }
 
-    private IEnumerator PatrolRoutine()
+    private void HandlePatrol()
     {
-        while (true)
+        if (waypoints.Length == 0) return;
+
+        Transform target = waypoints[currentWaypointIndex];
+
+        if (isWaiting)
         {
-            if (!isReacting && waypoints.Length > 0)
+            rb.linearVelocity = Vector2.zero;
+            animator.SetBool("isMoving", false);
+            waitTimer -= Time.deltaTime;
+            if (waitTimer <= 0f)
             {
-                Transform target = waypoints[currentWaypointIndex];
-                yield return StartCoroutine(MoveToTarget(target.position));
-
-                animator.SetBool("isMoving", false);
-                yield return new WaitForSeconds(waitAtWaypoint);
-
+                isWaiting = false;
                 currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Length;
             }
-            yield return null;
+            return;
+        }
+
+        float distance = Vector3.Distance(transform.position, target.position);
+
+        if (distance > 0.1f)
+        {
+            MoveTowards(target.position);
+        }
+        else
+        {
+            rb.linearVelocity = Vector2.zero;
+            animator.SetBool("isMoving", false);
+            isWaiting = true;
+            waitTimer = waitAtWaypoint;
         }
     }
 
-    private IEnumerator MoveToTarget(Vector3 target)
+    private void HandleDistraction()
     {
-        animator.SetBool("isMoving", true);
-
-        while (Vector3.Distance(transform.position, target) > 0.1f)
+        if (distractionPathIndex < distractionPath.Length)
         {
-            if (isReacting)
+            Transform target = distractionPath[distractionPathIndex];
+            float distance = Vector3.Distance(transform.position, target.position);
+
+            if (distance > 0.1f)
             {
-                animator.SetBool("isMoving", false);
-                rb.linearVelocity = Vector2.zero;
-                yield break;
+                MoveTowards(target.position);
             }
-
-            Vector3 direction = (target - transform.position).normalized;
-            rb.linearVelocity = direction * moveSpeed;
-
-            if (direction.x < 0)
-                transform.localScale = new Vector3(-Mathf.Abs(defaultScale.x), defaultScale.y, defaultScale.z);
-            else if (direction.x > 0)
-                transform.localScale = new Vector3(Mathf.Abs(defaultScale.x), defaultScale.y, defaultScale.z);
-
-            yield return new WaitForFixedUpdate();
+            else
+            {
+                if (distractionPathIndex == 0 && distractionTimer > 100f)
+                {
+                    isDistracted = false;
+                    if (exclamationMark != null) exclamationMark.SetActive(false);
+                    return;
+                }
+                distractionPathIndex++;
+            }
+            return;
         }
 
         rb.linearVelocity = Vector2.zero;
         animator.SetBool("isMoving", false);
+
+        distractionTimer -= Time.deltaTime;
+        if (distractionTimer <= 0f)
+        {
+            distractionPathIndex = 0;
+            distractionTimer = 999f;
+        }
+    }
+
+    private void MoveTowards(Vector3 target)
+    {
+        Vector3 direction = (target - transform.position).normalized;
+        rb.linearVelocity = direction * moveSpeed;
+        animator.SetBool("isMoving", true);
+
+        if (direction.x < 0)
+            transform.localScale = new Vector3(-Mathf.Abs(defaultScale.x), defaultScale.y, defaultScale.z);
+        else if (direction.x > 0)
+            transform.localScale = new Vector3(Mathf.Abs(defaultScale.x), defaultScale.y, defaultScale.z);
+    }
+
+    public void StartDistraction(Transform[] path, float duration)
+    {
+        isDistracted = true;
+        distractionPath = path;
+        distractionPathIndex = 0;
+        distractionTimer = duration;
+        isWaiting = false;
+
+        if (exclamationMark != null) exclamationMark.SetActive(true);
+    }
+
+    private void HandleDetection()
+    {
+        if (CanSeeRaccoon())
+        {
+            if (!isDetecting)
+            {
+                isDetecting = true;
+                if (eyeIndicator != null) eyeIndicator.SetActive(true);
+                if (detectionBar != null) detectionBar.gameObject.SetActive(true);
+            }
+
+            detectionProgress += Time.deltaTime;
+            detectionProgress = Mathf.Clamp(detectionProgress, 0f, detectionTime);
+            if (detectionBar != null) detectionBar.fillAmount = detectionProgress / detectionTime;
+
+            if (detectionProgress >= detectionTime) CatchRaccoon();
+        }
+        else
+        {
+            if (isDetecting)
+            {
+                detectionProgress -= Time.deltaTime * decaySpeed;
+                detectionProgress = Mathf.Clamp(detectionProgress, 0f, detectionTime);
+                if (detectionBar != null) detectionBar.fillAmount = detectionProgress / detectionTime;
+
+                if (detectionProgress <= 0f)
+                {
+                    isDetecting = false;
+                    if (eyeIndicator != null) eyeIndicator.SetActive(false);
+                    if (detectionBar != null) detectionBar.gameObject.SetActive(false);
+                }
+            }
+        }
     }
 
     private bool CanSeeRaccoon()
     {
         if (raccoon == null) return false;
+        if (raccoon.CompareTag("Hidden")) return false;
 
         Vector3 directionToRaccoon = raccoon.position - transform.position;
         float distance = directionToRaccoon.magnitude;
-
         if (distance > visionRadius) return false;
 
         Vector3 facingDirection = Vector3.down;
         float angle = Vector3.Angle(facingDirection, directionToRaccoon);
-
         if (angle > visionAngle / 2) return false;
 
         return true;
@@ -119,81 +231,37 @@ public class HumanController : MonoBehaviour
 
     public void AddAnnoyance(float amount)
     {
-        currentAnnoyance = Mathf.Min(currentAnnoyance + amount, maxAnnoyance);
+        currentAnnoyance += amount;
+        currentAnnoyance = Mathf.Min(currentAnnoyance, maxAnnoyance);
         UpdateAnnoyanceUI();
-
-        if (currentAnnoyance >= maxAnnoyance)
-        {
-            StartCoroutine(LeaveRoom());
-        }
+        if (currentAnnoyance >= maxAnnoyance) isReacting = true;
     }
 
     private void UpdateAnnoyanceUI()
     {
-        if (annoyanceBar != null)
-            annoyanceBar.value = currentAnnoyance / maxAnnoyance;
+        if (annoyanceBar != null) annoyanceBar.value = currentAnnoyance / maxAnnoyance;
     }
 
     public void ReactToPrank(Vector3 prankLocation, float reactionTime = 3f)
     {
-        StopAllCoroutines();
-        StartCoroutine(ReactionRoutine(prankLocation, reactionTime));
+        isReacting = true;
+        Invoke("StopReacting", reactionTime);
     }
 
-    private IEnumerator ReactionRoutine(Vector3 targetLocation, float duration)
+    private void StopReacting()
     {
-        isReacting = true;
-        yield return StartCoroutine(MoveToTarget(targetLocation));
-        animator.SetBool("isMoving", false);
-        yield return new WaitForSeconds(duration);
         isReacting = false;
-
-        if (patrolCoroutine != null)
-            StopCoroutine(patrolCoroutine);
-        if (waypoints.Length > 0)
-            patrolCoroutine = StartCoroutine(PatrolRoutine());
-    }
-
-    private IEnumerator LeaveRoom()
-    {
-        isReacting = true;
-        animator.SetBool("isMoving", false);
-        yield return new WaitForSeconds(2f);
     }
 
     private void CatchRaccoon()
     {
         if (Time.timeScale == 0) return;
-
         Time.timeScale = 0;
         OnCaughtRaccoon?.Invoke();
     }
 
-    public float GetAnnoyanceProgress()
-    {
-        return currentAnnoyance / maxAnnoyance;
-    }
-
-    public bool IsReacting()
-    {
-        return isReacting;
-    }
-
-    public void ResetMovementState()
-    {
-        StopAllCoroutines();
-
-        isReacting = false;
-
-        if (rb != null)
-            rb.linearVelocity = Vector2.zero;
-
-        if (animator != null)
-            animator.SetBool("isMoving", false);
-
-        if (waypoints != null && waypoints.Length > 0)
-            patrolCoroutine = StartCoroutine(PatrolRoutine());
-    }
+    public float GetAnnoyanceProgress() { return currentAnnoyance / maxAnnoyance; }
+    public bool IsReacting() { return isReacting; }
 
     public static void RestartGame()
     {

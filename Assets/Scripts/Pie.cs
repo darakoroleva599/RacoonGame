@@ -2,28 +2,21 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 
-public class FlowerPot : MonoBehaviour
+public class Pie : MonoBehaviour
 {
     [SerializeField] private float annoyanceAmount = 25f;
-    [SerializeField] private AudioClip potFallSound;
-    [SerializeField] private GameObject dirtParticles;
+    [SerializeField] private Sprite spoiledPieSprite;
 
     private bool isActivated = false;
     private HumanController humanController;
-    private AudioSource audioSource;
+    private SpriteRenderer spriteRenderer;
 
     private static List<GameObject> hiddenObjects = new List<GameObject>();
 
     void Start()
     {
-        audioSource = GetComponent<AudioSource>();
-        if (audioSource == null)
-            audioSource = gameObject.AddComponent<AudioSource>();
-
         humanController = FindObjectOfType<HumanController>();
-
-        if (dirtParticles != null)
-            dirtParticles.SetActive(false);
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void OnEnable()
@@ -40,27 +33,29 @@ public class FlowerPot : MonoBehaviour
     {
         if (isActivated) return;
 
-        if (FlowerPotData.Instance != null)
+        if (!FridgeData.pepperTaken)
         {
-            FlowerPotData.Instance.annoyanceAmount = annoyanceAmount;
-            FlowerPotData.Instance.potPosition = transform.position;
+            return;
         }
 
-        FlowerPotData.wasCompleted = false;
+        if (PieData.Instance != null)
+            PieData.Instance.annoyanceAmount = annoyanceAmount;
+
+        PieData.wasCompleted = false;
 
         HideMainScene();
-        SceneManager.LoadScene("FlowerPotMiniGame", LoadSceneMode.Additive);
+        SceneManager.LoadScene("PieMinigame", LoadSceneMode.Additive);
     }
 
     private void HideMainScene()
     {
         hiddenObjects.Clear();
 
-        List<GameObject> potParents = new List<GameObject>();
+        List<GameObject> pieParents = new List<GameObject>();
         Transform parent = transform;
         while (parent != null)
         {
-            potParents.Add(parent.gameObject);
+            pieParents.Add(parent.gameObject);
             parent = parent.parent;
         }
 
@@ -68,15 +63,15 @@ public class FlowerPot : MonoBehaviour
 
         foreach (GameObject obj in rootObjects)
         {
-            if (obj == gameObject || 
-                potParents.Contains(obj) ||
+            if (obj == gameObject ||
+                pieParents.Contains(obj) ||
                 obj.GetComponent<OvenData>() != null ||
                 obj.GetComponent<FlowerPotData>() != null ||
                 obj.GetComponent<QuestManager>() != null ||
                 obj.name.Contains("EventSystem") ||
                 obj.name.Contains("GameData") ||
                 obj.name.Contains("Main Camera") ||
-            obj.name.Contains("Camera"))
+                obj.name.Contains("Camera"))
             {
                 continue;
             }
@@ -102,11 +97,11 @@ public class FlowerPot : MonoBehaviour
 
     private void OnMinigameSceneUnloaded(Scene scene)
     {
-        if (scene.name == "FlowerPotMiniGame")
+        if (scene.name == "PieMinigame")
         {
             ShowMainScene();
 
-            if (FlowerPotData.wasCompleted)
+            if (PieData.wasCompleted)
             {
                 CompletePrank();
             }
@@ -117,15 +112,8 @@ public class FlowerPot : MonoBehaviour
     {
         isActivated = true;
 
-        if (dirtParticles != null)
-            dirtParticles.SetActive(true);
-
-        Collider2D col = GetComponent<Collider2D>();
-        if (col != null)
-            col.enabled = false;
-
-        if (potFallSound != null && audioSource != null)
-            audioSource.PlayOneShot(potFallSound);
+        if (spriteRenderer != null && spoiledPieSprite != null)
+            spriteRenderer.sprite = spoiledPieSprite;
 
         if (humanController != null)
         {
@@ -134,6 +122,7 @@ public class FlowerPot : MonoBehaviour
         }
 
         if (QuestManager.Instance != null)
-            QuestManager.Instance.CompleteQuest("FlowerPot");
+            QuestManager.Instance.CompleteQuest("Pie");
+        PepperDisplay.Hide();
     }
 }

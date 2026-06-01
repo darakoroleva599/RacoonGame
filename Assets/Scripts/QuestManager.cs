@@ -38,6 +38,16 @@ public class QuestManager : MonoBehaviour
         UpdateQuestDisplay();
     }
 
+    public bool IsQuestCompleted(string questName)
+    {
+        foreach (Quest quest in quests)
+        {
+            if (quest.questName == questName)
+                return quest.isCompleted;
+        }
+        return false;
+    }
+
     private void UpdateQuestDisplay()
     {
         foreach (Quest quest in quests)

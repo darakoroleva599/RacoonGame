@@ -53,6 +53,6 @@ public class OvenKnobController : MonoBehaviour
     private IEnumerator WaitAndReturn()
     {
         yield return new WaitForSecondsRealtime(0.5f);
-        SceneManager.UnloadSceneAsync("OvenKnobminigame");
+        SceneManager.UnloadSceneAsync("OvenKnobminiGame");
     }
 }

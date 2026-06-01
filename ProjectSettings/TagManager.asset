@@ -9,6 +9,14 @@ TagManager:
   - Podosokonnik
   - FlowerPot
   - Broken
+  - Fridge
+  - Pie
+  - HidingSpot
+  - Hidden
+  - DoorDistraction
+  - LampDistraction
+  - PhoneDistraction
+  - ExclamationMark
   layers:
   - Default
   - TransparentFX

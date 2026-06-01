@@ -33,8 +33,8 @@ public class OvenMinigameController : MonoBehaviour
         {
             waitingForInput = false;
             isTransitioning = true;
-            SceneManager.LoadScene("OvenKnobminigame", LoadSceneMode.Additive);
-            SceneManager.UnloadSceneAsync("OvenMinigame");
+            SceneManager.LoadScene("OvenKnobminiGame", LoadSceneMode.Additive);
+            SceneManager.UnloadSceneAsync("OvenMiniGame");
         }
     }
 }
