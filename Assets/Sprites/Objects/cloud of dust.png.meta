@@ -1,0 +1,4498 @@
+fileFormatVersion: 2
+guid: f371022778ee9e243abcf26b21f6e9ea
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5852310016471150614
+    second: cloud of dust_0
+  - first:
+      213: 1365972745715342835
+    second: cloud of dust_1
+  - first:
+      213: -5347644221592791594
+    second: cloud of dust_2
+  - first:
+      213: -2292098138455491748
+    second: cloud of dust_3
+  - first:
+      213: -1191072951122424575
+    second: cloud of dust_4
+  - first:
+      213: -7945126405990094954
+    second: cloud of dust_5
+  - first:
+      213: 8504455910740413409
+    second: cloud of dust_6
+  - first:
+      213: -2008137317728965549
+    second: cloud of dust_7
+  - first:
+      213: 7842474893905110017
+    second: cloud of dust_8
+  - first:
+      213: -630034224118587667
+    second: cloud of dust_9
+  - first:
+      213: -5430281937821058299
+    second: cloud of dust_10
+  - first:
+      213: -1832681431312098382
+    second: cloud of dust_11
+  - first:
+      213: -1738366681343078978
+    second: cloud of dust_12
+  - first:
+      213: 2066490556172283663
+    second: cloud of dust_13
+  - first:
+      213: 6188953692944044803
+    second: cloud of dust_14
+  - first:
+      213: 5797237702241584694
+    second: cloud of dust_15
+  - first:
+      213: 709932182340696219
+    second: cloud of dust_16
+  - first:
+      213: 8334062104739471846
+    second: cloud of dust_17
+  - first:
+      213: -4872801965804274652
+    second: cloud of dust_18
+  - first:
+      213: -8387992203691879988
+    second: cloud of dust_19
+  - first:
+      213: 2480399773498381883
+    second: cloud of dust_20
+  - first:
+      213: -7885600835751478258
+    second: cloud of dust_21
+  - first:
+      213: 3325064811311616892
+    second: cloud of dust_22
+  - first:
+      213: 6206683380775139511
+    second: cloud of dust_23
+  - first:
+      213: -3564314884042840969
+    second: cloud of dust_24
+  - first:
+      213: 2846749181669176470
+    second: cloud of dust_25
+  - first:
+      213: -3515555315017822240
+    second: cloud of dust_26
+  - first:
+      213: -2198296621311139515
+    second: cloud of dust_27
+  - first:
+      213: 7411704438935049297
+    second: cloud of dust_28
+  - first:
+      213: 8088464843254221113
+    second: cloud of dust_29
+  - first:
+      213: 1857073635640003073
+    second: cloud of dust_30
+  - first:
+      213: 768339267657290635
+    second: cloud of dust_31
+  - first:
+      213: -2485507331622241106
+    second: cloud of dust_32
+  - first:
+      213: 1260044958272592876
+    second: cloud of dust_33
+  - first:
+      213: -6798820244791992203
+    second: cloud of dust_34
+  - first:
+      213: 4723005252684730529
+    second: cloud of dust_35
+  - first:
+      213: 6134149324372653275
+    second: cloud of dust_36
+  - first:
+      213: -8330384771901392618
+    second: cloud of dust_37
+  - first:
+      213: 1045834186764867009
+    second: cloud of dust_38
+  - first:
+      213: -6676220471612979579
+    second: cloud of dust_39
+  - first:
+      213: -8151300548004313462
+    second: cloud of dust_40
+  - first:
+      213: -2695128584855374978
+    second: cloud of dust_41
+  - first:
+      213: -8562715779465831130
+    second: cloud of dust_42
+  - first:
+      213: 929580349512316364
+    second: cloud of dust_43
+  - first:
+      213: 8550512984575726319
+    second: cloud of dust_44
+  - first:
+      213: 718963456617357434
+    second: cloud of dust_45
+  - first:
+      213: 2775222835674903968
+    second: cloud of dust_46
+  - first:
+      213: -4220048742302871114
+    second: cloud of dust_47
+  - first:
+      213: -8746140470497545568
+    second: cloud of dust_48
+  - first:
+      213: 4075465629081855645
+    second: cloud of dust_49
+  - first:
+      213: 2236674752372401711
+    second: cloud of dust_50
+  - first:
+      213: -4528878001524047450
+    second: cloud of dust_51
+  - first:
+      213: 8109743032374561905
+    second: cloud of dust_52
+  - first:
+      213: -7392173835819482427
+    second: cloud of dust_53
+  - first:
+      213: 8364106306621921270
+    second: cloud of dust_54
+  - first:
+      213: -1990891396165143720
+    second: cloud of dust_55
+  - first:
+      213: 1869763258454304256
+    second: cloud of dust_56
+  - first:
+      213: -2247290814839069111
+    second: cloud of dust_57
+  - first:
+      213: 2124656742790669851
+    second: cloud of dust_58
+  - first:
+      213: -8198603100857063157
+    second: cloud of dust_59
+  - first:
+      213: 6444238887174802485
+    second: cloud of dust_60
+  - first:
+      213: -8440287247504743568
+    second: cloud of dust_61
+  - first:
+      213: -5447546366414219254
+    second: cloud of dust_62
+  - first:
+      213: -3051990188671289825
+    second: cloud of dust_63
+  - first:
+      213: -1112082159200208011
+    second: cloud of dust_64
+  - first:
+      213: -1952079273665916178
+    second: cloud of dust_65
+  - first:
+      213: -4537627145499069636
+    second: cloud of dust_66
+  - first:
+      213: 2461282406251067953
+    second: cloud of dust_67
+  - first:
+      213: 2786564525491629835
+    second: cloud of dust_68
+  - first:
+      213: 3703363646541117766
+    second: cloud of dust_69
+  - first:
+      213: -3013374954554718939
+    second: cloud of dust_70
+  - first:
+      213: -8947163542051746370
+    second: cloud of dust_71
+  - first:
+      213: 6543008469291398660
+    second: cloud of dust_72
+  - first:
+      213: 4950472746156680816
+    second: cloud of dust_73
+  - first:
+      213: 2486296353157240541
+    second: cloud of dust_74
+  - first:
+      213: -3914309622357649829
+    second: cloud of dust_75
+  - first:
+      213: -5568253959108478898
+    second: cloud of dust_76
+  - first:
+      213: 7127049166188915911
+    second: cloud of dust_77
+  - first:
+      213: 3249275649618744303
+    second: cloud of dust_78
+  - first:
+      213: -3070180631737072257
+    second: cloud of dust_79
+  - first:
+      213: 8615297964485944086
+    second: cloud of dust_80
+  - first:
+      213: -5644574359215249365
+    second: cloud of dust_81
+  - first:
+      213: 2083575687450965014
+    second: cloud of dust_82
+  - first:
+      213: -8020010249500534978
+    second: cloud of dust_83
+  - first:
+      213: 4131143085946890516
+    second: cloud of dust_84
+  - first:
+      213: -8463477583772075207
+    second: cloud of dust_85
+  - first:
+      213: -1251832615473147635
+    second: cloud of dust_86
+  - first:
+      213: -4685792004822040356
+    second: cloud of dust_87
+  - first:
+      213: 219285348786052856
+    second: cloud of dust_88
+  - first:
+      213: 5643534015717027334
+    second: cloud of dust_89
+  - first:
+      213: -6820797086724844341
+    second: cloud of dust_90
+  - first:
+      213: 4615108771443527373
+    second: cloud of dust_91
+  - first:
+      213: 7826343712220172269
+    second: cloud of dust_92
+  - first:
+      213: -1506007299593491526
+    second: cloud of dust_93
+  - first:
+      213: -5539354667567472729
+    second: cloud of dust_94
+  - first:
+      213: -9160440079574269573
+    second: cloud of dust_95
+  - first:
+      213: -1249448427250954040
+    second: cloud of dust_96
+  - first:
+      213: 3117494647911099465
+    second: cloud of dust_97
+  - first:
+      213: 2897190225772620368
+    second: cloud of dust_98
+  - first:
+      213: -618812002678208812
+    second: cloud of dust_99
+  - first:
+      213: 5998629724064934315
+    second: cloud of dust_100
+  - first:
+      213: -5596382365079270120
+    second: cloud of dust_101
+  - first:
+      213: 1993394555142313059
+    second: cloud of dust_102
+  - first:
+      213: -1610238594950532599
+    second: cloud of dust_103
+  - first:
+      213: 5303985831280037648
+    second: cloud of dust_104
+  - first:
+      213: -7391712201959808788
+    second: cloud of dust_105
+  - first:
+      213: -6478899292837804863
+    second: cloud of dust_106
+  - first:
+      213: -1261488260392738069
+    second: cloud of dust_107
+  - first:
+      213: -661614038313352991
+    second: cloud of dust_108
+  - first:
+      213: -8886848840400484993
+    second: cloud of dust_109
+  - first:
+      213: 4417917832495992182
+    second: cloud of dust_110
+  - first:
+      213: 6927712922911907538
+    second: cloud of dust_111
+  - first:
+      213: -5049730362348971165
+    second: cloud of dust_112
+  - first:
+      213: -3300215520325166854
+    second: cloud of dust_113
+  - first:
+      213: -4847632260922406444
+    second: cloud of dust_114
+  - first:
+      213: -5296300044773990470
+    second: cloud of dust_115
+  - first:
+      213: -5024765457662527827
+    second: cloud of dust_116
+  - first:
+      213: -1258888755417918054
+    second: cloud of dust_117
+  - first:
+      213: -6132777659925018034
+    second: cloud of dust_118
+  - first:
+      213: -3309864160383938723
+    second: cloud of dust_119
+  - first:
+      213: 8505930890531251019
+    second: cloud of dust_120
+  - first:
+      213: 1201914922164836402
+    second: cloud of dust_121
+  - first:
+      213: 2201212804861242581
+    second: cloud of dust_122
+  - first:
+      213: 860829119766348845
+    second: cloud of dust_123
+  - first:
+      213: -6983674640605912759
+    second: cloud of dust_124
+  - first:
+      213: -6138692118596224117
+    second: cloud of dust_125
+  - first:
+      213: 2685118875299888363
+    second: cloud of dust_126
+  - first:
+      213: -7749273754548604204
+    second: cloud of dust_127
+  - first:
+      213: 4852696305637328568
+    second: cloud of dust_128
+  - first:
+      213: -2154751472350182531
+    second: cloud of dust_129
+  - first:
+      213: -2677483741588344285
+    second: cloud of dust_130
+  - first:
+      213: -3193652976409248716
+    second: cloud of dust_131
+  - first:
+      213: -3444962238580874240
+    second: cloud of dust_132
+  - first:
+      213: 3255432007939292948
+    second: cloud of dust_133
+  - first:
+      213: 8681339409270487882
+    second: cloud of dust_134
+  - first:
+      213: 7002463335284911515
+    second: cloud of dust_135
+  - first:
+      213: -1800335301119059122
+    second: cloud of dust_136
+  - first:
+      213: -8544035302869720096
+    second: cloud of dust_137
+  - first:
+      213: -4076915993114853927
+    second: cloud of dust_138
+  - first:
+      213: 5524844873574250186
+    second: cloud of dust_139
+  - first:
+      213: -539479312875143799
+    second: cloud of dust_140
+  - first:
+      213: 521392220690862634
+    second: cloud of dust_141
+  - first:
+      213: -881438653624347885
+    second: cloud of dust_142
+  - first:
+      213: 202533684192824991
+    second: cloud of dust_143
+  - first:
+      213: 7693876982800972559
+    second: cloud of dust_144
+  - first:
+      213: -7250508546467373576
+    second: cloud of dust_145
+  - first:
+      213: 5639544996964925149
+    second: cloud of dust_146
+  - first:
+      213: -5704059820239236754
+    second: cloud of dust_147
+  - first:
+      213: -5461840639235471464
+    second: cloud of dust_148
+  - first:
+      213: -6724457226033253361
+    second: cloud of dust_149
+  - first:
+      213: -2665393854504810939
+    second: cloud of dust_150
+  - first:
+      213: 7059616771706781957
+    second: cloud of dust_151
+  - first:
+      213: -5572641028448546642
+    second: cloud of dust_152
+  - first:
+      213: 7944208946102588916
+    second: cloud of dust_153
+  - first:
+      213: 1894522294186917857
+    second: cloud of dust_154
+  - first:
+      213: -2508903289364196238
+    second: cloud of dust_155
+  - first:
+      213: -928938454318329599
+    second: cloud of dust_156
+  - first:
+      213: 4949177860728159358
+    second: cloud of dust_157
+  - first:
+      213: -2665242578346559424
+    second: cloud of dust_158
+  - first:
+      213: -1039457077552113558
+    second: cloud of dust_159
+  - first:
+      213: -489556316472475718
+    second: cloud of dust_160
+  - first:
+      213: -9076823067323427040
+    second: cloud of dust_161
+  - first:
+      213: 2186289944827625102
+    second: cloud of dust_162
+  - first:
+      213: 8745905802082694447
+    second: cloud of dust_163
+  - first:
+      213: -2461844776663736474
+    second: cloud of dust_164
+  - first:
+      213: 315412643014515378
+    second: cloud of dust_165
+  - first:
+      213: -8228700805778657197
+    second: cloud of dust_166
+  - first:
+      213: -8202303318340051494
+    second: cloud of dust_167
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cloud of dust_0
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 195
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aefc6c00c0b68cea0800000000000000
+      internalID: -5852310016471150614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_1
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 193
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fd5a3999f8e4f210800000000000000
+      internalID: 1365972745715342835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_2
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 192
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d59acad9e959c5b0800000000000000
+      internalID: -5347644221592791594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_3
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 193
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5bb60b13e4d030e0800000000000000
+      internalID: -2292098138455491748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_4
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 193
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d85c62675787fe0800000000000000
+      internalID: -1191072951122424575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_5
+      rect:
+        serializedVersion: 2
+        x: 719
+        y: 193
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 697626bf0ad3db190800000000000000
+      internalID: -7945126405990094954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_6
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 0
+        width: 268
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eb47af9795e50670800000000000000
+      internalID: 8504455910740413409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_7
+      rect:
+        serializedVersion: 2
+        x: 877
+        y: 194
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35c2f84cfb9a124e0800000000000000
+      internalID: -2008137317728965549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_8
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 199
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10422236d5116dc60800000000000000
+      internalID: 7842474893905110017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_9
+      rect:
+        serializedVersion: 2
+        x: 1154
+        y: 193
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dee9213163ba147f0800000000000000
+      internalID: -630034224118587667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_10
+      rect:
+        serializedVersion: 2
+        x: 1262
+        y: 202
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50bb4f13953c3a4b0800000000000000
+      internalID: -5430281937821058299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_11
+      rect:
+        serializedVersion: 2
+        x: 1430
+        y: 195
+        width: 26
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bb103cb2f10196e0800000000000000
+      internalID: -1832681431312098382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_12
+      rect:
+        serializedVersion: 2
+        x: 1532
+        y: 202
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebdcb2da6b410e7e0800000000000000
+      internalID: -1738366681343078978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_13
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 189
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0f295c4636adac10800000000000000
+      internalID: 2066490556172283663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_14
+      rect:
+        serializedVersion: 2
+        x: 1806
+        y: 200
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 303954fd79493e550800000000000000
+      internalID: 6188953692944044803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_15
+      rect:
+        serializedVersion: 2
+        x: 1960
+        y: 185
+        width: 28
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6368c90a9fce37050800000000000000
+      internalID: 5797237702241584694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_16
+      rect:
+        serializedVersion: 2
+        x: 2074
+        y: 204
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b98f807fe8f2ad900800000000000000
+      internalID: 709932182340696219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_17
+      rect:
+        serializedVersion: 2
+        x: 2234
+        y: 187
+        width: 27
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e16a09145988a370800000000000000
+      internalID: 8334062104739471846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_18
+      rect:
+        serializedVersion: 2
+        x: 2347
+        y: 205
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42c3967ed64506cb0800000000000000
+      internalID: -4872801965804274652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_19
+      rect:
+        serializedVersion: 2
+        x: 2441
+        y: 0
+        width: 272
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc11330488dd79b80800000000000000
+      internalID: -8387992203691879988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_20
+      rect:
+        serializedVersion: 2
+        x: 2509
+        y: 183
+        width: 30
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b369458c3762c6220800000000000000
+      internalID: 2480399773498381883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_21
+      rect:
+        serializedVersion: 2
+        x: 2623
+        y: 206
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0c7280d1d7b09290800000000000000
+      internalID: -7885600835751478258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_22
+      rect:
+        serializedVersion: 2
+        x: 2713
+        y: 0
+        width: 274
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c73516534d0052e20800000000000000
+      internalID: 3325064811311616892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_23
+      rect:
+        serializedVersion: 2
+        x: 2777
+        y: 187
+        width: 27
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b83c6086a1922650800000000000000
+      internalID: 6206683380775139511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_24
+      rect:
+        serializedVersion: 2
+        x: 2904
+        y: 206
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7742dfc5f72098ec0800000000000000
+      internalID: -3564314884042840969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_25
+      rect:
+        serializedVersion: 2
+        x: 2987
+        y: 0
+        width: 270
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 694760a4c4fa18720800000000000000
+      internalID: 2846749181669176470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_26
+      rect:
+        serializedVersion: 2
+        x: 3048
+        y: 185
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ef4024311d363fc0800000000000000
+      internalID: -3515555315017822240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_27
+      rect:
+        serializedVersion: 2
+        x: 3172
+        y: 206
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 541eec7bed41e71e0800000000000000
+      internalID: -2198296621311139515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_28
+      rect:
+        serializedVersion: 2
+        x: 3257
+        y: 0
+        width: 272
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 154d8e61be9abd660800000000000000
+      internalID: 7411704438935049297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_29
+      rect:
+        serializedVersion: 2
+        x: 3322
+        y: 187
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9394760abefff3070800000000000000
+      internalID: 8088464843254221113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_30
+      rect:
+        serializedVersion: 2
+        x: 3441
+        y: 206
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10ac016e1a6a5c910800000000000000
+      internalID: 1857073635640003073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_31
+      rect:
+        serializedVersion: 2
+        x: 3602
+        y: 193
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8352bb3e70b9aa00800000000000000
+      internalID: 768339267657290635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_32
+      rect:
+        serializedVersion: 2
+        x: 3710
+        y: 202
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eacf60c2044b18dd0800000000000000
+      internalID: -2485507331622241106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_33
+      rect:
+        serializedVersion: 2
+        x: 3798
+        y: 0
+        width: 274
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceb1cdaa6349c7110800000000000000
+      internalID: 1260044958272592876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_34
+      rect:
+        serializedVersion: 2
+        x: 3869
+        y: 194
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5706071520db5a1a0800000000000000
+      internalID: -6798820244791992203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_35
+      rect:
+        serializedVersion: 2
+        x: 3993
+        y: 199
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a0d396f04c7b8140800000000000000
+      internalID: 4723005252684730529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_36
+      rect:
+        serializedVersion: 2
+        x: 4150
+        y: 193
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd43f667f40e02550800000000000000
+      internalID: 6134149324372653275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_37
+      rect:
+        serializedVersion: 2
+        x: 4255
+        y: 193
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6197e7caf27846c80800000000000000
+      internalID: -8330384771901392618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_38
+      rect:
+        serializedVersion: 2
+        x: 4422
+        y: 192
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c5541cd6ac838e00800000000000000
+      internalID: 1045834186764867009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_39
+      rect:
+        serializedVersion: 2
+        x: 4525
+        y: 193
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 586415b6adc4953a0800000000000000
+      internalID: -6676220471612979579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 272
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8681cac653c0ee80800000000000000
+      internalID: -8151300548004313462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_41
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 173
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e73b1bbd4daf89ad0800000000000000
+      internalID: -2695128584855374978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_42
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 0
+        width: 265
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d9e44ad5f1b2980800000000000000
+      internalID: -8562715779465831130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_43
+      rect:
+        serializedVersion: 2
+        x: 537
+        y: 0
+        width: 277
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc57dda176886ec00800000000000000
+      internalID: 929580349512316364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_44
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 165
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe25005c14689a670800000000000000
+      internalID: 8550512984575726319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_45
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 0
+        width: 277
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a702a2e54754af900800000000000000
+      internalID: 718963456617357434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_46
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 0
+        width: 268
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a574fc1772938620800000000000000
+      internalID: 2775222835674903968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_47
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 164
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b1143417006f65c0800000000000000
+      internalID: -4220048742302871114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_48
+      rect:
+        serializedVersion: 2
+        x: 1627
+        y: 0
+        width: 268
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a27354c4977f9680800000000000000
+      internalID: -8746140470497545568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_49
+      rect:
+        serializedVersion: 2
+        x: 1895
+        y: 0
+        width: 278
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d96ecbb9566fe8830800000000000000
+      internalID: 4075465629081855645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_50
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 0
+        width: 268
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f26ed3d36d34a0f10800000000000000
+      internalID: 2236674752372401711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_51
+      rect:
+        serializedVersion: 2
+        x: 2473
+        y: 164
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a10410e3713621c0800000000000000
+      internalID: -4528878001524047450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_52
+      rect:
+        serializedVersion: 2
+        x: 2740
+        y: 176
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17c826812589b8070800000000000000
+      internalID: 8109743032374561905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_53
+      rect:
+        serializedVersion: 2
+        x: 3009
+        y: 173
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c20b0ecf09b96990800000000000000
+      internalID: -7392173835819482427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_54
+      rect:
+        serializedVersion: 2
+        x: 3282
+        y: 173
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f7ddc5fe56431470800000000000000
+      internalID: 8364106306621921270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_55
+      rect:
+        serializedVersion: 2
+        x: 3529
+        y: 0
+        width: 269
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 853f139c2deee54e0800000000000000
+      internalID: -1990891396165143720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_56
+      rect:
+        serializedVersion: 2
+        x: 3828
+        y: 165
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 006ee32f6cbb2f910800000000000000
+      internalID: 1869763258454304256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_57
+      rect:
+        serializedVersion: 2
+        x: 4072
+        y: 0
+        width: 271
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 946e48a19e400d0e0800000000000000
+      internalID: -2247290814839069111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_58
+      rect:
+        serializedVersion: 2
+        x: 4343
+        y: 0
+        width: 281
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b162da7fc0c4c7d10800000000000000
+      internalID: 2124656742790669851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_59
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 136
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b09aff6fae5b83e80800000000000000
+      internalID: -8198603100857063157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_60
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 163
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53c00d5ff198e6950800000000000000
+      internalID: 6444238887174802485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_61
+      rect:
+        serializedVersion: 2
+        x: 1924
+        y: 156
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 073683a87731eda80800000000000000
+      internalID: -8440287247504743568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_62
+      rect:
+        serializedVersion: 2
+        x: 2197
+        y: 158
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a08196c217d6664b0800000000000000
+      internalID: -5447546366414219254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_63
+      rect:
+        serializedVersion: 2
+        x: 3495
+        y: 160
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f163542f71725a5d0800000000000000
+      internalID: -3051990188671289825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_64
+      rect:
+        serializedVersion: 2
+        x: 3814
+        y: 136
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57b72d31b271190f0800000000000000
+      internalID: -1112082159200208011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_65
+      rect:
+        serializedVersion: 2
+        x: 4040
+        y: 163
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee29dbf3e32d8e4e0800000000000000
+      internalID: -1952079273665916178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_66
+      rect:
+        serializedVersion: 2
+        x: 2959
+        y: 156
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c33bb5d072c1701c0800000000000000
+      internalID: -4537627145499069636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_67
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 120
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13a738cde4b382220800000000000000
+      internalID: 2461282406251067953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_68
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 117
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0f22ad0caddba620800000000000000
+      internalID: 2786564525491629835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_69
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 118
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 649bd228d9df46330800000000000000
+      internalID: 3703363646541117766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_70
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 120
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52505b2c1775e26d0800000000000000
+      internalID: -3013374954554718939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_71
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 121
+        width: 23
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebd0ea0a92a45d380800000000000000
+      internalID: -8947163542051746370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_72
+      rect:
+        serializedVersion: 2
+        x: 1641
+        y: 121
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4067c76598f6dca50800000000000000
+      internalID: 6543008469291398660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_73
+      rect:
+        serializedVersion: 2
+        x: 1867
+        y: 112
+        width: 28
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 076ebe0ebbc93b440800000000000000
+      internalID: 4950472746156680816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_74
+      rect:
+        serializedVersion: 2
+        x: 2137
+        y: 114
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd659483c59118220800000000000000
+      internalID: 2486296353157240541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_75
+      rect:
+        serializedVersion: 2
+        x: 2411
+        y: 115
+        width: 29
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b569a7a23249da9c0800000000000000
+      internalID: -3914309622357649829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_76
+      rect:
+        serializedVersion: 2
+        x: 2681
+        y: 141
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e483d2ca68699b2b0800000000000000
+      internalID: -5568253959108478898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_77
+      rect:
+        serializedVersion: 2
+        x: 2686
+        y: 115
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cc2f67b47d58e260800000000000000
+      internalID: 7127049166188915911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_78
+      rect:
+        serializedVersion: 2
+        x: 2722
+        y: 120
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe31ad8ecfeb71d20800000000000000
+      internalID: 3249275649618744303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_79
+      rect:
+        serializedVersion: 2
+        x: 2992
+        y: 120
+        width: 22
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7507016bf68465d0800000000000000
+      internalID: -3070180631737072257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_80
+      rect:
+        serializedVersion: 2
+        x: 3265
+        y: 114
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 613a4575adfaf8770800000000000000
+      internalID: 8615297964485944086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_81
+      rect:
+        serializedVersion: 2
+        x: 3549
+        y: 120
+        width: 23
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2862bac6817aa1b0800000000000000
+      internalID: -5644574359215249365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_82
+      rect:
+        serializedVersion: 2
+        x: 4088
+        y: 118
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 614b7296c095aec10800000000000000
+      internalID: 2083575687450965014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_83
+      rect:
+        serializedVersion: 2
+        x: 4365
+        y: 117
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e37578f7b2333b090800000000000000
+      internalID: -8020010249500534978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_84
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 110
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 419ec2abfb4c45930800000000000000
+      internalID: 4131143085946890516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_85
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 103
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93bb8ce9affab8a80800000000000000
+      internalID: -8463477583772075207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_86
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 106
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0199746ed890aee0800000000000000
+      internalID: -1251832615473147635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_87
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 103
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd0873d7ff8b8feb0800000000000000
+      internalID: -4685792004822040356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_88
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 109
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fe17d6ecde0b0300800000000000000
+      internalID: 219285348786052856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_89
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 105
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60ea5ac594cd15e40800000000000000
+      internalID: 5643534015717027334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_90
+      rect:
+        serializedVersion: 2
+        x: 1905
+        y: 105
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc41fb01039a751a0800000000000000
+      internalID: -6820797086724844341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_91
+      rect:
+        serializedVersion: 2
+        x: 2177
+        y: 105
+        width: 26
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dce4ea9c9f82c0040800000000000000
+      internalID: 4615108771443527373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_92
+      rect:
+        serializedVersion: 2
+        x: 2453
+        y: 112
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: defcef8f322cc9c60800000000000000
+      internalID: 7826343712220172269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_93
+      rect:
+        serializedVersion: 2
+        x: 2963
+        y: 100
+        width: 22
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abba5961756991be0800000000000000
+      internalID: -1506007299593491526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_94
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 100
+        width: 21
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7af1db257424023b0800000000000000
+      internalID: -5539354667567472729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_95
+      rect:
+        serializedVersion: 2
+        x: 3507
+        y: 97
+        width: 22
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7189be18449fd080800000000000000
+      internalID: -9160440079574269573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_96
+      rect:
+        serializedVersion: 2
+        x: 3769
+        y: 109
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c05988764119aee0800000000000000
+      internalID: -1249448427250954040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_97
+      rect:
+        serializedVersion: 2
+        x: 4045
+        y: 103
+        width: 27
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94c2ce57dd0934b20800000000000000
+      internalID: 3117494647911099465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_98
+      rect:
+        serializedVersion: 2
+        x: 4315
+        y: 106
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a29ed0923e43820800000000000000
+      internalID: 2897190225772620368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_99
+      rect:
+        serializedVersion: 2
+        x: 4587
+        y: 103
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d60e9d13c98967f0800000000000000
+      internalID: -618812002678208812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_100
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 84
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba96df1b3f96f3350800000000000000
+      internalID: 5998629724064934315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_101
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 68
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81d803ec3e7a552b0800000000000000
+      internalID: -5596382365079270120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_102
+      rect:
+        serializedVersion: 2
+        x: 1087
+        y: 69
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 364947459c5f9ab10800000000000000
+      internalID: 1993394555142313059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_103
+      rect:
+        serializedVersion: 2
+        x: 1359
+        y: 70
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9027950878847a9e0800000000000000
+      internalID: -1610238594950532599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_104
+      rect:
+        serializedVersion: 2
+        x: 3535
+        y: 69
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01fc627030b8b9940800000000000000
+      internalID: 5303985831280037648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_105
+      rect:
+        serializedVersion: 2
+        x: 4352
+        y: 68
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce0e3405aec5b6990800000000000000
+      internalID: -7391712201959808788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_106
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 65
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c48fda7b635616a0800000000000000
+      internalID: -6478899292837804863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_107
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 57
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be227fe5c1b4e7ee0800000000000000
+      internalID: -1261488260392738069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_108
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e0cbeb998971d6f0800000000000000
+      internalID: -661614038313352991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_109
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 56
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f75465f60129ba480800000000000000
+      internalID: -8886848840400484993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_110
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 64
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67d89cc8cd89f4d30800000000000000
+      internalID: 4417917832495992182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_111
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 58
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2de1c04e23e242060800000000000000
+      internalID: 6927712922911907538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_112
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 60
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36b5fa47df0cbe9b0800000000000000
+      internalID: -5049730362348971165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_113
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 58
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af899c438774332d0800000000000000
+      internalID: -3300215520325166854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_114
+      rect:
+        serializedVersion: 2
+        x: 1633
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d90ffd7420c9bcb0800000000000000
+      internalID: -4847632260922406444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_115
+      rect:
+        serializedVersion: 2
+        x: 1870
+        y: 59
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abf5c579b23cf76b0800000000000000
+      internalID: -5296300044773990470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_116
+      rect:
+        serializedVersion: 2
+        x: 2145
+        y: 62
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da63f584072744ab0800000000000000
+      internalID: -5024765457662527827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_117
+      rect:
+        serializedVersion: 2
+        x: 2419
+        y: 63
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a95d499c857878ee0800000000000000
+      internalID: -1258888755417918054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_118
+      rect:
+        serializedVersion: 2
+        x: 2448
+        y: 56
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4ac7bd063ff3eaa0800000000000000
+      internalID: -6132777659925018034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_119
+      rect:
+        serializedVersion: 2
+        x: 2693
+        y: 67
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5fc48125100112d0800000000000000
+      internalID: -3309864160383938723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_120
+      rect:
+        serializedVersion: 2
+        x: 2719
+        y: 59
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b43232e14132b0670800000000000000
+      internalID: 8505930890531251019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_121
+      rect:
+        serializedVersion: 2
+        x: 2962
+        y: 59
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23850e1f04f0ea010800000000000000
+      internalID: 1201914922164836402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_122
+      rect:
+        serializedVersion: 2
+        x: 2991
+        y: 60
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dcabcc22674c8e10800000000000000
+      internalID: 2201212804861242581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_123
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 58
+        width: 17
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d244cf7068742fb00800000000000000
+      internalID: 860829119766348845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_124
+      rect:
+        serializedVersion: 2
+        x: 3264
+        y: 51
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 941e7cb5ae0051f90800000000000000
+      internalID: -6983674640605912759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_125
+      rect:
+        serializedVersion: 2
+        x: 3507
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8bf495da0cfecaa0800000000000000
+      internalID: -6138692118596224117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_126
+      rect:
+        serializedVersion: 2
+        x: 3771
+        y: 60
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bec32f50465734520800000000000000
+      internalID: 2685118875299888363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_127
+      rect:
+        serializedVersion: 2
+        x: 3807
+        y: 64
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d27fd0e39c057490800000000000000
+      internalID: -7749273754548604204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_128
+      rect:
+        serializedVersion: 2
+        x: 4046
+        y: 58
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b60d5c449d385340800000000000000
+      internalID: 4852696305637328568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_129
+      rect:
+        serializedVersion: 2
+        x: 4081
+        y: 56
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d734157c3f8c812e0800000000000000
+      internalID: -2154751472350182531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_130
+      rect:
+        serializedVersion: 2
+        x: 4320
+        y: 56
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3223eb219baa7dad0800000000000000
+      internalID: -2677483741588344285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_131
+      rect:
+        serializedVersion: 2
+        x: 4588
+        y: 57
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43cf145e98ddda3d0800000000000000
+      internalID: -3193652976409248716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_132
+      rect:
+        serializedVersion: 2
+        x: 1904
+        y: 49
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 004a0c0a8190130d0800000000000000
+      internalID: -3444962238580874240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_133
+      rect:
+        serializedVersion: 2
+        x: 2175
+        y: 49
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41f78a7c92e9d2d20800000000000000
+      internalID: 3255432007939292948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_134
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 25
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4bba2072305a7870800000000000000
+      internalID: 8681339409270487882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_135
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 8
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9daa548d4fbd2160800000000000000
+      internalID: 7002463335284911515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_136
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 5
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4bd33c059ce307e0800000000000000
+      internalID: -1800335301119059122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_137
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 22
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e3ad08092d7d6980800000000000000
+      internalID: -8544035302869720096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_138
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 7
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ddb7433182eb67c0800000000000000
+      internalID: -4076915993114853927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_139
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 8
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac6f78004213cac40800000000000000
+      internalID: 5524844873574250186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_140
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 6
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98db7685c626388f0800000000000000
+      internalID: -539479312875143799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_141
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 22
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a225ee6567b5c3700800000000000000
+      internalID: 521392220690862634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_142
+      rect:
+        serializedVersion: 2
+        x: 1545
+        y: 5
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3131c6fe63084c3f0800000000000000
+      internalID: -881438653624347885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_143
+      rect:
+        serializedVersion: 2
+        x: 1673
+        y: 21
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9e4d5d005b8fc200800000000000000
+      internalID: 202533684192824991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_144
+      rect:
+        serializedVersion: 2
+        x: 1823
+        y: 7
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0bf7691a5426ca60800000000000000
+      internalID: 7693876982800972559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_145
+      rect:
+        serializedVersion: 2
+        x: 1940
+        y: 20
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fdd0ee44e4016b90800000000000000
+      internalID: -7250508546467373576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_146
+      rect:
+        serializedVersion: 2
+        x: 2097
+        y: 7
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddefcee8b40b34e40800000000000000
+      internalID: 5639544996964925149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_147
+      rect:
+        serializedVersion: 2
+        x: 2212
+        y: 20
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e61df0d90db17d0b0800000000000000
+      internalID: -5704059820239236754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_148
+      rect:
+        serializedVersion: 2
+        x: 2280
+        y: 22
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 897c39e60e4a334b0800000000000000
+      internalID: -5461840639235471464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_149
+      rect:
+        serializedVersion: 2
+        x: 2370
+        y: 7
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f04baf6d7cdeda2a0800000000000000
+      internalID: -6724457226033253361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_150
+      rect:
+        serializedVersion: 2
+        x: 2486
+        y: 21
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5464bb3496e920bd0800000000000000
+      internalID: -2665393854504810939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_151
+      rect:
+        serializedVersion: 2
+        x: 2646
+        y: 8
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50109f7ec0cc8f160800000000000000
+      internalID: 7059616771706781957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_152
+      rect:
+        serializedVersion: 2
+        x: 2681
+        y: 19
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea09e8e72800aa2b0800000000000000
+      internalID: -5572641028448546642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_153
+      rect:
+        serializedVersion: 2
+        x: 2761
+        y: 17
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5dced32ff7f3e60800000000000000
+      internalID: 7944208946102588916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_154
+      rect:
+        serializedVersion: 2
+        x: 2822
+        y: 19
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1efb11c2df1ba4a10800000000000000
+      internalID: 1894522294186917857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_155
+      rect:
+        serializedVersion: 2
+        x: 2910
+        y: 6
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27453a540c59e2dd0800000000000000
+      internalID: -2508903289364196238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_156
+      rect:
+        serializedVersion: 2
+        x: 3032
+        y: 20
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 101d724c56fbb13f0800000000000000
+      internalID: -928938454318329599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_157
+      rect:
+        serializedVersion: 2
+        x: 3095
+        y: 22
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7cfdeeda030fa440800000000000000
+      internalID: 4949177860728159358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_158
+      rect:
+        serializedVersion: 2
+        x: 3185
+        y: 7
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 048386dfef7230bd0800000000000000
+      internalID: -2665242578346559424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_159
+      rect:
+        serializedVersion: 2
+        x: 3300
+        y: 21
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a689d359b4b1391f0800000000000000
+      internalID: -1039457077552113558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_160
+      rect:
+        serializedVersion: 2
+        x: 3452
+        y: 7
+        width: 24
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abffb1bbf1fb439f0800000000000000
+      internalID: -489556316472475718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_161
+      rect:
+        serializedVersion: 2
+        x: 3719
+        y: 6
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0279d17e285a80280800000000000000
+      internalID: -9076823067323427040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_162
+      rect:
+        serializedVersion: 2
+        x: 3993
+        y: 8
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8e75711f13475e10800000000000000
+      internalID: 2186289944827625102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_163
+      rect:
+        serializedVersion: 2
+        x: 4117
+        y: 22
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f25ba2c3df2bf5970800000000000000
+      internalID: 8745905802082694447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_164
+      rect:
+        serializedVersion: 2
+        x: 4268
+        y: 7
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66f9ec21835c5ddd0800000000000000
+      internalID: -2461844776663736474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_165
+      rect:
+        serializedVersion: 2
+        x: 4535
+        y: 5
+        width: 24
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ba1c80b022906400800000000000000
+      internalID: 315412643014515378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_166
+      rect:
+        serializedVersion: 2
+        x: 3221
+        y: 16
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 350b794f638cdcd80800000000000000
+      internalID: -8228700805778657197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cloud of dust_167
+      rect:
+        serializedVersion: 2
+        x: 3491
+        y: 16
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: add5552f6909b2e80800000000000000
+      internalID: -8202303318340051494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 6948e0ef2c872cf4680cff56817a438b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      cloud of dust_0: -5852310016471150614
+      cloud of dust_1: 1365972745715342835
+      cloud of dust_10: -5430281937821058299
+      cloud of dust_100: 5998629724064934315
+      cloud of dust_101: -5596382365079270120
+      cloud of dust_102: 1993394555142313059
+      cloud of dust_103: -1610238594950532599
+      cloud of dust_104: 5303985831280037648
+      cloud of dust_105: -7391712201959808788
+      cloud of dust_106: -6478899292837804863
+      cloud of dust_107: -1261488260392738069
+      cloud of dust_108: -661614038313352991
+      cloud of dust_109: -8886848840400484993
+      cloud of dust_11: -1832681431312098382
+      cloud of dust_110: 4417917832495992182
+      cloud of dust_111: 6927712922911907538
+      cloud of dust_112: -5049730362348971165
+      cloud of dust_113: -3300215520325166854
+      cloud of dust_114: -4847632260922406444
+      cloud of dust_115: -5296300044773990470
+      cloud of dust_116: -5024765457662527827
+      cloud of dust_117: -1258888755417918054
+      cloud of dust_118: -6132777659925018034
+      cloud of dust_119: -3309864160383938723
+      cloud of dust_12: -1738366681343078978
+      cloud of dust_120: 8505930890531251019
+      cloud of dust_121: 1201914922164836402
+      cloud of dust_122: 2201212804861242581
+      cloud of dust_123: 860829119766348845
+      cloud of dust_124: -6983674640605912759
+      cloud of dust_125: -6138692118596224117
+      cloud of dust_126: 2685118875299888363
+      cloud of dust_127: -7749273754548604204
+      cloud of dust_128: 4852696305637328568
+      cloud of dust_129: -2154751472350182531
+      cloud of dust_13: 2066490556172283663
+      cloud of dust_130: -2677483741588344285
+      cloud of dust_131: -3193652976409248716
+      cloud of dust_132: -3444962238580874240
+      cloud of dust_133: 3255432007939292948
+      cloud of dust_134: 8681339409270487882
+      cloud of dust_135: 7002463335284911515
+      cloud of dust_136: -1800335301119059122
+      cloud of dust_137: -8544035302869720096
+      cloud of dust_138: -4076915993114853927
+      cloud of dust_139: 5524844873574250186
+      cloud of dust_14: 6188953692944044803
+      cloud of dust_140: -539479312875143799
+      cloud of dust_141: 521392220690862634
+      cloud of dust_142: -881438653624347885
+      cloud of dust_143: 202533684192824991
+      cloud of dust_144: 7693876982800972559
+      cloud of dust_145: -7250508546467373576
+      cloud of dust_146: 5639544996964925149
+      cloud of dust_147: -5704059820239236754
+      cloud of dust_148: -5461840639235471464
+      cloud of dust_149: -6724457226033253361
+      cloud of dust_15: 5797237702241584694
+      cloud of dust_150: -2665393854504810939
+      cloud of dust_151: 7059616771706781957
+      cloud of dust_152: -5572641028448546642
+      cloud of dust_153: 7944208946102588916
+      cloud of dust_154: 1894522294186917857
+      cloud of dust_155: -2508903289364196238
+      cloud of dust_156: -928938454318329599
+      cloud of dust_157: 4949177860728159358
+      cloud of dust_158: -2665242578346559424
+      cloud of dust_159: -1039457077552113558
+      cloud of dust_16: 709932182340696219
+      cloud of dust_160: -489556316472475718
+      cloud of dust_161: -9076823067323427040
+      cloud of dust_162: 2186289944827625102
+      cloud of dust_163: 8745905802082694447
+      cloud of dust_164: -2461844776663736474
+      cloud of dust_165: 315412643014515378
+      cloud of dust_166: -8228700805778657197
+      cloud of dust_167: -8202303318340051494
+      cloud of dust_17: 8334062104739471846
+      cloud of dust_18: -4872801965804274652
+      cloud of dust_19: -8387992203691879988
+      cloud of dust_2: -5347644221592791594
+      cloud of dust_20: 2480399773498381883
+      cloud of dust_21: -7885600835751478258
+      cloud of dust_22: 3325064811311616892
+      cloud of dust_23: 6206683380775139511
+      cloud of dust_24: -3564314884042840969
+      cloud of dust_25: 2846749181669176470
+      cloud of dust_26: -3515555315017822240
+      cloud of dust_27: -2198296621311139515
+      cloud of dust_28: 7411704438935049297
+      cloud of dust_29: 8088464843254221113
+      cloud of dust_3: -2292098138455491748
+      cloud of dust_30: 1857073635640003073
+      cloud of dust_31: 768339267657290635
+      cloud of dust_32: -2485507331622241106
+      cloud of dust_33: 1260044958272592876
+      cloud of dust_34: -6798820244791992203
+      cloud of dust_35: 4723005252684730529
+      cloud of dust_36: 6134149324372653275
+      cloud of dust_37: -8330384771901392618
+      cloud of dust_38: 1045834186764867009
+      cloud of dust_39: -6676220471612979579
+      cloud of dust_4: -1191072951122424575
+      cloud of dust_40: -8151300548004313462
+      cloud of dust_41: -2695128584855374978
+      cloud of dust_42: -8562715779465831130
+      cloud of dust_43: 929580349512316364
+      cloud of dust_44: 8550512984575726319
+      cloud of dust_45: 718963456617357434
+      cloud of dust_46: 2775222835674903968
+      cloud of dust_47: -4220048742302871114
+      cloud of dust_48: -8746140470497545568
+      cloud of dust_49: 4075465629081855645
+      cloud of dust_5: -7945126405990094954
+      cloud of dust_50: 2236674752372401711
+      cloud of dust_51: -4528878001524047450
+      cloud of dust_52: 8109743032374561905
+      cloud of dust_53: -7392173835819482427
+      cloud of dust_54: 8364106306621921270
+      cloud of dust_55: -1990891396165143720
+      cloud of dust_56: 1869763258454304256
+      cloud of dust_57: -2247290814839069111
+      cloud of dust_58: 2124656742790669851
+      cloud of dust_59: -8198603100857063157
+      cloud of dust_6: 8504455910740413409
+      cloud of dust_60: 6444238887174802485
+      cloud of dust_61: -8440287247504743568
+      cloud of dust_62: -5447546366414219254
+      cloud of dust_63: -3051990188671289825
+      cloud of dust_64: -1112082159200208011
+      cloud of dust_65: -1952079273665916178
+      cloud of dust_66: -4537627145499069636
+      cloud of dust_67: 2461282406251067953
+      cloud of dust_68: 2786564525491629835
+      cloud of dust_69: 3703363646541117766
+      cloud of dust_7: -2008137317728965549
+      cloud of dust_70: -3013374954554718939
+      cloud of dust_71: -8947163542051746370
+      cloud of dust_72: 6543008469291398660
+      cloud of dust_73: 4950472746156680816
+      cloud of dust_74: 2486296353157240541
+      cloud of dust_75: -3914309622357649829
+      cloud of dust_76: -5568253959108478898
+      cloud of dust_77: 7127049166188915911
+      cloud of dust_78: 3249275649618744303
+      cloud of dust_79: -3070180631737072257
+      cloud of dust_8: 7842474893905110017
+      cloud of dust_80: 8615297964485944086
+      cloud of dust_81: -5644574359215249365
+      cloud of dust_82: 2083575687450965014
+      cloud of dust_83: -8020010249500534978
+      cloud of dust_84: 4131143085946890516
+      cloud of dust_85: -8463477583772075207
+      cloud of dust_86: -1251832615473147635
+      cloud of dust_87: -4685792004822040356
+      cloud of dust_88: 219285348786052856
+      cloud of dust_89: 5643534015717027334
+      cloud of dust_9: -630034224118587667
+      cloud of dust_90: -6820797086724844341
+      cloud of dust_91: 4615108771443527373
+      cloud of dust_92: 7826343712220172269
+      cloud of dust_93: -1506007299593491526
+      cloud of dust_94: -5539354667567472729
+      cloud of dust_95: -9160440079574269573
+      cloud of dust_96: -1249448427250954040
+      cloud of dust_97: 3117494647911099465
+      cloud of dust_98: 2897190225772620368
+      cloud of dust_99: -618812002678208812
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

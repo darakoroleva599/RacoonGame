@@ -1,0 +1,1690 @@
+fileFormatVersion: 2
+guid: 8c7b26409299ca84aa32fab972917039
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7730504549792782674
+    second: parro screamt1_0
+  - first:
+      213: 4519189168490689686
+    second: parro screamt1_1
+  - first:
+      213: -233435828633510360
+    second: parro screamt1_2
+  - first:
+      213: -3382372029814482333
+    second: parro screamt1_3
+  - first:
+      213: 8576365356834021557
+    second: parro screamt1_4
+  - first:
+      213: -3800799043891541933
+    second: parro screamt1_5
+  - first:
+      213: -8977914328188832081
+    second: parro screamt1_6
+  - first:
+      213: -5325274193105837792
+    second: parro screamt1_7
+  - first:
+      213: 1440694146156342220
+    second: parro screamt1_8
+  - first:
+      213: 2561956691044713054
+    second: parro screamt1_9
+  - first:
+      213: 291734692532263605
+    second: parro screamt1_10
+  - first:
+      213: -8715603784552728598
+    second: parro screamt1_11
+  - first:
+      213: 4392698493282371750
+    second: parro screamt1_12
+  - first:
+      213: 1122625678928991566
+    second: parro screamt1_13
+  - first:
+      213: -2222192088773567086
+    second: parro screamt1_14
+  - first:
+      213: 7021481737823557171
+    second: parro screamt1_15
+  - first:
+      213: 588159936538756357
+    second: parro screamt1_16
+  - first:
+      213: -6839821272009560595
+    second: parro screamt1_17
+  - first:
+      213: 8035462602147143909
+    second: parro screamt1_18
+  - first:
+      213: 6908836011286233029
+    second: parro screamt1_19
+  - first:
+      213: 4653351093298793288
+    second: parro screamt1_20
+  - first:
+      213: 571128497949453892
+    second: parro screamt1_21
+  - first:
+      213: 3734820275686931789
+    second: parro screamt1_22
+  - first:
+      213: -7489339524036273252
+    second: parro screamt1_23
+  - first:
+      213: -1834945189858518600
+    second: parro screamt1_24
+  - first:
+      213: 3213989032074515529
+    second: parro screamt1_25
+  - first:
+      213: 6345553015432494608
+    second: parro screamt1_26
+  - first:
+      213: 8091740523687563144
+    second: parro screamt1_27
+  - first:
+      213: 5240898782697481435
+    second: parro screamt1_28
+  - first:
+      213: 4211290144326169237
+    second: parro screamt1_29
+  - first:
+      213: 4778509103530997929
+    second: parro screamt1_30
+  - first:
+      213: -6259697975505335193
+    second: parro screamt1_31
+  - first:
+      213: -8083655998837897246
+    second: parro screamt1_32
+  - first:
+      213: 1408973144129060274
+    second: parro screamt1_33
+  - first:
+      213: 630884610189077044
+    second: parro screamt1_34
+  - first:
+      213: 4043804106583006964
+    second: parro screamt1_35
+  - first:
+      213: 6898969944594040933
+    second: parro screamt1_36
+  - first:
+      213: 336834663522863624
+    second: parro screamt1_37
+  - first:
+      213: -4663366240490851660
+    second: parro screamt1_38
+  - first:
+      213: -5975451335983655598
+    second: parro screamt1_39
+  - first:
+      213: -6742563885553579831
+    second: parro screamt1_40
+  - first:
+      213: -3928729477087265984
+    second: parro screamt1_41
+  - first:
+      213: 1486494634429152479
+    second: parro screamt1_42
+  - first:
+      213: 8222191488421695104
+    second: parro screamt1_43
+  - first:
+      213: -355005699175831672
+    second: parro screamt1_44
+  - first:
+      213: 3976828498135882924
+    second: parro screamt1_45
+  - first:
+      213: 1182427003259027016
+    second: parro screamt1_46
+  - first:
+      213: 8333544089986123719
+    second: parro screamt1_47
+  - first:
+      213: 9018002289511067050
+    second: parro screamt1_48
+  - first:
+      213: -8063892060510613293
+    second: parro screamt1_49
+  - first:
+      213: 2942665645008810495
+    second: parro screamt1_50
+  - first:
+      213: -2415028493782014488
+    second: parro screamt1_51
+  - first:
+      213: 1199016629394466294
+    second: parro screamt1_52
+  - first:
+      213: 7637559030968372861
+    second: parro screamt1_53
+  - first:
+      213: -3405664884517223270
+    second: parro screamt1_54
+  - first:
+      213: -4769576107120701454
+    second: parro screamt1_55
+  - first:
+      213: 8621476138063987375
+    second: parro screamt1_56
+  - first:
+      213: -2299865088263376356
+    second: parro screamt1_57
+  - first:
+      213: 2872092179530069991
+    second: parro screamt1_58
+  - first:
+      213: 1554345399103108263
+    second: parro screamt1_59
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: parro screamt1_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 10
+        width: 71
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea66f07e11bb7b490800000000000000
+      internalID: -7730504549792782674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_1
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 10
+        width: 71
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6943ea4ea9267be30800000000000000
+      internalID: 4519189168490689686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_2
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 10
+        width: 76
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82e5374c95ba2ccf0800000000000000
+      internalID: -233435828633510360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_3
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 96
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36ad0b83f866f01d0800000000000000
+      internalID: -3382372029814482333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_4
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 95
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b0ee0e3ade550770800000000000000
+      internalID: 8576365356834021557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_5
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 100
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35843363869d04bc0800000000000000
+      internalID: -3800799043891541933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_6
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 10
+        width: 71
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa63a6c4c7a086380800000000000000
+      internalID: -8977914328188832081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_7
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 10
+        width: 78
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0212f5cf553d816b0800000000000000
+      internalID: -5325274193105837792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_8
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 99
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccb22ab51bf5ef310800000000000000
+      internalID: 1440694146156342220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_9
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 95
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e52c7a36906ed8320800000000000000
+      internalID: 2561956691044713054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_10
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 100
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ba1b0d38237c0400800000000000000
+      internalID: 291734692532263605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_11
+      rect:
+        serializedVersion: 2
+        x: 495
+        y: 10
+        width: 71
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae73fa20984fb0780800000000000000
+      internalID: -8715603784552728598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_12
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 10
+        width: 78
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a84d71910006fc30800000000000000
+      internalID: 4392698493282371750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_13
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 99
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e455b486b1e549f00800000000000000
+      internalID: 1122625678928991566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_14
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 95
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29dd7f5a1103921e0800000000000000
+      internalID: -2222192088773567086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_15
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 100
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3369ddb6070517160800000000000000
+      internalID: 7021481737823557171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_16
+      rect:
+        serializedVersion: 2
+        x: 687
+        y: 10
+        width: 71
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50542889850992800800000000000000
+      internalID: 588159936538756357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_17
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 10
+        width: 78
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deda5b2cac21411a0800000000000000
+      internalID: -6839821272009560595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_18
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 99
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e0aae6b9a2b38f60800000000000000
+      internalID: 8035462602147143909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_19
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 95
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cf74286fbd11ef50800000000000000
+      internalID: 6908836011286233029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_20
+      rect:
+        serializedVersion: 2
+        x: 875
+        y: 100
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84b00433a26049040800000000000000
+      internalID: 4653351093298793288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_21
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 10
+        width: 71
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44e2169c75e0de700800000000000000
+      internalID: 571128497949453892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_22
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 10
+        width: 78
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4dfe38b04fb4d330800000000000000
+      internalID: 3734820275686931789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_23
+      rect:
+        serializedVersion: 2
+        x: 971
+        y: 99
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b56831265801890800000000000000
+      internalID: -7489339524036273252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_24
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 95
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b9db206217f886e0800000000000000
+      internalID: -1834945189858518600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_25
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 100
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9449dc80ff16a9c20800000000000000
+      internalID: 3213989032074515529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_26
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 10
+        width: 71
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01e334ce8deef0850800000000000000
+      internalID: 6345553015432494608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_27
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 10
+        width: 78
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88fc7096223ab4070800000000000000
+      internalID: 8091740523687563144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_28
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 99
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd4e576eca96bb840800000000000000
+      internalID: 5240898782697481435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_29
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 95
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5923aaae212817a30800000000000000
+      internalID: 4211290144326169237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_30
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 100
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a87fe746bca05240800000000000000
+      internalID: 4778509103530997929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_31
+      rect:
+        serializedVersion: 2
+        x: 1263
+        y: 10
+        width: 71
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76cc5c84bd51129a0800000000000000
+      internalID: -6259697975505335193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_32
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 10
+        width: 78
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e7cfc6b2b511df80800000000000000
+      internalID: -8083655998837897246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_33
+      rect:
+        serializedVersion: 2
+        x: 1355
+        y: 99
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2bdb0e90c9dad8310800000000000000
+      internalID: 1408973144129060274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_34
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 95
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43aa49cd53a51c800800000000000000
+      internalID: 630884610189077044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_35
+      rect:
+        serializedVersion: 2
+        x: 1451
+        y: 100
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fe5522f86a7e1830800000000000000
+      internalID: 4043804106583006964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_36
+      rect:
+        serializedVersion: 2
+        x: 1455
+        y: 10
+        width: 71
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 568cf9fbc901ebf50800000000000000
+      internalID: 6898969944594040933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_37
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 10
+        width: 78
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80a8153875daca400800000000000000
+      internalID: 336834663522863624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_38
+      rect:
+        serializedVersion: 2
+        x: 1547
+        y: 99
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b27ef1ac15684fb0800000000000000
+      internalID: -4663366240490851660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_39
+      rect:
+        serializedVersion: 2
+        x: 1647
+        y: 10
+        width: 71
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2559f025baee21da0800000000000000
+      internalID: -5975451335983655598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_40
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 10
+        width: 71
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c88336aed99d62a0800000000000000
+      internalID: -6742563885553579831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_41
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 93
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04b7b9b1b595a79c0800000000000000
+      internalID: -3928729477087265984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_42
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 87
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc7ca58ef611a410800000000000000
+      internalID: 1486494634429152479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_43
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 86
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08e8d9e78971b1270800000000000000
+      internalID: 8222191488421695104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_44
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 87
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 887a26f8234c21bf0800000000000000
+      internalID: -355005699175831672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_45
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 86
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cac1a0ce278803730800000000000000
+      internalID: 3976828498135882924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_46
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 87
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84e751e3813d86010800000000000000
+      internalID: 1182427003259027016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_47
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 86
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c7cda36232b6a370800000000000000
+      internalID: 8333544089986123719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_48
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 87
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aad67f98d41662d70800000000000000
+      internalID: 9018002289511067050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_49
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 86
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d01c2235ec471090800000000000000
+      internalID: -8063892060510613293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_50
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 87
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff1fe7f20d276d820800000000000000
+      internalID: 2942665645008810495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_51
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 86
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e52da951681c7ed0800000000000000
+      internalID: -2415028493782014488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_52
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 87
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f5e7d29543c3a010800000000000000
+      internalID: 1199016629394466294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_53
+      rect:
+        serializedVersion: 2
+        x: 1254
+        y: 86
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7e42ff197f0ef960800000000000000
+      internalID: 7637559030968372861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_54
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 87
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a94445ed4d5acb0d0800000000000000
+      internalID: -3405664884517223270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_55
+      rect:
+        serializedVersion: 2
+        x: 1446
+        y: 86
+        width: 13
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ff41e50dcf0fcdb0800000000000000
+      internalID: -4769576107120701454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_56
+      rect:
+        serializedVersion: 2
+        x: 1549
+        y: 87
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa28fc87ed2a5a770800000000000000
+      internalID: 8621476138063987375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_57
+      rect:
+        serializedVersion: 2
+        x: 1645
+        y: 93
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c123dbe23ec3510e0800000000000000
+      internalID: -2299865088263376356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_58
+      rect:
+        serializedVersion: 2
+        x: 1646
+        y: 87
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e7311bce98bbd720800000000000000
+      internalID: 2872092179530069991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: parro screamt1_59
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 86
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a4bdcbb7e4229510800000000000000
+      internalID: 1554345399103108263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      parro screamt1_0: -7730504549792782674
+      parro screamt1_1: 4519189168490689686
+      parro screamt1_10: 291734692532263605
+      parro screamt1_11: -8715603784552728598
+      parro screamt1_12: 4392698493282371750
+      parro screamt1_13: 1122625678928991566
+      parro screamt1_14: -2222192088773567086
+      parro screamt1_15: 7021481737823557171
+      parro screamt1_16: 588159936538756357
+      parro screamt1_17: -6839821272009560595
+      parro screamt1_18: 8035462602147143909
+      parro screamt1_19: 6908836011286233029
+      parro screamt1_2: -233435828633510360
+      parro screamt1_20: 4653351093298793288
+      parro screamt1_21: 571128497949453892
+      parro screamt1_22: 3734820275686931789
+      parro screamt1_23: -7489339524036273252
+      parro screamt1_24: -1834945189858518600
+      parro screamt1_25: 3213989032074515529
+      parro screamt1_26: 6345553015432494608
+      parro screamt1_27: 8091740523687563144
+      parro screamt1_28: 5240898782697481435
+      parro screamt1_29: 4211290144326169237
+      parro screamt1_3: -3382372029814482333
+      parro screamt1_30: 4778509103530997929
+      parro screamt1_31: -6259697975505335193
+      parro screamt1_32: -8083655998837897246
+      parro screamt1_33: 1408973144129060274
+      parro screamt1_34: 630884610189077044
+      parro screamt1_35: 4043804106583006964
+      parro screamt1_36: 6898969944594040933
+      parro screamt1_37: 336834663522863624
+      parro screamt1_38: -4663366240490851660
+      parro screamt1_39: -5975451335983655598
+      parro screamt1_4: 8576365356834021557
+      parro screamt1_40: -6742563885553579831
+      parro screamt1_41: -3928729477087265984
+      parro screamt1_42: 1486494634429152479
+      parro screamt1_43: 8222191488421695104
+      parro screamt1_44: -355005699175831672
+      parro screamt1_45: 3976828498135882924
+      parro screamt1_46: 1182427003259027016
+      parro screamt1_47: 8333544089986123719
+      parro screamt1_48: 9018002289511067050
+      parro screamt1_49: -8063892060510613293
+      parro screamt1_5: -3800799043891541933
+      parro screamt1_50: 2942665645008810495
+      parro screamt1_51: -2415028493782014488
+      parro screamt1_52: 1199016629394466294
+      parro screamt1_53: 7637559030968372861
+      parro screamt1_54: -3405664884517223270
+      parro screamt1_55: -4769576107120701454
+      parro screamt1_56: 8621476138063987375
+      parro screamt1_57: -2299865088263376356
+      parro screamt1_58: 2872092179530069991
+      parro screamt1_59: 1554345399103108263
+      parro screamt1_6: -8977914328188832081
+      parro screamt1_7: -5325274193105837792
+      parro screamt1_8: 1440694146156342220
+      parro screamt1_9: 2561956691044713054
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

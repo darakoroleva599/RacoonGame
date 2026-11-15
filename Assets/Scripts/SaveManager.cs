@@ -17,6 +17,13 @@ public class SaveManager : MonoBehaviour
     public bool lampCompleted = false;
     public bool phoneCompleted = false;
 
+    public bool hasSavedPlayerState = false;
+    public Vector3 savedPlayerPosition;
+    public bool savedPlayerOnTaburet = false;
+    public bool savedPlayerOnPodosokonnik = false;
+    public bool savedPlayerHidden = false;
+
+
     void Awake()
     {
         if (Instance == null)
@@ -52,14 +59,29 @@ public class SaveManager : MonoBehaviour
     {
         if (scene.name == "Kitchen" && gameStarted)
         {
-            Invoke("LoadProgress", 0.1f);
+            LoadProgress();
         }
     }
+
 
     public void SaveProgress()
     {
         HumanController human = FindObjectOfType<HumanController>();
-        if (human != null) annoyanceProgress = human.GetAnnoyanceProgress();
+
+        if (human != null)
+            annoyanceProgress = human.GetAnnoyanceProgress();
+
+        PlayerMove player = FindObjectOfType<PlayerMove>();
+
+        if (player != null && !player.IsCrawling)
+        {
+            savedPlayerPosition = player.transform.position;
+            savedPlayerOnTaburet = player.IsOnTaburet;
+            savedPlayerOnPodosokonnik = player.IsOnPodosokonnik;
+            savedPlayerHidden = player.IsHidden;
+            hasSavedPlayerState = true;
+        }
+
         pepperTaken = FridgeData.pepperTaken;
         pepperVisible = PepperDisplay.IsVisible();
 
@@ -75,10 +97,35 @@ public class SaveManager : MonoBehaviour
         }
     }
 
+
+
     public void LoadProgress()
     {
+        Debug.Log("LoadProgress: QuestManager = " +
+    (QuestManager.Instance == null ? "NULL" : "FOUND"));
+        HumanController human = FindObjectOfType<HumanController>();
+
+        if (human != null)
+            human.SetAnnoyanceProgress(annoyanceProgress);
+
+        PlayerMove player = FindObjectOfType<PlayerMove>();
+
+        if (hasSavedPlayerState && player != null)
+        {
+            player.RestoreState(
+                savedPlayerPosition,
+                savedPlayerOnTaburet,
+                savedPlayerOnPodosokonnik,
+                savedPlayerHidden
+            );
+        }
+
         FridgeData.pepperTaken = pepperTaken;
-        if (pepperVisible) PepperDisplay.Show(); else PepperDisplay.Hide();
+
+        if (pepperVisible)
+            PepperDisplay.Show();
+        else
+            PepperDisplay.Hide();
 
         if (QuestManager.Instance != null)
         {
@@ -92,10 +139,20 @@ public class SaveManager : MonoBehaviour
         }
     }
 
+
+
     public void ResetProgress()
     {
         gameStarted = true;
+
         annoyanceProgress = 0f;
+
+        hasSavedPlayerState = false;
+        savedPlayerPosition = Vector3.zero;
+        savedPlayerOnTaburet = false;
+        savedPlayerOnPodosokonnik = false;
+        savedPlayerHidden = false;
+
         ovenCompleted = false;
         flowerPotCompleted = false;
         fridgeCompleted = false;
@@ -105,7 +162,9 @@ public class SaveManager : MonoBehaviour
         doorCompleted = false;
         lampCompleted = false;
         phoneCompleted = false;
+
         FridgeData.pepperTaken = false;
         PepperDisplay.Hide();
     }
+
 }

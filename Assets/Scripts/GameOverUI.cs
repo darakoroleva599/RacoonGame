@@ -37,6 +37,9 @@ public class GameOverUI : MonoBehaviour
         if (humanController != null)
             humanController.OnCaughtRaccoon -= ShowGameOver;
 
+        if (SaveManager.Instance != null)
+            SaveManager.Instance.ResetProgress();
+
         UnityEngine.SceneManagement.SceneManager.LoadScene(
             UnityEngine.SceneManagement.SceneManager.GetActiveScene().name
         );

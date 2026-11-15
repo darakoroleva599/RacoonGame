@@ -5,13 +5,18 @@ public class PauseController : MonoBehaviour
 {
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (SaveManager.Instance != null)
-                SaveManager.Instance.SaveProgress();
+        if (!Input.GetKeyDown(KeyCode.Space))
+            return;
 
-            Time.timeScale = 1;
-            SceneManager.LoadScene("MainMenu");
-        }
+        PlayerMove player = FindObjectOfType<PlayerMove>();
+
+        if (player != null && player.IsCrawling)
+            return;
+
+        if (SaveManager.Instance != null)
+            SaveManager.Instance.SaveProgress();
+
+        Time.timeScale = 1;
+        SceneManager.LoadScene("MainMenu");
     }
 }

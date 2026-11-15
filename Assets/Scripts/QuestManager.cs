@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using TMPro;
 
@@ -8,12 +9,22 @@ public class QuestManager : MonoBehaviour
     {
         public string questName;
         public TextMeshProUGUI questText;
-        [HideInInspector] public bool isCompleted = false;
+
+        [HideInInspector]
+        public bool isCompleted = false;
     }
 
-    [SerializeField] private Quest[] quests;
+    [SerializeField] public Quest[] quests;
 
     public static QuestManager Instance { get; private set; }
+
+    private readonly string[] questOrder =
+    {
+        "FlowerPot",
+        "Oven",
+        "Fridge",
+        "Pie"
+    };
 
     void Awake()
     {
@@ -35,6 +46,12 @@ public class QuestManager : MonoBehaviour
                 break;
             }
         }
+
+        UpdateQuestDisplay();
+    }
+
+    public void UpdateQuestDisplayPublic()
+    {
         UpdateQuestDisplay();
     }
 
@@ -45,25 +62,65 @@ public class QuestManager : MonoBehaviour
             if (quest.questName == questName)
                 return quest.isCompleted;
         }
+
+        return false;
+    }
+
+    public bool CanStartQuest(string questName)
+    {
+        string[] questOrder =
+        {
+        "FlowerPot",
+        "Oven",
+        "Fridge",
+        "Pie"
+    };
+
+        foreach (string name in questOrder)
+        {
+            if (name == questName)
+                return !IsQuestCompleted(name);
+
+            if (!IsQuestCompleted(name))
+                return false;
+        }
+
         return false;
     }
 
     private void UpdateQuestDisplay()
     {
+        string currentQuest = null;
+
+        foreach (string questName in questOrder)
+        {
+            foreach (Quest quest in quests)
+            {
+                if (quest.questName == questName && !quest.isCompleted)
+                {
+                    currentQuest = questName;
+                    break;
+                }
+            }
+
+            if (currentQuest != null)
+                break;
+        }
+
         foreach (Quest quest in quests)
         {
-            if (quest.questText != null)
+            if (quest.questText == null)
+                continue;
+
+            bool shouldShow = quest.questName == currentQuest;
+
+            quest.questText.gameObject.SetActive(shouldShow);
+
+            if (shouldShow)
             {
-                if (quest.isCompleted)
-                {
-                    quest.questText.fontStyle = FontStyles.Strikethrough;
-                    quest.questText.color = Color.gray;
-                }
-                else
-                {
-                    quest.questText.fontStyle = FontStyles.Normal;
-                    quest.questText.color = Color.white;
-                }
+                quest.questText.fontStyle = FontStyles.Normal;
+                quest.questText.color =
+                    new Color(0.545f, 0.271f, 0.075f, 1f);
             }
         }
     }

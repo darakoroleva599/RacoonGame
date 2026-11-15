@@ -8,7 +8,7 @@ public class PlayerMove : MonoBehaviour
     public float walkSpeed = 1f;
 
     [Header("Interaction")]
-    [SerializeField] private float interactionRadius = 1.5f;
+    [SerializeField] private float interactionRadius = 1.0f;
     [SerializeField] private float climbHeight = 0.6f;
     [SerializeField] private float interactionCooldown = 1f;
     [SerializeField] private float climbDuration = 0.5f;
@@ -22,6 +22,12 @@ public class PlayerMove : MonoBehaviour
     private bool isOnPodosokonnik = false;
     private bool isCrawling = false;
     private bool isHidden = false;
+    public bool IsCrawling => isCrawling;
+
+
+    public bool IsOnTaburet => isOnTaburet;
+    public bool IsOnPodosokonnik => isOnPodosokonnik;
+    public bool IsHidden => isHidden;
 
     private float lastInteractionTime = 0f;
     private SpriteRenderer spriteRenderer;
@@ -116,12 +122,19 @@ public class PlayerMove : MonoBehaviour
 
     private void TryInteract()
     {
+        if (isCrawling)
+            return;
+
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, interactionRadius);
 
         foreach (var hit in hits)
         {
             if (hit.CompareTag("Oven"))
             {
+                if (QuestManager.Instance == null ||
+                    !QuestManager.Instance.CanStartQuest("Oven"))
+                    return;
+
                 Oven oven = hit.GetComponent<Oven>();
                 if (oven != null)
                 {
@@ -132,6 +145,10 @@ public class PlayerMove : MonoBehaviour
 
             if (hit.CompareTag("FlowerPot") && isOnPodosokonnik)
             {
+                if (QuestManager.Instance == null ||
+                    !QuestManager.Instance.CanStartQuest("FlowerPot"))
+                    return;
+
                 FlowerPot pot = hit.GetComponent<FlowerPot>();
                 if (pot != null)
                 {
@@ -142,6 +159,10 @@ public class PlayerMove : MonoBehaviour
 
             if (hit.CompareTag("Fridge"))
             {
+                if (QuestManager.Instance == null ||
+                    !QuestManager.Instance.CanStartQuest("Fridge"))
+                    return;
+
                 Fridge fridge = hit.GetComponent<Fridge>();
                 if (fridge != null)
                 {
@@ -150,8 +171,13 @@ public class PlayerMove : MonoBehaviour
                 }
             }
 
-            if (hit.CompareTag("Pie") && Vector2.Distance(transform.position, hit.transform.position) < 1.2f)
+            if (hit.CompareTag("Pie") &&
+    Vector2.Distance(transform.position, hit.transform.position) < 1.2f)
             {
+                if (QuestManager.Instance == null ||
+                    !QuestManager.Instance.CanStartQuest("Pie"))
+                    return;
+
                 Pie pie = hit.GetComponent<Pie>();
                 if (pie != null)
                 {
@@ -160,9 +186,15 @@ public class PlayerMove : MonoBehaviour
                 }
             }
 
-            if (hit.CompareTag("DoorDistraction") || hit.CompareTag("LampDistraction") || hit.CompareTag("PhoneDistraction"))
+            if (hit.CompareTag("DoorDistraction") ||
+    hit.CompareTag("LampDistraction") ||
+    hit.CompareTag("PhoneDistraction"))
             {
+                if (isOnPodosokonnik)
+                    continue;
+
                 DistractionObject distraction = hit.GetComponent<DistractionObject>();
+
                 if (distraction != null)
                 {
                     distraction.Activate();
@@ -252,6 +284,46 @@ public class PlayerMove : MonoBehaviour
 
         isOnTaburet = false;
         isOnPodosokonnik = false;
+    }
+
+    public void RestoreState(
+        Vector3 savedPosition,
+        bool savedOnTaburet,
+        bool savedOnPodosokonnik,
+        bool savedHidden)
+    {
+        if (rb == null)
+            rb = GetComponent<Rigidbody2D>();
+
+        transform.position = savedPosition;
+
+        if (rb != null)
+        {
+            rb.position = new Vector2(savedPosition.x, savedPosition.y);
+            rb.linearVelocity = Vector2.zero;
+        }
+
+        isOnTaburet = savedOnTaburet;
+        isOnPodosokonnik = savedOnPodosokonnik;
+
+        isCrawling = false;
+
+        if (animator == null)
+            animator = GetComponent<Animator>();
+
+        if (animator != null)
+            animator.SetBool("isCrawling", false);
+
+        isHidden = savedHidden;
+
+        if (spriteRenderer != null)
+            spriteRenderer.enabled = !isHidden;
+
+        Collider2D playerCollider = GetComponent<Collider2D>();
+        if (playerCollider != null)
+            playerCollider.enabled = !isHidden;
+
+        gameObject.tag = isHidden ? "Hidden" : "Player";
     }
 
     private void OnDrawGizmosSelected()

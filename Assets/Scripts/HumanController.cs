@@ -42,10 +42,20 @@ public class HumanController : MonoBehaviour
     private Transform[] distractionPath;
     private int distractionPathIndex = 0;
 
+    private bool isCheckingPrank = false;
+    private float checkPrankTimer = 0f;
+    private Transform checkPoint;
+    private Transform returnPoint;
+    private bool prankReturning = false;
+    private float stuckTimer = 0f;
+
     private float detectionProgress = 0f;
     private bool isDetecting = false;
 
     public System.Action OnCaughtRaccoon;
+    public System.Action OnCheckPrankFinished;
+    public System.Action OnCheckPrankStopped;
+    public System.Action OnCheckPrankLeaving;
 
     void Start()
     {
@@ -69,6 +79,12 @@ public class HumanController : MonoBehaviour
     void Update()
     {
         HandleDetection();
+
+        if (isCheckingPrank)
+        {
+            HandleCheckPrank();
+            return;
+        }
 
         if (isReacting)
         {
@@ -155,6 +171,77 @@ public class HumanController : MonoBehaviour
         }
     }
 
+    private void HandleCheckPrank()
+    {
+        if (prankReturning)
+        {
+            stuckTimer += Time.deltaTime;
+            if (stuckTimer > 5f)
+            {
+                isCheckingPrank = false;
+                prankReturning = false;
+                isWaiting = false;
+                waitTimer = 0f;
+                stuckTimer = 0f;
+                rb.linearVelocity = Vector2.zero;
+                animator.SetBool("isMoving", false);
+                return;
+            }
+        }
+        else
+        {
+            stuckTimer = 0f;
+        }
+
+        if (!prankReturning)
+        {
+            Transform target = checkPoint;
+            float distance = Vector3.Distance(transform.position, target.position);
+
+            if (distance > 0.3f)
+            {
+                MoveTowards(target.position);
+                return;
+            }
+
+            rb.linearVelocity = Vector2.zero;
+            animator.SetBool("isMoving", false);
+
+            if (OnCheckPrankStopped != null) OnCheckPrankStopped.Invoke();
+
+            checkPrankTimer -= Time.deltaTime;
+
+            if (checkPrankTimer <= 0f)
+            {
+                if (OnCheckPrankLeaving != null) OnCheckPrankLeaving.Invoke();
+                prankReturning = true;
+            }
+            return;
+        }
+
+        if (prankReturning)
+        {
+            Transform target = returnPoint;
+            float distance = Vector3.Distance(transform.position, target.position);
+
+            if (distance > 0.3f)
+            {
+                MoveTowards(target.position);
+                return;
+            }
+
+            isCheckingPrank = false;
+            prankReturning = false;
+            isWaiting = false;
+            waitTimer = 0f;
+            stuckTimer = 0f;
+            rb.linearVelocity = Vector2.zero;
+            animator.SetBool("isMoving", false);
+
+            if (OnCheckPrankFinished != null) OnCheckPrankFinished.Invoke();
+        }
+    }
+
     private void MoveTowards(Vector3 target)
     {
         Vector3 direction = (target - transform.position).normalized;
@@ -176,6 +263,19 @@ public class HumanController : MonoBehaviour
         isWaiting = false;
 
         if (exclamationMark != null) exclamationMark.SetActive(true);
+    }
+
+    public void CheckPrank(Transform checkPt, Transform returnPt, float duration)
+    {
+        if (isCheckingPrank) return;
+
+        isCheckingPrank = true;
+        checkPoint = checkPt;
+        returnPoint = returnPt;
+        prankReturning = false;
+        checkPrankTimer = duration;
+        stuckTimer = 0f;
+        isWaiting = false;
     }
 
     private void HandleDetection()
@@ -240,6 +340,13 @@ public class HumanController : MonoBehaviour
     private void UpdateAnnoyanceUI()
     {
         if (annoyanceBar != null) annoyanceBar.value = currentAnnoyance / maxAnnoyance;
+    }
+
+
+    public void SetAnnoyanceProgress(float progress)
+    {
+        currentAnnoyance = Mathf.Clamp01(progress) * maxAnnoyance;
+        UpdateAnnoyanceUI();
     }
 
     public void ReactToPrank(Vector3 prankLocation, float reactionTime = 3f)
