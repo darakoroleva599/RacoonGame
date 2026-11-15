@@ -16,6 +16,7 @@ public class SaveManager : MonoBehaviour
     public bool doorCompleted = false;
     public bool lampCompleted = false;
     public bool phoneCompleted = false;
+    public string savedSceneName = "Kitchen";
 
     public bool hasSavedPlayerState = false;
     public Vector3 savedPlayerPosition;

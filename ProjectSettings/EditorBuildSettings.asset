@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PieMinigame.unity
     guid: e6759154c1c8e4a4abfc4c026ef44e70
+  - enabled: 1
+    path: Assets/Scenes/LivingRoom.unity
+    guid: e6fb2bf0352adbf48be9c95e52458d65
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

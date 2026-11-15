@@ -28,7 +28,11 @@ public class MainMenuController : MonoBehaviour
     private void StartGame()
     {
         if (SaveManager.Instance != null)
+        {
             SaveManager.Instance.ResetProgress();
+            SaveManager.Instance.savedSceneName = "Kitchen";
+        }
+
         Time.timeScale = 1;
         SceneManager.LoadScene("Kitchen");
     }
@@ -36,7 +40,15 @@ public class MainMenuController : MonoBehaviour
     private void ContinueGame()
     {
         Time.timeScale = 1;
-        SceneManager.LoadScene("Kitchen");
+
+        if (SaveManager.Instance != null)
+        {
+            SceneManager.LoadScene(SaveManager.Instance.savedSceneName);
+        }
+        else
+        {
+            SceneManager.LoadScene("Kitchen");
+        }
     }
 
     private void ExitGame()

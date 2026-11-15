@@ -31,6 +31,8 @@ public class PlayerMove : MonoBehaviour
 
     private float lastInteractionTime = 0f;
     private SpriteRenderer spriteRenderer;
+    [SerializeField] private SpriteRenderer pepperRenderer;
+    private bool pepperWasVisibleBeforeHiding;
 
     void Start()
     {
@@ -91,15 +93,26 @@ public class PlayerMove : MonoBehaviour
         if (isHidden)
         {
             isHidden = false;
+
             spriteRenderer.enabled = true;
             GetComponent<Collider2D>().enabled = true;
             gameObject.tag = "Player";
+
+            if (pepperRenderer != null)
+                pepperRenderer.enabled = pepperWasVisibleBeforeHiding;
         }
         else
         {
             if (IsNearHidingSpot())
             {
                 isHidden = true;
+
+                if (pepperRenderer != null)
+                {
+                    pepperWasVisibleBeforeHiding = pepperRenderer.enabled;
+                    pepperRenderer.enabled = false;
+                }
+
                 spriteRenderer.enabled = false;
                 GetComponent<Collider2D>().enabled = false;
                 gameObject.tag = "Hidden";
@@ -227,37 +240,56 @@ public class PlayerMove : MonoBehaviour
     private IEnumerator ClimbRoutine(Transform target)
     {
         isCrawling = true;
-        rb.linearVelocity = Vector2.zero;
 
+        animator.speed = 1f;
+
+        bool pepperWasVisible = pepperRenderer != null && pepperRenderer.enabled;
+
+        if (pepperRenderer != null)
+            pepperRenderer.enabled = false;
+
+        rb.linearVelocity = Vector2.zero;
+        animator.SetBool("isMoving", false);
         animator.SetBool("isCrawling", true);
 
-        yield return new WaitForSeconds(0.6f);
-
         Collider2D targetCollider = target.GetComponent<Collider2D>();
+
         float targetTop = target.position.y;
+
         if (targetCollider != null)
         {
             Bounds bounds = targetCollider.bounds;
             targetTop = bounds.max.y;
         }
 
-        Vector3 startPosition = transform.position;
-        Vector3 endPosition = new Vector3(
+        Vector2 startPosition = rb.position;
+
+        Vector2 endPosition = new Vector2(
             target.position.x,
-            targetTop + climbHeight,
-            transform.position.z
+            targetTop + climbHeight
         );
 
         float elapsed = 0f;
+
         while (elapsed < climbDuration)
         {
-            elapsed += Time.unscaledDeltaTime;
-            float t = elapsed / climbDuration;
-            transform.position = Vector3.Lerp(startPosition, endPosition, t);
-            yield return null;
+            elapsed += Time.fixedDeltaTime;
+
+            float t = Mathf.Clamp01(elapsed / climbDuration);
+
+            Vector2 newPosition = Vector2.Lerp(
+                startPosition,
+                endPosition,
+                t
+            );
+
+            rb.MovePosition(newPosition);
+
+            yield return new WaitForFixedUpdate();
         }
 
-        transform.position = endPosition;
+        rb.position = endPosition;
+        rb.linearVelocity = Vector2.zero;
 
         if (target.CompareTag("Taburet"))
         {
@@ -271,7 +303,10 @@ public class PlayerMove : MonoBehaviour
         }
 
         animator.SetBool("isCrawling", false);
+
         isCrawling = false;
+        if (pepperRenderer != null)
+            pepperRenderer.enabled = pepperWasVisible;
     }
 
     private void ClimbDown()

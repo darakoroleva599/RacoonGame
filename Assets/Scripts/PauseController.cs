@@ -14,7 +14,10 @@ public class PauseController : MonoBehaviour
             return;
 
         if (SaveManager.Instance != null)
+        {
+            SaveManager.Instance.savedSceneName = SceneManager.GetActiveScene().name;
             SaveManager.Instance.SaveProgress();
+        }
 
         Time.timeScale = 1;
         SceneManager.LoadScene("MainMenu");

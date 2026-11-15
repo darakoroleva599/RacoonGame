@@ -32,6 +32,8 @@ public class HumanController : MonoBehaviour
     private Vector3 defaultScale;
     private int currentWaypointIndex = 0;
     private bool isReacting = false;
+    private bool isTransitionPending = false;
+    private bool isTransitioning = false;
     private Transform raccoon;
 
     private float waitTimer = 0f;
@@ -185,6 +187,7 @@ public class HumanController : MonoBehaviour
                 stuckTimer = 0f;
                 rb.linearVelocity = Vector2.zero;
                 animator.SetBool("isMoving", false);
+                TryStartSceneTransition();
                 return;
             }
         }
@@ -238,7 +241,10 @@ public class HumanController : MonoBehaviour
             rb.linearVelocity = Vector2.zero;
             animator.SetBool("isMoving", false);
 
-            if (OnCheckPrankFinished != null) OnCheckPrankFinished.Invoke();
+            if (OnCheckPrankFinished != null)
+                OnCheckPrankFinished.Invoke();
+
+            TryStartSceneTransition();
         }
     }
 
@@ -334,7 +340,23 @@ public class HumanController : MonoBehaviour
         currentAnnoyance += amount;
         currentAnnoyance = Mathf.Min(currentAnnoyance, maxAnnoyance);
         UpdateAnnoyanceUI();
-        if (currentAnnoyance >= maxAnnoyance) isReacting = true;
+
+        if (currentAnnoyance >= maxAnnoyance && !isTransitionPending)
+        {
+            isTransitionPending = true;
+        }
+    }
+
+    private void TryStartSceneTransition()
+    {
+        if (!isTransitionPending || isTransitioning)
+            return;
+
+        isTransitionPending = false;
+        isTransitioning = true;
+
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("LivingRoom");
     }
 
     private void UpdateAnnoyanceUI()

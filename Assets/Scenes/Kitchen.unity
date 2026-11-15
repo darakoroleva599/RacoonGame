@@ -1405,7 +1405,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 6
   m_Sprite: {fileID: 8374363231432968964, guid: e21be56b0963e1c419f590d578c898fa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2563,6 +2563,7 @@ MonoBehaviour:
   interactionCooldown: 5
   climbDuration: 0.2
   hidingRadius: 0.5
+  pepperRenderer: {fileID: 388143637}
 --- !u!95 &638330865
 Animator:
   serializedVersion: 7
@@ -3188,7 +3189,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -1.230727, y: 0.87546617}
+  m_Offset: {x: -1.2602491, y: 0.87546617}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3198,7 +3199,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.6343961, y: 1.228382}
+  m_Size: {x: 1.6934404, y: 1.228382}
   m_EdgeRadius: 0
 --- !u!114 &904794032
 MonoBehaviour:
@@ -3407,7 +3408,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -69.1, y: 52.6}
+  m_AnchoredPosition: {x: -72.1, y: 52.6}
   m_SizeDelta: {x: 8.23, y: 6.15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &940627063
@@ -6099,6 +6100,7 @@ MonoBehaviour:
   doorCompleted: 0
   lampCompleted: 0
   phoneCompleted: 0
+  savedSceneName: Kitchen
   hasSavedPlayerState: 0
   savedPlayerPosition: {x: 0, y: 0, z: 0}
   savedPlayerOnTaburet: 0
@@ -6766,7 +6768,7 @@ Transform:
   m_GameObject: {fileID: 2032196433}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.017, y: 0.782, z: 0}
+  m_LocalPosition: {x: 0.017, y: 0.936, z: 0}
   m_LocalScale: {x: 0.5144753, y: 0.5144753, z: 0.5144753}
   m_ConstrainProportionsScale: 0
   m_Children: []
