@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerMove : MonoBehaviour
 {
@@ -17,6 +18,8 @@ public class PlayerMove : MonoBehaviour
     private Rigidbody2D rb;
     private Animator animator;
     private Vector3 defaultScale;
+    private static Vector3 bookshelfReturnPosition;
+    private static bool hasBookshelfReturnPosition = false;
 
     private bool isOnTaburet = false;
     private bool isOnPodosokonnik = false;
@@ -42,6 +45,19 @@ public class PlayerMove : MonoBehaviour
         rb.gravityScale = 0;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         defaultScale = transform.localScale;
+
+        if (hasBookshelfReturnPosition)
+        {
+            transform.position = bookshelfReturnPosition;
+            rb.position = new Vector2(
+                bookshelfReturnPosition.x,
+                bookshelfReturnPosition.y
+            );
+
+            rb.linearVelocity = Vector2.zero;
+
+            hasBookshelfReturnPosition = false;
+        }
     }
 
     void Update()
@@ -184,6 +200,15 @@ public class PlayerMove : MonoBehaviour
                 }
             }
 
+            if (hit.CompareTag("Bookshelf"))
+            {
+                bookshelfReturnPosition = transform.position;
+                hasBookshelfReturnPosition = true;
+
+                SceneManager.LoadScene("BookshelfPuzzle");
+                return;
+            }
+
             if (hit.CompareTag("Pie") &&
     Vector2.Distance(transform.position, hit.transform.position) < 1.2f)
             {
@@ -201,7 +226,8 @@ public class PlayerMove : MonoBehaviour
 
             if (hit.CompareTag("DoorDistraction") ||
     hit.CompareTag("LampDistraction") ||
-    hit.CompareTag("PhoneDistraction"))
+    hit.CompareTag("PhoneDistraction") ||
+    hit.CompareTag("TVDistraction"))
             {
                 if (isOnPodosokonnik)
                     continue;

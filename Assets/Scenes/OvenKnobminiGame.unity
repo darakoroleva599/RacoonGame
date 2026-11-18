@@ -204,7 +204,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.2936215, y: 3.2460785, z: 3.2936215}
+  m_LocalScale: {x: 3.6447337, y: 3.2460785, z: 3.2936215}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -242,7 +242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::OvenKnobController
   knob: {fileID: 1258794639}
-  maxRotation: 360
+  maxRotation: -115
   scrollSensitivity: 3
   startRotation: 0
   clockwise: 0
@@ -584,8 +584,8 @@ Camera:
   m_GameObject: {fileID: 1964892188}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0

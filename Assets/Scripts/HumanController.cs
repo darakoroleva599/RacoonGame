@@ -68,6 +68,7 @@ public class HumanController : MonoBehaviour
         rb.gravityScale = 0;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         defaultScale = transform.localScale;
+        
 
         raccoon = GameObject.FindGameObjectWithTag("Player").transform;
 

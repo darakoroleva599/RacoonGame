@@ -17,6 +17,14 @@ TagManager:
   - LampDistraction
   - PhoneDistraction
   - ExclamationMark
+  - Bookshelf
+  - Safe
+  - "\u0417\u0444\u043A\u043A\u0449\u0435\u0421\u0444\u043F\u0443"
+  - ParrotCage
+  - IroningBoard
+  - Phone
+  - TVDistraction
+  - LampDistraction2
   layers:
   - Default
   - TransparentFX
