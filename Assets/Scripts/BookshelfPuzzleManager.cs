@@ -1,4 +1,3 @@
-
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -19,34 +18,29 @@ public class BookshelfPuzzleManager : MonoBehaviour
     private int selectedSlot = -1;
     private bool puzzleCompleted;
 
+
     private void Start()
     {
         WasCompleted = false;
         for (int i = 0; i < booksInSlots.Length; i++)
         {
             if (booksInSlots[i] != null)
-            {
                 booksInSlots[i].Initialize(this);
-            }
         }
 
         if (exitButton != null)
-        {
             exitButton.SetActive(false);
-        }
 
         CheckSolution();
     }
+
 
     public void SelectBook(BookPuzzleItem clickedBook)
     {
         if (puzzleCompleted || clickedBook == null)
             return;
 
-        int clickedSlot = System.Array.IndexOf(
-            booksInSlots, clickedBook
-        );
-
+        int clickedSlot = System.Array.IndexOf(booksInSlots, clickedBook);
         if (clickedSlot < 0)
             return;
 
@@ -67,7 +61,6 @@ public class BookshelfPuzzleManager : MonoBehaviour
         }
 
         BookPuzzleItem secondBook = clickedBook;
-
         Vector3 firstPosition = selectedBook.transform.position;
         Vector3 secondPosition = secondBook.transform.position;
 
@@ -76,39 +69,28 @@ public class BookshelfPuzzleManager : MonoBehaviour
 
         booksInSlots[selectedSlot] = secondBook;
         booksInSlots[clickedSlot] = selectedBook;
-
         selectedBook.SetSelected(false);
-
         selectedBook = null;
         selectedSlot = -1;
 
         CheckSolution();
     }
 
+
     private void CheckSolution()
     {
         if (booksInSlots.Length != correctOrder.Length)
-        {
             return;
-        }
 
         for (int i = 0; i < booksInSlots.Length; i++)
         {
-            if (booksInSlots[i] == null)
-            {
+            if (booksInSlots[i] == null || booksInSlots[i].GetBookId() != correctOrder[i])
                 return;
-            }
-
-            int bookId = booksInSlots[i].GetBookId();
-
-
-            if (bookId != correctOrder[i])
-            {
-                return;
-            }
         }
+
         CompletePuzzle();
     }
+
 
     private void CompletePuzzle()
     {
@@ -117,12 +99,10 @@ public class BookshelfPuzzleManager : MonoBehaviour
             return;
 
         puzzleCompleted = true;
-
         if (exitButton != null)
-        {
             exitButton.SetActive(true);
-        }
     }
+
 
     public void ExitPuzzle()
     {

@@ -1,3 +1,4 @@
+
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -27,6 +28,10 @@ public class HumanController : MonoBehaviour
     [Header("Distraction")]
     [SerializeField] private GameObject exclamationMark;
 
+    [Header("Parrot Reaction")]
+    [SerializeField] private float parrotReactionSpeed = 4f;
+    [SerializeField] private float parrotStayDuration = 8f;
+
     private Rigidbody2D rb;
     private Animator animator;
     private Vector3 defaultScale;
@@ -54,10 +59,50 @@ public class HumanController : MonoBehaviour
     private float detectionProgress = 0f;
     private bool isDetecting = false;
 
+
+    private bool isReactingToParrot = false;
+    private Transform parrotCheckPoint;
+    private float parrotStayTimer = 0f;
+
+
+    private static Vector3 savedHumanPosition;
+    private static bool hasSavedHumanPosition = false;
+
     public System.Action OnCaughtRaccoon;
     public System.Action OnCheckPrankFinished;
     public System.Action OnCheckPrankStopped;
     public System.Action OnCheckPrankLeaving;
+
+
+    public static void SaveHumanPosition(HumanController human)
+    {
+        if (human == null)
+            return;
+
+        savedHumanPosition = human.transform.position;
+        hasSavedHumanPosition = true;
+    }
+
+
+    private void RestoreHumanPosition()
+    {
+        if (!hasSavedHumanPosition)
+            return;
+
+        transform.position = savedHumanPosition;
+
+        if (rb != null)
+        {
+            rb.position = new Vector2(
+                savedHumanPosition.x,
+            savedHumanPosition.y
+            );
+
+            rb.linearVelocity = Vector2.zero;
+        }
+
+        hasSavedHumanPosition = false;
+    }
 
     void Start()
     {
@@ -68,7 +113,6 @@ public class HumanController : MonoBehaviour
         rb.gravityScale = 0;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         defaultScale = transform.localScale;
-        
 
         raccoon = GameObject.FindGameObjectWithTag("Player").transform;
 
@@ -77,11 +121,22 @@ public class HumanController : MonoBehaviour
         if (exclamationMark != null) exclamationMark.SetActive(false);
 
         UpdateAnnoyanceUI();
+
+
+
+        RestoreHumanPosition();
     }
 
     void Update()
     {
         HandleDetection();
+
+
+        if (isReactingToParrot)
+        {
+            HandleParrotReaction();
+            return;
+        }
 
         if (isCheckingPrank)
         {
@@ -116,11 +171,13 @@ public class HumanController : MonoBehaviour
             rb.linearVelocity = Vector2.zero;
             animator.SetBool("isMoving", false);
             waitTimer -= Time.deltaTime;
+
             if (waitTimer <= 0f)
             {
                 isWaiting = false;
                 currentWaypointIndex = (currentWaypointIndex + 1) % waypoints.Length;
             }
+
             return;
         }
 
@@ -158,8 +215,10 @@ public class HumanController : MonoBehaviour
                     if (exclamationMark != null) exclamationMark.SetActive(false);
                     return;
                 }
+
                 distractionPathIndex++;
             }
+
             return;
         }
 
@@ -167,6 +226,7 @@ public class HumanController : MonoBehaviour
         animator.SetBool("isMoving", false);
 
         distractionTimer -= Time.deltaTime;
+
         if (distractionTimer <= 0f)
         {
             distractionPathIndex = 0;
@@ -179,6 +239,7 @@ public class HumanController : MonoBehaviour
         if (prankReturning)
         {
             stuckTimer += Time.deltaTime;
+
             if (stuckTimer > 5f)
             {
                 isCheckingPrank = false;
@@ -211,15 +272,19 @@ public class HumanController : MonoBehaviour
             rb.linearVelocity = Vector2.zero;
             animator.SetBool("isMoving", false);
 
-            if (OnCheckPrankStopped != null) OnCheckPrankStopped.Invoke();
+            if (OnCheckPrankStopped != null)
+                OnCheckPrankStopped.Invoke();
 
             checkPrankTimer -= Time.deltaTime;
 
             if (checkPrankTimer <= 0f)
             {
-                if (OnCheckPrankLeaving != null) OnCheckPrankLeaving.Invoke();
+                if (OnCheckPrankLeaving != null)
+                    OnCheckPrankLeaving.Invoke();
+
                 prankReturning = true;
             }
+
             return;
         }
 
@@ -249,6 +314,85 @@ public class HumanController : MonoBehaviour
         }
     }
 
+
+
+    public void ReactToParrot(Transform cagePoint)
+    {
+        if (cagePoint == null || isReactingToParrot)
+            return;
+
+        isReactingToParrot = true;
+        parrotCheckPoint = cagePoint;
+        parrotStayTimer = parrotStayDuration;
+
+        isWaiting = false;
+        isDistracted = false;
+        isCheckingPrank = false;
+        prankReturning = false;
+
+        if (exclamationMark != null)
+            exclamationMark.SetActive(true);
+    }
+
+    private void HandleParrotReaction()
+    {
+        if (parrotCheckPoint == null)
+        {
+            EndParrotReaction();
+            return;
+        }
+
+        float distance = Vector3.Distance(transform.position, parrotCheckPoint.position);
+
+
+        if (distance > 0.3f)
+        {
+            MoveTowardsParrot(parrotCheckPoint.position);
+            return;
+        }
+
+
+        rb.linearVelocity = Vector2.zero;
+        animator.SetBool("isMoving", false);
+
+        parrotStayTimer -= Time.deltaTime;
+
+        if (parrotStayTimer <= 0f)
+        {
+            EndParrotReaction();
+        }
+    }
+
+    private void MoveTowardsParrot(Vector3 target)
+    {
+        Vector3 direction = (target - transform.position).normalized;
+        rb.linearVelocity = direction * parrotReactionSpeed;
+        animator.SetBool("isMoving", true);
+
+        if (direction.x < 0)
+            transform.localScale = new Vector3(-Mathf.Abs(defaultScale.x), defaultScale.y, defaultScale.z);
+        else if (direction.x > 0)
+            transform.localScale = new Vector3(Mathf.Abs(defaultScale.x), defaultScale.y, defaultScale.z);
+    }
+
+    private void EndParrotReaction()
+    {
+        isReactingToParrot = false;
+        parrotCheckPoint = null;
+        parrotStayTimer = 0f;
+
+        rb.linearVelocity = Vector2.zero;
+        animator.SetBool("isMoving", false);
+
+        isWaiting = false;
+        waitTimer = 0f;
+
+        if (exclamationMark != null)
+            exclamationMark.SetActive(false);
+    }
+
+
+
     private void MoveTowards(Vector3 target)
     {
         Vector3 direction = (target - transform.position).normalized;
@@ -269,7 +413,8 @@ public class HumanController : MonoBehaviour
         distractionTimer = duration;
         isWaiting = false;
 
-        if (exclamationMark != null) exclamationMark.SetActive(true);
+        if (exclamationMark != null)
+            exclamationMark.SetActive(true);
     }
 
     public void CheckPrank(Transform checkPt, Transform returnPt, float duration)
@@ -298,9 +443,12 @@ public class HumanController : MonoBehaviour
 
             detectionProgress += Time.deltaTime;
             detectionProgress = Mathf.Clamp(detectionProgress, 0f, detectionTime);
-            if (detectionBar != null) detectionBar.fillAmount = detectionProgress / detectionTime;
 
-            if (detectionProgress >= detectionTime) CatchRaccoon();
+            if (detectionBar != null)
+                detectionBar.fillAmount = detectionProgress / detectionTime;
+
+            if (detectionProgress >= detectionTime)
+                CatchRaccoon();
         }
         else
         {
@@ -308,7 +456,9 @@ public class HumanController : MonoBehaviour
             {
                 detectionProgress -= Time.deltaTime * decaySpeed;
                 detectionProgress = Mathf.Clamp(detectionProgress, 0f, detectionTime);
-                if (detectionBar != null) detectionBar.fillAmount = detectionProgress / detectionTime;
+
+                if (detectionBar != null)
+                    detectionBar.fillAmount = detectionProgress / detectionTime;
 
                 if (detectionProgress <= 0f)
                 {
@@ -327,11 +477,14 @@ public class HumanController : MonoBehaviour
 
         Vector3 directionToRaccoon = raccoon.position - transform.position;
         float distance = directionToRaccoon.magnitude;
+
         if (distance > visionRadius) return false;
 
         Vector3 facingDirection = Vector3.down;
         float angle = Vector3.Angle(facingDirection, directionToRaccoon);
-        if (angle > visionAngle / 2) return false;
+
+        if (angle > visionAngle / 2)
+            return false;
 
         return true;
     }
@@ -362,9 +515,9 @@ public class HumanController : MonoBehaviour
 
     private void UpdateAnnoyanceUI()
     {
-        if (annoyanceBar != null) annoyanceBar.value = currentAnnoyance / maxAnnoyance;
+        if (annoyanceBar != null)
+            annoyanceBar.value = currentAnnoyance / maxAnnoyance;
     }
-
 
     public void SetAnnoyanceProgress(float progress)
     {
@@ -386,12 +539,20 @@ public class HumanController : MonoBehaviour
     private void CatchRaccoon()
     {
         if (Time.timeScale == 0) return;
+
         Time.timeScale = 0;
         OnCaughtRaccoon?.Invoke();
     }
 
-    public float GetAnnoyanceProgress() { return currentAnnoyance / maxAnnoyance; }
-    public bool IsReacting() { return isReacting; }
+    public float GetAnnoyanceProgress()
+    {
+        return currentAnnoyance / maxAnnoyance;
+    }
+
+    public bool IsReacting()
+    {
+        return isReacting;
+    }
 
     public static void RestartGame()
     {

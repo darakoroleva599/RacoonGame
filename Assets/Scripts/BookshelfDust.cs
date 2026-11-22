@@ -23,7 +23,7 @@ public class BookshelfDust : MonoBehaviour
             dustCloud.SetActive(false);
         }
 
-        // Если головоломка со стеллажом решена
+
         if (BookshelfPuzzleManager.WasCompleted)
         {
             BookshelfPuzzleManager.WasCompleted = false;

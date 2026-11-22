@@ -15,19 +15,25 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private float climbDuration = 0.5f;
     [SerializeField] private float hidingRadius = 1f;
 
+    [Header("Blanket")]
+    [SerializeField] private GameObject blanketOnRaccoon;
+    [SerializeField] private SpriteRenderer cageSpriteRenderer;
+    [SerializeField] private Sprite cageCoveredSprite;
+
+
+    private static Vector3 returnPosition;
+    private static bool hasReturnPosition = false;
+
     private Rigidbody2D rb;
     private Animator animator;
     private Vector3 defaultScale;
-    private static Vector3 bookshelfReturnPosition;
-    private static bool hasBookshelfReturnPosition = false;
 
     private bool isOnTaburet = false;
     private bool isOnPodosokonnik = false;
     private bool isCrawling = false;
     private bool isHidden = false;
+
     public bool IsCrawling => isCrawling;
-
-
     public bool IsOnTaburet => isOnTaburet;
     public bool IsOnPodosokonnik => isOnPodosokonnik;
     public bool IsHidden => isHidden;
@@ -37,27 +43,93 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private SpriteRenderer pepperRenderer;
     private bool pepperWasVisibleBeforeHiding;
 
+    private bool hasBlanket = false;
+    private bool cageCovered = false;
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+
         rb.gravityScale = 0;
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         defaultScale = transform.localScale;
 
-        if (hasBookshelfReturnPosition)
-        {
-            transform.position = bookshelfReturnPosition;
-            rb.position = new Vector2(
-                bookshelfReturnPosition.x,
-                bookshelfReturnPosition.y
-            );
 
+        if (hasReturnPosition &&
+            SceneManager.GetActiveScene().name == "LivingRoom")
+        {
+            transform.position = returnPosition;
+            rb.position = new Vector2(returnPosition.x, returnPosition.y);
             rb.linearVelocity = Vector2.zero;
 
-            hasBookshelfReturnPosition = false;
+            hasReturnPosition = false;
         }
+
+
+        if (blanketOnRaccoon == null)
+        {
+            Transform blanket = FindChildRecursive(transform, "BlanketOnRaccoon");
+            if (blanket != null)
+                blanketOnRaccoon = blanket.gameObject;
+        }
+
+        if (blanketOnRaccoon != null)
+            blanketOnRaccoon.SetActive(false);
+
+
+        RestoreCoveredCage();
+    }
+
+    private void RestoreCoveredCage()
+    {
+        if (!ParrotController.IsCageCovered)
+            return;
+
+        cageCovered = true;
+        hasBlanket = false;
+
+
+        if (blanketOnRaccoon != null)
+            blanketOnRaccoon.SetActive(false);
+
+
+        GameObject ironingBoard = GameObject.FindGameObjectWithTag("IroningBoard");
+
+        if (ironingBoard != null)
+        {
+            Transform blanketOnBoard =
+                FindChildRecursive(ironingBoard.transform, "BlanketOnBoard");
+
+            if (blanketOnBoard != null)
+                blanketOnBoard.gameObject.SetActive(false);
+        }
+
+
+        if (cageSpriteRenderer == null)
+        {
+            GameObject cage = GameObject.FindGameObjectWithTag("ParrotCage");
+
+            if (cage != null)
+            {
+                Transform cageSprite =
+                    FindChildRecursive(cage.transform, "CageSprite");
+
+                if (cageSprite != null)
+                    cageSpriteRenderer = cageSprite.GetComponent<SpriteRenderer>();
+            }
+        }
+
+        if (cageSpriteRenderer != null && cageCoveredSprite != null)
+            cageSpriteRenderer.sprite = cageCoveredSprite;
+
+
+        ParrotController parrot =
+            FindObjectOfType<ParrotController>();
+
+        if (parrot != null)
+            parrot.CoverCage();
     }
 
     void Update()
@@ -82,7 +154,8 @@ public class PlayerMove : MonoBehaviour
         else if (x > 0)
             transform.localScale = new Vector3(Mathf.Abs(defaultScale.x), defaultScale.y, defaultScale.z);
 
-        if (Input.GetKeyDown(KeyCode.E) && Time.realtimeSinceStartup - lastInteractionTime > interactionCooldown)
+        if (Input.GetKeyDown(KeyCode.E) &&
+            Time.realtimeSinceStartup - lastInteractionTime > interactionCooldown)
         {
             lastInteractionTime = Time.realtimeSinceStartup;
             TryInteract();
@@ -93,7 +166,8 @@ public class PlayerMove : MonoBehaviour
             TryClimb();
         }
 
-        if (Input.GetKeyDown(KeyCode.S) && (isOnTaburet || isOnPodosokonnik) && !isCrawling)
+        if (Input.GetKeyDown(KeyCode.S) &&
+            (isOnTaburet || isOnPodosokonnik) && !isCrawling)
         {
             ClimbDown();
         }
@@ -139,6 +213,7 @@ public class PlayerMove : MonoBehaviour
     private bool IsNearHidingSpot()
     {
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, hidingRadius);
+
         foreach (var hit in hits)
         {
             if (hit.CompareTag("HidingSpot"))
@@ -146,6 +221,7 @@ public class PlayerMove : MonoBehaviour
                 return true;
             }
         }
+
         return false;
     }
 
@@ -156,8 +232,39 @@ public class PlayerMove : MonoBehaviour
 
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, interactionRadius);
 
+
         foreach (var hit in hits)
         {
+
+            if (hit.CompareTag("IroningBoard") && !hasBlanket && !cageCovered)
+            {
+                Transform blanketOnBoard =
+                    FindChildRecursive(hit.transform, "BlanketOnBoard");
+
+                if (blanketOnBoard != null && blanketOnRaccoon != null)
+                {
+                    blanketOnBoard.gameObject.SetActive(false);
+                    blanketOnRaccoon.SetActive(true);
+                    hasBlanket = true;
+                    return;
+                }
+            }
+
+
+            if (hit.CompareTag("ParrotCage") && hasBlanket && !cageCovered)
+            {
+                if (QuestManager.Instance == null ||
+                    !QuestManager.Instance.CanStartQuest("ParrotCage"))
+                    return;
+
+                CoverParrotCage(hit.transform);
+                return;
+            }
+        }
+
+        foreach (var hit in hits)
+        {
+
             if (hit.CompareTag("Oven"))
             {
                 if (QuestManager.Instance == null ||
@@ -171,6 +278,7 @@ public class PlayerMove : MonoBehaviour
                     return;
                 }
             }
+
 
             if (hit.CompareTag("FlowerPot") && isOnPodosokonnik)
             {
@@ -186,6 +294,7 @@ public class PlayerMove : MonoBehaviour
                 }
             }
 
+
             if (hit.CompareTag("Fridge"))
             {
                 if (QuestManager.Instance == null ||
@@ -200,17 +309,27 @@ public class PlayerMove : MonoBehaviour
                 }
             }
 
+
             if (hit.CompareTag("Bookshelf"))
             {
-                bookshelfReturnPosition = transform.position;
-                hasBookshelfReturnPosition = true;
+                if (QuestManager.Instance != null &&
+                    !QuestManager.Instance.CanStartQuest("Bookshelf"))
+                    return;
+
+                HumanController.SaveHumanPosition(
+                    FindObjectOfType<HumanController>()
+                );
+
+                returnPosition = transform.position;
+                hasReturnPosition = true;
 
                 SceneManager.LoadScene("BookshelfPuzzle");
                 return;
             }
 
+
             if (hit.CompareTag("Pie") &&
-    Vector2.Distance(transform.position, hit.transform.position) < 1.2f)
+                Vector2.Distance(transform.position, hit.transform.position) < 1.2f)
             {
                 if (QuestManager.Instance == null ||
                     !QuestManager.Instance.CanStartQuest("Pie"))
@@ -224,10 +343,11 @@ public class PlayerMove : MonoBehaviour
                 }
             }
 
+
             if (hit.CompareTag("DoorDistraction") ||
-    hit.CompareTag("LampDistraction") ||
-    hit.CompareTag("PhoneDistraction") ||
-    hit.CompareTag("TVDistraction"))
+                hit.CompareTag("LampDistraction") ||
+                hit.CompareTag("PhoneDistraction") ||
+                hit.CompareTag("TVDistraction"))
             {
                 if (isOnPodosokonnik)
                     continue;
@@ -240,7 +360,76 @@ public class PlayerMove : MonoBehaviour
                     return;
                 }
             }
+
+
+            if (hit.CompareTag("Safe"))
+            {
+                if (QuestManager.Instance == null ||
+                    !QuestManager.Instance.CanStartQuest("Safe"))
+                    return;
+
+                HumanController.SaveHumanPosition(
+                    FindObjectOfType<HumanController>()
+                );
+
+                returnPosition = transform.position;
+                hasReturnPosition = true;
+
+                SceneManager.LoadScene("SafePazzle");
+                return;
+            }
         }
+    }
+
+    private void CoverParrotCage(Transform cage)
+    {
+
+        if (blanketOnRaccoon != null)
+            blanketOnRaccoon.SetActive(false);
+
+        hasBlanket = false;
+        cageCovered = true;
+
+        if (QuestManager.Instance != null)
+            QuestManager.Instance.CompleteQuest("ParrotCage");
+
+
+        if (cageSpriteRenderer == null)
+        {
+            Transform cageSprite = FindChildRecursive(cage, "CageSprite");
+
+            if (cageSprite != null)
+                cageSpriteRenderer = cageSprite.GetComponent<SpriteRenderer>();
+        }
+
+        if (cageSpriteRenderer != null && cageCoveredSprite != null)
+            cageSpriteRenderer.sprite = cageCoveredSprite;
+
+
+        ParrotController parrot =
+            cage.GetComponentInChildren<ParrotController>(true);
+
+        if (parrot != null)
+            parrot.CoverCage();
+    }
+
+    private Transform FindChildRecursive(Transform parent, string childName)
+    {
+        if (parent == null)
+            return null;
+
+        if (parent.name == childName)
+            return parent;
+
+        foreach (Transform child in parent)
+        {
+            Transform result = FindChildRecursive(child, childName);
+
+            if (result != null)
+                return result;
+        }
+
+        return null;
     }
 
     private void TryClimb()
@@ -331,6 +520,7 @@ public class PlayerMove : MonoBehaviour
         animator.SetBool("isCrawling", false);
 
         isCrawling = false;
+
         if (pepperRenderer != null)
             pepperRenderer.enabled = pepperWasVisible;
     }
@@ -381,6 +571,7 @@ public class PlayerMove : MonoBehaviour
             spriteRenderer.enabled = !isHidden;
 
         Collider2D playerCollider = GetComponent<Collider2D>();
+
         if (playerCollider != null)
             playerCollider.enabled = !isHidden;
 
@@ -391,6 +582,7 @@ public class PlayerMove : MonoBehaviour
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, interactionRadius);
+
         Gizmos.color = Color.blue;
         Gizmos.DrawWireSphere(transform.position, hidingRadius);
     }

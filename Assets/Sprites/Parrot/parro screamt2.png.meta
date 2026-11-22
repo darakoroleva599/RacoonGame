@@ -290,15 +290,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: parro screamt2_0
+      name: parrot1
       rect:
         serializedVersion: 2
-        x: 10
-        y: 2
-        width: 71
-        height: 101
+        x: 0
+        y: 0
+        width: 81
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -312,15 +312,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parro screamt2_1
+      name: parrot2
       rect:
         serializedVersion: 2
-        x: 90
-        y: 2
-        width: 71
-        height: 103
+        x: 81
+        y: 0
+        width: 80
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -334,15 +334,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parro screamt2_2
+      name: parrot3
       rect:
         serializedVersion: 2
-        x: 165
-        y: 2
-        width: 76
-        height: 107
+        x: 161
+        y: 0
+        width: 80
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -364,7 +364,7 @@ TextureImporter:
         width: 7
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -386,7 +386,7 @@ TextureImporter:
         width: 13
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -408,7 +408,7 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -422,15 +422,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parro screamt2_6
+      name: parrot4
       rect:
         serializedVersion: 2
-        x: 250
-        y: 2
-        width: 71
-        height: 106
+        x: 241
+        y: 0
+        width: 80
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -444,15 +444,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parro screamt2_7
+      name: parrot5
       rect:
         serializedVersion: 2
-        x: 323
-        y: 2
-        width: 78
-        height: 106
+        x: 321
+        y: 0
+        width: 80
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -474,7 +474,7 @@ TextureImporter:
         width: 9
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -496,7 +496,7 @@ TextureImporter:
         width: 13
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -518,7 +518,7 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -532,15 +532,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parro screamt2_11
+      name: parrot6
       rect:
         serializedVersion: 2
-        x: 410
-        y: 2
-        width: 71
-        height: 106
+        x: 401
+        y: 0
+        width: 80
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -554,15 +554,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parro screamt2_12
+      name: parrot
       rect:
         serializedVersion: 2
-        x: 483
-        y: 2
-        width: 78
-        height: 106
+        x: 481
+        y: 0
+        width: 80
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -584,7 +584,7 @@ TextureImporter:
         width: 9
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -606,7 +606,7 @@ TextureImporter:
         width: 13
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -628,7 +628,7 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -642,15 +642,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parro screamt2_16
+      name: parrot7
       rect:
         serializedVersion: 2
-        x: 570
-        y: 2
-        width: 71
-        height: 106
+        x: 561
+        y: 0
+        width: 80
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -664,15 +664,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parro screamt2_17
+      name: parrot8
       rect:
         serializedVersion: 2
-        x: 643
-        y: 2
-        width: 78
-        height: 106
+        x: 641
+        y: 0
+        width: 80
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -694,7 +694,7 @@ TextureImporter:
         width: 9
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -716,7 +716,7 @@ TextureImporter:
         width: 13
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -738,7 +738,7 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -752,15 +752,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parro screamt2_21
+      name: parrot9
       rect:
         serializedVersion: 2
-        x: 730
-        y: 2
-        width: 71
-        height: 106
+        x: 721
+        y: 0
+        width: 80
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -774,15 +774,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parro screamt2_22
+      name: parrot10
       rect:
         serializedVersion: 2
-        x: 803
-        y: 2
-        width: 78
-        height: 106
+        x: 801
+        y: 0
+        width: 80
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -804,7 +804,7 @@ TextureImporter:
         width: 9
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -826,7 +826,7 @@ TextureImporter:
         width: 13
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -848,7 +848,7 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -862,15 +862,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parro screamt2_26
+      name: parrot11
       rect:
         serializedVersion: 2
-        x: 890
-        y: 2
-        width: 71
-        height: 106
+        x: 881
+        y: 0
+        width: 80
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -884,15 +884,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parro screamt2_27
+      name: parrot12
       rect:
         serializedVersion: 2
-        x: 963
-        y: 2
-        width: 78
-        height: 106
+        x: 961
+        y: 0
+        width: 80
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -914,7 +914,7 @@ TextureImporter:
         width: 9
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -936,7 +936,7 @@ TextureImporter:
         width: 13
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -958,7 +958,7 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -972,15 +972,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parro screamt2_31
+      name: parrot13
       rect:
         serializedVersion: 2
-        x: 1050
-        y: 2
-        width: 71
-        height: 106
+        x: 1041
+        y: 0
+        width: 80
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -994,15 +994,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parro screamt2_32
+      name: parrot14
       rect:
         serializedVersion: 2
-        x: 1123
-        y: 2
-        width: 78
-        height: 106
+        x: 1121
+        y: 0
+        width: 80
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1024,7 +1024,7 @@ TextureImporter:
         width: 9
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1046,7 +1046,7 @@ TextureImporter:
         width: 13
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1068,7 +1068,7 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1082,15 +1082,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parro screamt2_36
+      name: parrot15
       rect:
         serializedVersion: 2
-        x: 1210
-        y: 2
-        width: 71
-        height: 106
+        x: 1201
+        y: 0
+        width: 80
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1104,15 +1104,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parro screamt2_37
+      name: parrot16
       rect:
         serializedVersion: 2
-        x: 1283
-        y: 2
-        width: 78
-        height: 106
+        x: 1281
+        y: 0
+        width: 80
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1134,7 +1134,7 @@ TextureImporter:
         width: 9
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1148,15 +1148,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parro screamt2_39
+      name: parrot17
       rect:
         serializedVersion: 2
-        x: 1370
-        y: 2
-        width: 71
-        height: 103
+        x: 1361
+        y: 0
+        width: 80
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1170,15 +1170,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: parro screamt2_40
+      name: parrot18
       rect:
         serializedVersion: 2
-        x: 1450
-        y: 2
-        width: 70
-        height: 101
+        x: 1441
+        y: 0
+        width: 79
+        height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1200,7 +1200,7 @@ TextureImporter:
         width: 8
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1222,7 +1222,7 @@ TextureImporter:
         width: 7
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1244,7 +1244,7 @@ TextureImporter:
         width: 13
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1266,7 +1266,7 @@ TextureImporter:
         width: 8
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1288,7 +1288,7 @@ TextureImporter:
         width: 13
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1310,7 +1310,7 @@ TextureImporter:
         width: 8
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1332,7 +1332,7 @@ TextureImporter:
         width: 13
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1354,7 +1354,7 @@ TextureImporter:
         width: 8
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1376,7 +1376,7 @@ TextureImporter:
         width: 13
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1398,7 +1398,7 @@ TextureImporter:
         width: 8
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1420,7 +1420,7 @@ TextureImporter:
         width: 13
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1442,7 +1442,7 @@ TextureImporter:
         width: 8
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1464,7 +1464,7 @@ TextureImporter:
         width: 13
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1486,7 +1486,7 @@ TextureImporter:
         width: 8
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1508,7 +1508,7 @@ TextureImporter:
         width: 13
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1530,7 +1530,7 @@ TextureImporter:
         width: 8
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1552,7 +1552,7 @@ TextureImporter:
         width: 8
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1574,7 +1574,7 @@ TextureImporter:
         width: 7
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1596,7 +1596,7 @@ TextureImporter:
         width: 7
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1613,7 +1613,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 48a2b8f5284d0ca4aaead20bc6042b6a
     internalID: 0
     vertices: []
     indices: 
@@ -1623,42 +1623,25 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      parro screamt2_0: -8565761804135746718
-      parro screamt2_1: -2847243360460290343
       parro screamt2_10: 5173014215890183617
-      parro screamt2_11: 3851327153407476583
-      parro screamt2_12: -5579061890707562765
       parro screamt2_13: 7393973793503344907
       parro screamt2_14: -2236925086896390057
       parro screamt2_15: -3715951206724478389
-      parro screamt2_16: -2199128154679578249
-      parro screamt2_17: -1517678628384316501
       parro screamt2_18: -4782947969217775637
       parro screamt2_19: -5686822434296220785
-      parro screamt2_2: 1179952707513030735
       parro screamt2_20: -4694402323307924321
-      parro screamt2_21: -1700836673614493637
-      parro screamt2_22: -6182974795514491591
       parro screamt2_23: -4103331792505623683
       parro screamt2_24: 9071110192663245395
       parro screamt2_25: -5451516420183934565
-      parro screamt2_26: 3346570729356609638
-      parro screamt2_27: -8572109039620685454
       parro screamt2_28: -3694661498527632484
       parro screamt2_29: -8594898430551407503
       parro screamt2_3: 1695294157940439736
       parro screamt2_30: -3920183026821834269
-      parro screamt2_31: 3534265348481543048
-      parro screamt2_32: -5104116366474531649
       parro screamt2_33: 4491913103330902279
       parro screamt2_34: -7751139717415083203
       parro screamt2_35: -3955992117041135577
-      parro screamt2_36: 5740316491188525630
-      parro screamt2_37: 7187576669227091999
       parro screamt2_38: 7471143645316062269
-      parro screamt2_39: -2311659087234742930
       parro screamt2_4: -5537037877507320937
-      parro screamt2_40: -7526136026958370561
       parro screamt2_41: 6261031168242170480
       parro screamt2_42: -4048380723535484968
       parro screamt2_43: -1088715748840314349
@@ -1679,10 +1662,27 @@ TextureImporter:
       parro screamt2_57: -7329780694949385777
       parro screamt2_58: -2972139060290031890
       parro screamt2_59: -4656552927676766401
-      parro screamt2_6: 4753432448428163435
-      parro screamt2_7: -8594493324411108025
       parro screamt2_8: 4724874908530034522
       parro screamt2_9: -8222310560663383436
+      parrot: -5579061890707562765
+      parrot1: -8565761804135746718
+      parrot10: -6182974795514491591
+      parrot11: 3346570729356609638
+      parrot12: -8572109039620685454
+      parrot13: 3534265348481543048
+      parrot14: -5104116366474531649
+      parrot15: 5740316491188525630
+      parrot16: 7187576669227091999
+      parrot17: -2311659087234742930
+      parrot18: -7526136026958370561
+      parrot2: -2847243360460290343
+      parrot3: 1179952707513030735
+      parrot4: 4753432448428163435
+      parrot5: -8594493324411108025
+      parrot6: 3851327153407476583
+      parrot7: -2199128154679578249
+      parrot8: -1517678628384316501
+      parrot9: -1700836673614493637
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -102,8 +102,6 @@ public class SaveManager : MonoBehaviour
 
     public void LoadProgress()
     {
-        Debug.Log("LoadProgress: QuestManager = " +
-    (QuestManager.Instance == null ? "NULL" : "FOUND"));
         HumanController human = FindObjectOfType<HumanController>();
 
         if (human != null)
