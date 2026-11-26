@@ -1,81 +1,148 @@
+
 using UnityEngine;
 using TMPro;
-
+using System.Collections.Generic;
 
 public class QuestManager : MonoBehaviour
 {
-    public enum Level { Level1, Level2 }
-
+    public enum Level
+    {
+        Level1,
+        Level2
+    }
 
     [System.Serializable]
     public class Quest
     {
         public string questName;
         public TextMeshProUGUI questText;
-        [HideInInspector] public bool isCompleted = false;
+
+        [HideInInspector]
+        public bool isCompleted = false;
     }
 
     [Header("Level Settings")]
     [SerializeField] private Level currentLevel = Level.Level1;
     [SerializeField] public Quest[] quests;
+
     public static QuestManager Instance { get; private set; }
 
 
-    private readonly string[] level1QuestOrder = { "FlowerPot", "Oven", "Fridge", "Pie" };
-    private readonly string[] level2QuestOrder = { "Bookshelf", "ParrotCage", "Safe", "Phone" };
+    private static readonly HashSet<string> completedQuestNames = new HashSet<string>();
 
-
-    private string[] GetQuestOrder() => currentLevel == Level.Level1 ? level1QuestOrder : level2QuestOrder;
-
-
-    void Awake() { Instance = this; }
-
-
-    void Start()
+    private readonly string[] level1QuestOrder =
     {
+        "FlowerPot",
+        "Oven",
+        "Fridge",
+        "Pie"
+    };
+
+    private readonly string[] level2QuestOrder =
+    {
+        "Bookshelf",
+        "ParrotCage",
+        "Safe",
+        "Phone"
+    };
+
+    private string[] GetQuestOrder()
+    {
+        return currentLevel == Level.Level1
+            ? level1QuestOrder
+            : level2QuestOrder;
+    }
+
+    private void Awake()
+    {
+        Instance = this;
+    }
+
+    private void Start()
+    {
+
+        RestoreCompletedQuests();
+
 
         if (currentLevel == Level.Level2)
         {
             if (BookshelfPuzzleManager.WasCompleted)
-                MarkCompleted("Bookshelf");
+                RegisterQuestCompleted("Bookshelf");
+
             if (SafePuzzleManager.WasCompleted)
-                MarkCompleted("Safe");
+                RegisterQuestCompleted("Safe");
+
+            if (PhonePuzzleManager.WasCompleted)
+                RegisterQuestCompleted("Phone");
         }
+
         UpdateQuestDisplay();
     }
 
 
     public void CompleteQuest(string questName)
     {
-        MarkCompleted(questName);
+        RegisterQuestCompleted(questName);
         UpdateQuestDisplay();
     }
 
 
-    private void MarkCompleted(string questName)
+    public static void RegisterQuestCompleted(string questName)
     {
+        if (string.IsNullOrEmpty(questName))
+            return;
+
+        completedQuestNames.Add(questName);
+
+        if (Instance != null)
+        {
+            Instance.MarkCompletedLocal(questName);
+            Instance.UpdateQuestDisplay();
+        }
+
+    }
+
+    private void RestoreCompletedQuests()
+    {
+        if (quests == null)
+            return;
+
         foreach (Quest quest in quests)
         {
+            if (quest == null)
+                continue;
+
+            quest.isCompleted = completedQuestNames.Contains(quest.questName);
+        }
+    }
+
+    private void MarkCompletedLocal(string questName)
+    {
+        if (quests == null)
+            return;
+
+        foreach (Quest quest in quests)
+        {
+            if (quest == null)
+                continue;
+
             if (quest.questName == questName)
             {
                 quest.isCompleted = true;
-                break;
+                return;
             }
         }
     }
 
-
-    public void UpdateQuestDisplayPublic() { UpdateQuestDisplay(); }
-
+    public void UpdateQuestDisplayPublic()
+    {
+        UpdateQuestDisplay();
+    }
 
     public bool IsQuestCompleted(string questName)
     {
-        foreach (Quest quest in quests)
-            if (quest.questName == questName)
-                return quest.isCompleted;
-        return false;
+        return completedQuestNames.Contains(questName);
     }
-
 
     public bool CanStartQuest(string questName)
     {
@@ -83,41 +150,59 @@ public class QuestManager : MonoBehaviour
         {
             if (name == questName)
                 return !IsQuestCompleted(name);
+
             if (!IsQuestCompleted(name))
                 return false;
         }
+
         return false;
     }
-
 
     private void UpdateQuestDisplay()
     {
         string currentQuest = null;
+
         foreach (string questName in GetQuestOrder())
         {
+            if (IsQuestCompleted(questName))
+                continue;
+
             foreach (Quest quest in quests)
             {
-                if (quest.questName == questName && !quest.isCompleted)
+                if (quest == null)
+                    continue;
+
+                if (quest.questName == questName)
                 {
                     currentQuest = questName;
                     break;
                 }
             }
+
             if (currentQuest != null)
                 break;
         }
 
         foreach (Quest quest in quests)
         {
-            if (quest.questText == null)
+            if (quest == null || quest.questText == null)
                 continue;
+
             bool shouldShow = quest.questName == currentQuest;
+
             quest.questText.gameObject.SetActive(shouldShow);
+
             if (shouldShow)
             {
                 quest.questText.fontStyle = FontStyles.Normal;
-                quest.questText.color = new Color(0.545f, 0.271f, 0.075f, 1f);
+                quest.questText.color = new Color(
+                    0.545f,
+                    0.271f,
+                    0.075f,
+                    1f
+                );
             }
         }
+
     }
 }

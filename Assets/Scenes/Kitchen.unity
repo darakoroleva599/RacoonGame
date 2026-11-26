@@ -345,6 +345,8 @@ MonoBehaviour:
   currentAnnoyance: 0
   annoyanceBar: {fileID: 1021130527}
   exclamationMark: {fileID: 2032196433}
+  parrotReactionSpeed: 4
+  parrotStayDuration: 8
 --- !u!50 &112632839
 Rigidbody2D:
   serializedVersion: 5
@@ -2563,6 +2565,9 @@ MonoBehaviour:
   interactionCooldown: 5
   climbDuration: 0.2
   hidingRadius: 0.5
+  blanketOnRaccoon: {fileID: 0}
+  cageSpriteRenderer: {fileID: 0}
+  cageCoveredSprite: {fileID: 0}
   pepperRenderer: {fileID: 388143637}
 --- !u!95 &638330865
 Animator:
@@ -3189,7 +3194,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -1.2602491, y: 0.87546617}
+  m_Offset: {x: -1.1190048, y: 0.7233565}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3199,7 +3204,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1.6934404, y: 1.228382}
+  m_Size: {x: 1.975929, y: 1.5326014}
   m_EdgeRadius: 0
 --- !u!114 &904794032
 MonoBehaviour:
@@ -5577,6 +5582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c921a8ecab3a6b4a9e7c31ad696e98a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::QuestManager
+  currentLevel: 0
   quests:
   - questName: Oven
     questText: {fileID: 760393376}

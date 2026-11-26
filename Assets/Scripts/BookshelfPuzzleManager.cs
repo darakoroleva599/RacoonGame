@@ -18,10 +18,8 @@ public class BookshelfPuzzleManager : MonoBehaviour
     private int selectedSlot = -1;
     private bool puzzleCompleted;
 
-
     private void Start()
     {
-        WasCompleted = false;
         for (int i = 0; i < booksInSlots.Length; i++)
         {
             if (booksInSlots[i] != null)
@@ -34,13 +32,13 @@ public class BookshelfPuzzleManager : MonoBehaviour
         CheckSolution();
     }
 
-
     public void SelectBook(BookPuzzleItem clickedBook)
     {
         if (puzzleCompleted || clickedBook == null)
             return;
 
         int clickedSlot = System.Array.IndexOf(booksInSlots, clickedBook);
+
         if (clickedSlot < 0)
             return;
 
@@ -61,6 +59,7 @@ public class BookshelfPuzzleManager : MonoBehaviour
         }
 
         BookPuzzleItem secondBook = clickedBook;
+
         Vector3 firstPosition = selectedBook.transform.position;
         Vector3 secondPosition = secondBook.transform.position;
 
@@ -69,13 +68,13 @@ public class BookshelfPuzzleManager : MonoBehaviour
 
         booksInSlots[selectedSlot] = secondBook;
         booksInSlots[clickedSlot] = selectedBook;
+
         selectedBook.SetSelected(false);
         selectedBook = null;
         selectedSlot = -1;
 
         CheckSolution();
     }
-
 
     private void CheckSolution()
     {
@@ -84,25 +83,30 @@ public class BookshelfPuzzleManager : MonoBehaviour
 
         for (int i = 0; i < booksInSlots.Length; i++)
         {
-            if (booksInSlots[i] == null || booksInSlots[i].GetBookId() != correctOrder[i])
+            if (booksInSlots[i] == null ||
+                booksInSlots[i].GetBookId() != correctOrder[i])
+            {
                 return;
+            }
         }
 
         CompletePuzzle();
     }
 
-
     private void CompletePuzzle()
     {
-        WasCompleted = true;
         if (puzzleCompleted)
             return;
 
         puzzleCompleted = true;
+        WasCompleted = true;
+
+        HumanController.AddAnnoyanceAfterSceneLoad(33f);
+        QuestManager.RegisterQuestCompleted("Bookshelf");
+
         if (exitButton != null)
             exitButton.SetActive(true);
     }
-
 
     public void ExitPuzzle()
     {

@@ -68,6 +68,32 @@ public class HumanController : MonoBehaviour
     private static Vector3 savedHumanPosition;
     private static bool hasSavedHumanPosition = false;
 
+
+    private static float savedAnnoyance = 0f;
+    private static bool hasSavedAnnoyance = false;
+
+
+    private static float pendingAnnoyanceAfterSceneLoad = 0f;
+
+    public static void AddAnnoyanceAfterSceneLoad(float amount)
+    {
+        if (amount <= 0f)
+            return;
+
+        pendingAnnoyanceAfterSceneLoad += amount;
+    }
+
+    private void ApplyPendingAnnoyance()
+    {
+        if (pendingAnnoyanceAfterSceneLoad <= 0f)
+            return;
+
+        float amount = pendingAnnoyanceAfterSceneLoad;
+        pendingAnnoyanceAfterSceneLoad = 0f;
+
+        AddAnnoyance(amount);
+    }
+
     public System.Action OnCaughtRaccoon;
     public System.Action OnCheckPrankFinished;
     public System.Action OnCheckPrankStopped;
@@ -116,6 +142,17 @@ public class HumanController : MonoBehaviour
 
         raccoon = GameObject.FindGameObjectWithTag("Player").transform;
 
+
+        if (!hasSavedAnnoyance)
+        {
+            savedAnnoyance = currentAnnoyance;
+            hasSavedAnnoyance = true;
+        }
+        else
+        {
+            currentAnnoyance = savedAnnoyance;
+        }
+
         if (eyeIndicator != null) eyeIndicator.SetActive(false);
         if (detectionBar != null) detectionBar.gameObject.SetActive(false);
         if (exclamationMark != null) exclamationMark.SetActive(false);
@@ -125,6 +162,9 @@ public class HumanController : MonoBehaviour
 
 
         RestoreHumanPosition();
+
+
+        ApplyPendingAnnoyance();
     }
 
     void Update()
@@ -493,6 +533,10 @@ public class HumanController : MonoBehaviour
     {
         currentAnnoyance += amount;
         currentAnnoyance = Mathf.Min(currentAnnoyance, maxAnnoyance);
+
+        savedAnnoyance = currentAnnoyance;
+        hasSavedAnnoyance = true;
+
         UpdateAnnoyanceUI();
 
         if (currentAnnoyance >= maxAnnoyance && !isTransitionPending)

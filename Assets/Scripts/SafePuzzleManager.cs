@@ -2,7 +2,6 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-
 public class SafePuzzleManager : MonoBehaviour
 {
     [Header("Safe Sprites")]
@@ -16,16 +15,13 @@ public class SafePuzzleManager : MonoBehaviour
     [SerializeField] private int maxDigits = 7;
     [SerializeField] private Text codeText;
 
-
     [Header("Document")]
     [SerializeField] private GameObject document;
     [SerializeField] private Sprite documentNormalSprite;
     [SerializeField] private Sprite documentCorruptedSprite;
     [SerializeField] private Button corruptDocumentButton;
 
-
     public static bool WasCompleted { get; private set; }
-
 
     private string enteredCode = "";
     private bool safeUnlocked = false;
@@ -33,15 +29,15 @@ public class SafePuzzleManager : MonoBehaviour
     private bool wrongCodeShown = false;
     private SpriteRenderer documentRenderer;
 
-
     private void Start()
     {
         WasCompleted = false;
+
         if (document != null)
             documentRenderer = document.GetComponent<SpriteRenderer>();
+
         ResetSafe();
     }
-
 
     public void EnterDigit(int digit)
     {
@@ -52,6 +48,7 @@ public class SafePuzzleManager : MonoBehaviour
         {
             enteredCode = "";
             wrongCodeShown = false;
+
             if (safeBackground != null)
                 safeBackground.sprite = safeNormalSprite;
         }
@@ -66,7 +63,6 @@ public class SafePuzzleManager : MonoBehaviour
             CheckPassword();
     }
 
-
     private void CheckPassword()
     {
         if (enteredCode == correctPassword)
@@ -75,24 +71,25 @@ public class SafePuzzleManager : MonoBehaviour
             ShowWrongCode();
     }
 
-
     private void ShowWrongCode()
     {
         wrongCodeShown = true;
+
         if (safeBackground != null)
             safeBackground.sprite = safeWrongSprite;
     }
 
-
     private void UnlockSafe()
     {
         safeUnlocked = true;
+
         if (safeBackground != null)
             safeBackground.sprite = safeCorrectSprite;
 
         if (document != null)
         {
             Invoke(nameof(ActivateDocument), 1f);
+
             if (documentRenderer != null)
                 documentRenderer.sprite = documentNormalSprite;
         }
@@ -101,18 +98,17 @@ public class SafePuzzleManager : MonoBehaviour
             Invoke(nameof(ShowCorruptButton), 1f);
     }
 
-
     private void ShowCorruptButton()
     {
-        corruptDocumentButton.gameObject.SetActive(true);
+        if (corruptDocumentButton != null)
+            corruptDocumentButton.gameObject.SetActive(true);
     }
-
 
     private void ActivateDocument()
     {
-        document.SetActive(true);
+        if (document != null)
+            document.SetActive(true);
     }
-
 
     public void CorruptDocument()
     {
@@ -121,6 +117,9 @@ public class SafePuzzleManager : MonoBehaviour
 
         documentCorrupted = true;
         WasCompleted = true;
+
+        HumanController.AddAnnoyanceAfterSceneLoad(33f);
+        QuestManager.RegisterQuestCompleted("Safe");
 
         if (documentRenderer != null)
             documentRenderer.sprite = documentCorruptedSprite;
@@ -136,13 +135,11 @@ public class SafePuzzleManager : MonoBehaviour
         SceneManager.LoadScene("LivingRoom");
     }
 
-
     private void UpdateCodeText()
     {
         if (codeText != null)
             codeText.text = enteredCode;
     }
-
 
     private void ResetSafe()
     {
@@ -150,16 +147,21 @@ public class SafePuzzleManager : MonoBehaviour
         safeUnlocked = false;
         documentCorrupted = false;
         wrongCodeShown = false;
+
         if (safeBackground != null)
             safeBackground.sprite = safeNormalSprite;
+
         if (codeText != null)
             codeText.text = "";
+
         if (document != null)
         {
             document.SetActive(false);
+
             if (documentRenderer != null)
                 documentRenderer.sprite = documentNormalSprite;
         }
+
         if (corruptDocumentButton != null)
             corruptDocumentButton.gameObject.SetActive(false);
     }

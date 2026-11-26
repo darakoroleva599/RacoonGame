@@ -20,7 +20,6 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] private SpriteRenderer cageSpriteRenderer;
     [SerializeField] private Sprite cageCoveredSprite;
 
-
     private static Vector3 returnPosition;
     private static bool hasReturnPosition = false;
 
@@ -56,7 +55,6 @@ public class PlayerMove : MonoBehaviour
         rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         defaultScale = transform.localScale;
 
-
         if (hasReturnPosition &&
             SceneManager.GetActiveScene().name == "LivingRoom")
         {
@@ -67,7 +65,6 @@ public class PlayerMove : MonoBehaviour
             hasReturnPosition = false;
         }
 
-
         if (blanketOnRaccoon == null)
         {
             Transform blanket = FindChildRecursive(transform, "BlanketOnRaccoon");
@@ -77,7 +74,6 @@ public class PlayerMove : MonoBehaviour
 
         if (blanketOnRaccoon != null)
             blanketOnRaccoon.SetActive(false);
-
 
         RestoreCoveredCage();
     }
@@ -90,10 +86,8 @@ public class PlayerMove : MonoBehaviour
         cageCovered = true;
         hasBlanket = false;
 
-
         if (blanketOnRaccoon != null)
             blanketOnRaccoon.SetActive(false);
-
 
         GameObject ironingBoard = GameObject.FindGameObjectWithTag("IroningBoard");
 
@@ -105,7 +99,6 @@ public class PlayerMove : MonoBehaviour
             if (blanketOnBoard != null)
                 blanketOnBoard.gameObject.SetActive(false);
         }
-
 
         if (cageSpriteRenderer == null)
         {
@@ -123,7 +116,6 @@ public class PlayerMove : MonoBehaviour
 
         if (cageSpriteRenderer != null && cageCoveredSprite != null)
             cageSpriteRenderer.sprite = cageCoveredSprite;
-
 
         ParrotController parrot =
             FindObjectOfType<ParrotController>();
@@ -232,10 +224,8 @@ public class PlayerMove : MonoBehaviour
 
         Collider2D[] hits = Physics2D.OverlapCircleAll(transform.position, interactionRadius);
 
-
         foreach (var hit in hits)
         {
-
             if (hit.CompareTag("IroningBoard") && !hasBlanket && !cageCovered)
             {
                 Transform blanketOnBoard =
@@ -250,7 +240,6 @@ public class PlayerMove : MonoBehaviour
                 }
             }
 
-
             if (hit.CompareTag("ParrotCage") && hasBlanket && !cageCovered)
             {
                 if (QuestManager.Instance == null ||
@@ -264,7 +253,6 @@ public class PlayerMove : MonoBehaviour
 
         foreach (var hit in hits)
         {
-
             if (hit.CompareTag("Oven"))
             {
                 if (QuestManager.Instance == null ||
@@ -278,7 +266,6 @@ public class PlayerMove : MonoBehaviour
                     return;
                 }
             }
-
 
             if (hit.CompareTag("FlowerPot") && isOnPodosokonnik)
             {
@@ -294,7 +281,6 @@ public class PlayerMove : MonoBehaviour
                 }
             }
 
-
             if (hit.CompareTag("Fridge"))
             {
                 if (QuestManager.Instance == null ||
@@ -308,7 +294,6 @@ public class PlayerMove : MonoBehaviour
                     return;
                 }
             }
-
 
             if (hit.CompareTag("Bookshelf"))
             {
@@ -327,7 +312,6 @@ public class PlayerMove : MonoBehaviour
                 return;
             }
 
-
             if (hit.CompareTag("Pie") &&
                 Vector2.Distance(transform.position, hit.transform.position) < 1.2f)
             {
@@ -341,6 +325,20 @@ public class PlayerMove : MonoBehaviour
                     pie.StartMinigame();
                     return;
                 }
+            }
+
+
+            if (hit.CompareTag("Phone"))
+            {
+                HumanController.SaveHumanPosition(
+                    FindObjectOfType<HumanController>()
+                );
+
+                returnPosition = transform.position;
+                hasReturnPosition = true;
+
+                SceneManager.LoadScene("PhonePazzle");
+                return;
             }
 
 
@@ -360,7 +358,6 @@ public class PlayerMove : MonoBehaviour
                     return;
                 }
             }
-
 
             if (hit.CompareTag("Safe"))
             {
@@ -383,7 +380,6 @@ public class PlayerMove : MonoBehaviour
 
     private void CoverParrotCage(Transform cage)
     {
-
         if (blanketOnRaccoon != null)
             blanketOnRaccoon.SetActive(false);
 
@@ -392,7 +388,6 @@ public class PlayerMove : MonoBehaviour
 
         if (QuestManager.Instance != null)
             QuestManager.Instance.CompleteQuest("ParrotCage");
-
 
         if (cageSpriteRenderer == null)
         {
@@ -404,7 +399,6 @@ public class PlayerMove : MonoBehaviour
 
         if (cageSpriteRenderer != null && cageCoveredSprite != null)
             cageSpriteRenderer.sprite = cageCoveredSprite;
-
 
         ParrotController parrot =
             cage.GetComponentInChildren<ParrotController>(true);
